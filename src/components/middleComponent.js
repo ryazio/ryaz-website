@@ -12,8 +12,8 @@ function MiddleComponent() {
         <div class="left"></div><div class="right"></div>
       </div>
 
-      <div class="tagline">Tech Leadership that your startup deserves</div>
-      <div class="info">
+      <div class="tagline ff-brandon">Tech Leadership that your startup deserves</div>
+      <div class="info ff-brandon-light">
         Ryaz builds, ships and launches your digital product 
         with gaurantees on quality and performance.
       </div>

@@ -16,7 +16,7 @@ function Home() {
       <Router>
         <div class="container">
           <div class="left-container">
-            
+
             <Link to="/">
               <div class="logo">
                 <div class="left box"></div><div class="right box"></div>
