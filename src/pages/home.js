@@ -1,66 +1,32 @@
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Link
-} from "react-router-dom";
-
 import '../styles/styles.scss';
-import MiddleComponent from '../components/middleComponent';
-import WorkComponent from '../components/workComponent';
-import MethodComponent from '../components/methodComponent';
+import Header from '../components/header';
+import Footer from '../components/footer';
+
 
 function Home() {
   return (
     <>
-      <Router>
-        <div class="container">
-          <div class="left-container">
-
-            <Link to="/">
-              <div class="logo">
-                <div class="left box"></div><div class="right box"></div>
-              </div>
-            </Link>
-
-            <Link to="/work">
-              <div class="left-nav">Our Work</div>
-            </Link>
-
+      <div class="container">
+        <Header />
+        <div class="middle">
+          <div class="logo logo1">
+            <div class="left"></div><div class="right"></div>
           </div>
-    
-          <div class="top-container">
-            <div class="logo">
-              <div class="left"></div><div class="right"></div>
-            </div>
-            <img class="nav-icon" src="nav-icon.svg" alt=""></img>
+          <div class="logo logo2">
+            <div class="left"></div><div class="right"></div>
+          </div>
+          <div class="logo logo3">
+            <div class="left"></div><div class="right"></div>
           </div>
 
-          <Routes>
-            <Route path="/" element={<MiddleComponent />} />
-            <Route path="/work" element={<WorkComponent />} />
-            <Route path="/method" element={<MethodComponent />} />
-          </Routes>
-      
-          <div class="mobile-bottom-border"></div>
-
-          <div class="right-container">
-            <img class="nav-icon" src="nav-icon.svg" alt="" />
-            <Link to="/method"><div class="right-nav">The Ryaz Method</div></Link>
-          </div>
-          <div class="arrow">
-            <div class="up">
-              <div class="left"></div><div class="right"></div>
-            </div>
-            <div class="up-shadow">
-              <div class="ellipse"></div>
-              <div class="logo-shadow">
-                <div class="left"></div><div class="right"></div>
-              </div>
-            </div>
+          <div class="tagline ff-brandon">Tech Leadership that your startup deserves</div>
+          <div class="info ff-brandon-light">
+            Ryaz builds, ships and launches your digital product 
+            with gaurantees on quality and performance.
           </div>
         </div>
-      </Router>
+        <Footer />  
+      </div>
     </>
   );
 }
