@@ -5,7 +5,7 @@ import {
 } from "react-router-dom";
 import Home from './pages/home';
 import Work from './pages/work';
-import './App.css';
+import './styles/styles.scss';
 
 function App() {
   return (
@@ -14,7 +14,6 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/work' element={<Work />} />
       </Routes>
-      <Home />
     </Router>    
   );
 }

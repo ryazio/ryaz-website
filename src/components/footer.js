@@ -4,20 +4,20 @@ import { Link } from "react-router-dom";
 function Footer() {
   return (
     <>
-      <div class="mobile-bottom-border"></div>
+      <div className="mobile-bottom-border"></div>
 
-          <div class="right-container">
-            <img class="nav-icon" src="nav-icon.svg" alt="" />
-            <Link to="/method"><div class="right-nav">The Ryaz Method</div></Link>
+          <div className="right-container">
+            <img className="nav-icon" src="nav-icon.svg" alt="" />
+            <Link to="/method"><div className="right-nav">The Ryaz Method</div></Link>
           </div>
-          <div class="arrow">
-            <div class="up">
-              <div class="left"></div><div class="right"></div>
+          <div className="arrow">
+            <div className="up">
+              <div className="left"></div><div className="right"></div>
             </div>
-            <div class="up-shadow">
-              <div class="ellipse"></div>
-              <div class="logo-shadow">
-                <div class="left"></div><div class="right"></div>
+            <div className="up-shadow">
+              <div className="ellipse"></div>
+              <div className="logo-shadow">
+                <div className="left"></div><div className="right"></div>
               </div>
             </div>
           </div>

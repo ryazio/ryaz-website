@@ -1,32 +1,27 @@
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Link
-} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import '../styles/styles.scss';
 
 function Header() {
   return (
     <>
-      <div class="left-container">
+      <div className="left-container">
           <Link to="/">
-            <div class="logo">
-              <div class="left box"></div><div class="right box"></div>
+            <div className="logo">
+              <div className="left box"></div><div className="right box"></div>
             </div>
           </Link>
 
           <Link to="/work">
-            <div class="left-nav">Our Work</div>
+            <div className="left-nav">Our Work</div>
           </Link>
       </div>
   
-      <div class="top-container">
-        <div class="logo">
-          <div class="left"></div><div class="right"></div>
+      <div className="top-container">
+        <div className="logo">
+          <div className="left"></div><div className="right"></div>
         </div>
-        <img class="nav-icon" src="nav-icon.svg" alt=""></img>
+        <img className="nav-icon" src="nav-icon.svg" alt=""></img>
       </div>
     </>
   )
