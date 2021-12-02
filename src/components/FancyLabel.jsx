@@ -6,7 +6,7 @@ function fancyLabel({ colorA, colorB, text }) {
   };
 
   return (
-    <div className="ff-brandon-light fancy-label" style={style}>
+    <div className="ff-brandon fancy-label" style={style}>
       {text}
     </div>
   );

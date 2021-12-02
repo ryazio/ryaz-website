@@ -12,10 +12,10 @@ function Home() {
           <BackgroundLogo />
         </div>
 
-        <div className="tagline ff-brandon">
+        <div className="tagline ff-brandon-bold">
           Tech Leadership that your startup deserves.
         </div>
-        <div className="info ff-brandon-light">
+        <div className="info ff-brandon">
           Ryaz builds, ships and launches your digital product with gaurantees
           on quality and performance.
         </div>

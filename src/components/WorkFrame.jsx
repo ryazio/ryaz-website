@@ -5,7 +5,7 @@ function workFrame() {
   return (
     <div className="work-frame">
       <img className="" src="Group.svg" alt="" />
-      <div className="work-block-text ff-brandon-light">
+      <div className="work-block-text ff-brandon">
         Design a minimal and user-friendly for a community where every opinion
         matters.
       </div>

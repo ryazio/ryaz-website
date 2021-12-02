@@ -9,7 +9,7 @@ function Work() {
     <div className="container">
       <Header />
       <div className="work-container">
-        <div className="work-tagline ff-brandon-light">
+        <div className="work-tagline ff-brandon">
           We design, build and ship digital products on time with
           written guarantees on quality & performance
         </div>
