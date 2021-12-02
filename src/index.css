@@ -14,20 +14,14 @@ code {
 
 @font-face {
     font-family: 'Brandon';
-    src: url('fonts/BrandonGrotesque-Black.eot');
-    src: url('fonts/BrandonGrotesque-Black.eot?#iefix') format('embedded-opentype'),
-        url('fonts/BrandonGrotesque-Black.woff') format('woff'),
-        url('fonts/BrandonGrotesque-Black.ttf') format('truetype');
+    src: url('fonts/Brandon_reg.otf');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
-    font-family: 'Brandon-light';
-    src: url('fonts/BrandonGrotesque-Light.eot');
-    src: url('fonts/BrandonGrotesque-Light.eot?#iefix') format('embedded-opentype'),
-        url('fonts/BrandonGrotesque-Light.woff') format('woff'),
-        url('fonts/BrandonGrotesque-Light.ttf') format('truetype');
+    font-family: 'Brandon-bold';
+    src: url('fonts/Brandon_bld.otf');
     font-weight: 700;
     font-style: normal;
     font-display: swap;

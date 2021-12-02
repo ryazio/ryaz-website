@@ -15,3 +15,18 @@
   display: flex;
   justify-content: space-around;
 }
+
+.work-blk {
+  color: #fff;
+
+  .work-num {
+    font-size: 144px;
+    color: rgba(255, 255, 255, 0.05);
+  }
+  .work-title {
+    font-size: 64px;
+  }
+  .work-line {
+    font-size: 16px;
+  }
+}
