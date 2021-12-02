@@ -1,9 +1,10 @@
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
     <>
-      <div className="mobile-bottom-border"></div>
+      <div className="mobile-bottom-border" />
 
       <div className="right-container">
         <img className="nav-icon" src="nav-icon.svg" alt="" />
@@ -13,8 +14,8 @@ function Footer() {
       </div>
       <div className="arrow">
         <div className="up">
-          <div className="left"></div>
-          <div className="right"></div>
+          <div className="left" />
+          <div className="right" />
         </div>
       </div>
     </>

@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
@@ -6,8 +7,8 @@ function Header() {
       <div className="left-container">
         <Link to="/">
           <div className="logo">
-            <div className="left box"></div>
-            <div className="right box"></div>
+            <div className="left box" />
+            <div className="right box" />
           </div>
         </Link>
 
@@ -18,10 +19,10 @@ function Header() {
 
       <div className="top-container">
         <div className="logo">
-          <div className="left"></div>
-          <div className="right"></div>
+          <div className="left" />
+          <div className="right" />
         </div>
-        <img className="nav-icon" src="nav-icon.svg" alt=""></img>
+        <img className="nav-icon" src="nav-icon.svg" alt="" />
       </div>
     </>
   );
