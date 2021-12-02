@@ -9,14 +9,14 @@ function Work() {
     <>
       <div className="container" >
         <Header />
-        <div class="work-container">
-        <div class="work-tagline ff-brandon">We design, build and ship digital products on time with
+        <div className="work-container">
+        <div className="work-tagline ff-brandon">We design, build and ship digital products on time with
           written guarantees on quality & performance</div>
-          <div class="work-blocks">
-            <div class="work-blk ff-brandon">
-              <div class="work-num ff-brandon-bold">01</div>
-              <div class="work-title">Forby</div>             
-              <div class="work-line ff-brandon-light">Designing a minimal and user friendly for a community
+          <div className="work-blocks">
+            <div className="work-blk ff-brandon">
+              <div className="work-num ff-brandon-bold">01</div>
+              <div className="work-title">Forby</div>             
+              <div className="work-line ff-brandon">Designing a minimal and user friendly for a community
                 where every opinion matters
               </div>
             </div>
