@@ -1,16 +1,15 @@
-function fancyLabel(props) {
-  
+function fancyLabel({ colorA, colorB, text }) {
   const style = {
-    background: `linear-gradient(90deg, ${props.colorA} 0%, ${props.colorB} 100%)`
-  }
+    background: `linear-gradient(90deg, ${colorA} 0%, ${colorB} 100%)`,
+  };
 
   return (
     <>
-      <div class="ff-brandon-light fancy-label" style={style}>
-        {props.text}
+      <div className="ff-brandon-light fancy-label" style={style}>
+        {text}
       </div>
-      </>
-  )
+    </>
+  );
 }
 
 export default fancyLabel;

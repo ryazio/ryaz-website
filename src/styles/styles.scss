@@ -23,6 +23,15 @@ img {
     width: auto;
 }
 
+.ff-brandon {
+  font-family: "Brandon";
+}
+
+.ff-brandon-light {
+  font-family: 'Brandon-light';
+}
+
+
 .clear:before,
 .clear:after {
     content: "";
@@ -154,13 +163,14 @@ img {
     }
 
     .tagline {
-      width:304px;   
+      width:304px;  
       background: -webkit-linear-gradient(right, #3BB98C, #4DE5AF);
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
       font-weight:700;
       font-size: 36px;
+      z-index: 1;
 
       @media (min-width:$bp-tablet){
         font-size:48px;
@@ -177,6 +187,8 @@ img {
       line-height:36px;
       margin-top:14px;
       width: 304px;
+      font-weight: 700;
+      z-index: 1;
 
       @media (min-width:$bp-tablet){
         width: 440px;

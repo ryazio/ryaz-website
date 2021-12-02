@@ -1,5 +1,4 @@
 
-import '../styles/styles.scss';
 import '../styles/work.scss';
 import Header from '../components/header';
 import Footer from '../components/footer';
@@ -10,10 +9,10 @@ function Work() {
     <>
       <div className="container" >
         <Header />
-        <div class="work-container">
-        <div class="work-tagline ff-brandon-light">We design, build and ship digital products on time with
+        <div className="work-container">
+        <div className="work-tagline ff-brandon-light">We design, build and ship digital products on time with
           written guarantees on quality & performance</div>
-            <div class="work-blocks">
+            <div className="work-blocks">
               <WorkFrame />
               <WorkFrame />
             </div>
