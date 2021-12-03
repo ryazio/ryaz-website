@@ -11,18 +11,38 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
-@font-face {
-    font-family: 'Brandon';
-    src: url('fonts/Brandon_reg.otf');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
 @font-face {
     font-family: 'Brandon-bold';
     src: url('fonts/Brandon_bld.otf');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
+}
+@font-face {
+  font-family: 'Brandon-black';
+  src: url('fonts/Brandon_blk.otf');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Brandon-medium';
+  src: url('fonts/Brandon_med.otf');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Brandon';
+  src: url('fonts/Brandon_reg.otf');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Brandon_regular_italic';
+  src: url('fonts/Brandon_reg_it.otf');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }

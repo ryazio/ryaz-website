@@ -2,7 +2,7 @@ import React from 'react';
 
 function BackgroundLogo() {
   return (
-    <>
+    <div className="moving-logo">
       <div className="logo logo1">
         <div className="left" />
         <div className="right" />
@@ -15,7 +15,7 @@ function BackgroundLogo() {
         <div className="left" />
         <div className="right" />
       </div>
-    </>
+    </div>
   );
 }
 

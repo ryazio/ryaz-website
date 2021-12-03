@@ -1,30 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import RyazLogo from '../icons/RyazLogo';
 
 function Header() {
   return (
-    <>
-      <div className="left-container">
-        <Link to="/">
-          <div className="logo">
-            <div className="left box" />
-            <div className="right box" />
-          </div>
-        </Link>
+    <div className="left-container">
+      <Link to="/">
+        <RyazLogo />
+      </Link>
 
-        <Link to="/work">
-          <div className="left-nav">Our Work</div>
-        </Link>
-      </div>
+      <div><Link className="left-nav" to="/work">Our Work</Link></div>
 
-      <div className="top-container">
-        <div className="logo">
-          <div className="left" />
-          <div className="right" />
-        </div>
-        <img className="nav-icon" src="nav-icon.svg" alt="" />
-      </div>
-    </>
+      <div className="icon">&nbsp;</div>
+    </div>
   );
 }
 
