@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import NavIcon from '../icons/NavIcon';
 import RyazLogo from '../icons/RyazLogo';
 
 function Header() {
@@ -11,7 +12,7 @@ function Header() {
 
       <div><Link className="left-nav" to="/work">Our Work</Link></div>
 
-      <div className="icon">&nbsp;</div>
+      <div className="hamburger-icon"><NavIcon /></div>
     </div>
   );
 }

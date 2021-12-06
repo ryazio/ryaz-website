@@ -1,20 +1,12 @@
 import React from 'react';
+import RyazLogo from './RyazLogo';
 
 function BackgroundLogo() {
   return (
     <div className="moving-logo">
-      <div className="logo logo1">
-        <div className="left" />
-        <div className="right" />
-      </div>
-      <div className="logo logo2">
-        <div className="left" />
-        <div className="right" />
-      </div>
-      <div className="logo logo3">
-        <div className="left" />
-        <div className="right" />
-      </div>
+      <RyazLogo />
+      <RyazLogo />
+      <RyazLogo />
     </div>
   );
 }

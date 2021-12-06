@@ -20,8 +20,11 @@ function Home() {
             on quality and performance.
           </div>
         </div>
-        <div className="arrow">
-          <RyazLogo />
+        <div className="arrow-with-shadow">
+          <div className="arrow">
+            <RyazLogo />
+          </div>
+          <div className="ellipse">&nbsp;</div>
         </div>
       </div>
       <Footer />
