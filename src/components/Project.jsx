@@ -40,7 +40,12 @@ function Project({
       </div>
       <div className="project-image">
         {image && (
-        <img src={projectImage} alt="forby" style={isMounted ? mountAnimation : unmountAnimation} onAnimationEnd={() => { if (!isMounted) setImage(false); }} />
+        <img
+          src={projectImage}
+          alt={projectName}
+          style={isMounted ? mountAnimation : unmountAnimation}
+          onAnimationEnd={() => { if (!isMounted) setImage(false); }}
+        />
         )}
       </div>
     </>
