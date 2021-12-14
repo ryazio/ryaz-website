@@ -36,12 +36,17 @@
       .tagline {
         width: 100%;
         color: $rgba-light-green;
-        font-size: 48px;
+        font-size: 32px;
 
-        @media (min-width: $bp-tablet) {
+        
+        @media (min-width: $bp-tablet){
+          font-size: 34px;
           text-align: right;
           width: 50%;
           margin-right: 20px;
+        }
+        @media (min-width: $bp-desktop){
+          font-size: 48px;
         }
       }
 
@@ -83,7 +88,10 @@
   .side-header {
     @extend %side-bar;
     border-bottom: $grey-border;
-    border-right: $grey-border;
+    
+    @media (min-width: $bp-tablet){
+      border-right: $grey-border;
+    }
     
     .nav-title-link {
       visibility: hidden;
@@ -111,7 +119,11 @@
   }
   .side-footer {
     @extend %side-bar;
-    border-left: $grey-border;
+    border-top: $grey-border;
+    
+    @media (min-width: $bp-tablet){
+      border-left: $grey-border;
+    }
 
     .nav-icon {
       visibility: hidden;

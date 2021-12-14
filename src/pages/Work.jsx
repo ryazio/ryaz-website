@@ -42,6 +42,18 @@ function Work() {
             description="A Spain project, a marketplace for flamenco teachers with classes and events."
             projectImage="./Group.svg"
           />
+          <Project
+            srno="03"
+            projectName="Flamencos Online"
+            description="Designing a minimal and user-friendly for a community where every opionion matters."
+            projectImage="./Group.svg"
+          />
+          <Project
+            srno="04"
+            projectName="Wepath"
+            description="Designing a minimal and user-friendly for a community where every opionion matters."
+            projectImage="./Group.svg"
+          />
         </div>
       </div>
     </div>

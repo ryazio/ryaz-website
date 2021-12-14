@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/home.scss';
+// import '../styles/home.scss';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import BackgroundLogo from '../icons/BackgroundLogo';
@@ -20,7 +20,8 @@ function Home() {
               Tech Leadership that your startup deserves.
             </div>
             <div className="info ff-brandon">
-              Ryaz builds, ships and launches your digital product with gaurantees
+              Ryaz builds, ships and launches your digital product with
+              <span className="highlight-grn"> gaurantees </span>
               on quality and performance.
             </div>
           </div>
