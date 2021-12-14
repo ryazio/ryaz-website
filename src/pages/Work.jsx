@@ -34,25 +34,25 @@ function Work() {
             projectName="Forby"
             description="Designing a minimal and user-friendly for a community where
             every opionion matters."
-            projectImage="./Group.svg"
+            projectImage="./Cover.png"
           />
           <Project
             srno="02"
             projectName="Dev Studio"
             description="A Spain project, a marketplace for flamenco teachers with classes and events."
-            projectImage="./Group.svg"
+            projectImage="./Cover.png"
           />
           <Project
             srno="03"
             projectName="Flamencos Online"
             description="Designing a minimal and user-friendly for a community where every opionion matters."
-            projectImage="./Group.svg"
+            projectImage="./Cover.png"
           />
           <Project
             srno="04"
             projectName="Wepath"
             description="Designing a minimal and user-friendly for a community where every opionion matters."
-            projectImage="./Group.svg"
+            projectImage="./Cover.png"
           />
         </div>
       </div>
