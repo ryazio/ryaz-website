@@ -38,7 +38,7 @@
 
       .project-srno {
         font-size: 9rem;
-        opacity: 5%;
+        color: rgba($color: $clr-accent, $alpha: 0.04);
       }
 
       div {
@@ -80,10 +80,6 @@
     }
   }
 }
-
-// .project-name:hover .project-image{
-//   display: block !important;
-// }
 
 @keyframes mount {
   0% {
