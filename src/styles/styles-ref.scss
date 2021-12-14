@@ -1,0 +1,252 @@
+@import 'variables';
+@import 'mixins';
+
+body {
+  margin:0;
+  padding:0;
+}
+
+.ff-brandon {
+  font-family: "Brandon";
+}
+
+.ff-brandon-bold {
+  font-family: 'Brandon-bold';
+}
+
+* {
+    padding: 0;
+    margin:0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    -webkit-text-size-adjust:none;
+}
+img {
+    max-width: 100%;
+    width: auto;
+}
+
+.clear:before,
+.clear:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.container {
+  display: flex;
+  background: linear-gradient(111.17deg, #041534 0.23%, #030F26 100%);
+  flex-direction: column;
+
+  @media (min-width: $bp-desktop){
+    flex-direction: row;
+  }
+
+  // only at mobile
+  .top-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 50px;
+    border-bottom:$grey-border;
+
+    @media (min-width: $bp-tablet) {
+      height:75px;
+    }
+    @media (min-width: $bp-desktop) {
+      
+    }
+  }
+
+  /* Logo */
+  // .logo {
+  //   position:absolute;
+  //   top:15px;
+  //   left:15px;
+
+  //   @media (min-width: $bp-tablet){
+  //     top: 30px;
+  //     left: 30px;
+  //   }
+  // }
+
+  // .left {
+  //   @extend %logo-box;
+  //   height: 20px;
+  //   border-radius:2px;
+  //   border-top-right-radius:0;
+
+  //   @media (min-width: $bp-tablet){
+  //     height: 25px;
+  //   }
+  // }
+
+  // .right {
+  //   @extend %logo-box;
+  //   height: 10px;
+  //   vertical-align: top;
+  //   border-top-right-radius:2px;
+  //   border-bottom-right-radius:2px;
+  //   background: linear-gradient($primary-gradient-light, $primary-gradient-dark);
+    
+  //   @media (min-width: $bp-tablet){
+  //     height: 12.5px;
+  //   }
+  // }
+  
+  .left-container {
+    @extend %side-container;
+    height:100vh;
+    border-right:$grey-border;
+
+    .left-nav {
+      @extend %side-nav;
+      transform: scale(-1, -1);
+    }
+  }
+
+ .right-nav {
+      @extend %side-nav;
+    }
+    .nav-icon {
+      position: absolute;
+      top:15px;
+      right:15px;
+
+      @media (min-width:$bp-tablet){
+        top:30px;
+        right: 31px;
+      }
+    }
+  } 
+
+  .right-container {
+    @extend %side-container; 
+    border-left: $grey-border;
+  }
+.mobile-bottom-border{
+  border: $grey-border; 
+  z-index:10;
+  bottom:50px;
+  width:100%;
+  position:fixed;  
+
+  @media (min-width: $bp-tablet) {
+    display:none; 
+  }
+
+}
+// Animation
+@keyframes breathe {
+    0% {
+        transform: translateY(0) rotate(45deg);
+    }
+
+    50% {
+        transform: translateY(5px) rotate(45deg);
+    }
+
+    100% {
+        transform: translateY(0) rotate(45deg);
+    }
+}
+
+.arrow {
+    transition: ease-out .7s;
+}
+
+.up {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 85vh;
+    left: 50%;
+    transform: rotate(45deg) translateX(-15px);
+
+    .left {
+      width:12px;
+      height: 24px;
+    }
+    .right {
+      width: 12px;
+      height:12px;
+    }
+    @media (min-width: $bp-tablet) {
+      top:88vh;
+    }
+}
+
+.up-shadow {
+  position: absolute;
+  left:50%;
+  top:90vh;
+  width: 35px;
+  height: 35px;
+  
+  @media (min-width: $bp-tablet) {
+    top:93vh;
+  }
+
+  .ellipse {
+    width: 60px;
+    height: 9px;
+    background: rgba(77, 230, 175, 0.25);
+    filter: blur(10px);
+    margin-left: -25px;
+  }
+  .logo-shadow {
+    transform: rotate(45deg) translateX(-15px);
+    filter: blur(20px);
+
+    .left {
+      width: 9px;
+      height:18px;
+      margin-left:8px;
+    }
+    .right {
+      width: 9px;
+      height:9px;
+    }
+  }
+}
+
+.work-frame {
+  width: 466px;
+  height: 384px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  padding:7px 6px;
+
+  img {
+    width:100%;
+  }
+  .work-block-text {
+    font-size: 18px;
+    text-align: left;
+    color: #fff;
+    padding: 15px 18px;
+  }
+  .label-blk {
+    padding: 0 18px;
+    display:flex;
+  }
+}
+
+
+.fancy-label {
+  border-radius: 100px;
+  font-size: 12px;
+  color: #000;
+  min-width:98px;
+  height:28px;
+  display:flex;
+  justify-content: center;
+  padding:0 12px;
+  align-items: center;
+  max-width: fit-content;
+  margin-right:10px;
+}

@@ -1,5 +1,5 @@
 import React from 'react';
-import RyazLogo from './RyazLogo';
+import RyazLogo from '../components/RyazLogo';
 
 function BackgroundLogo() {
   return (
