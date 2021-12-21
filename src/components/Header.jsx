@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import NavIcon from '../icons/NavIcon';
 import RyazLogo from './RyazLogo';
 
 function Header() {
@@ -16,7 +17,9 @@ function Header() {
           <span>Our Work</span>
         </Link>
 
-        <img className="nav-icon" src="nav-icon.svg" alt="" />
+        <div className="nav-icon">
+          <NavIcon />
+        </div>
 
       </div>
       {/*

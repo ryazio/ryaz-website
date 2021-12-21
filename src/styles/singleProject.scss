@@ -1,0 +1,171 @@
+.project-details {
+  display: flex;
+  padding: 30px;
+  color: $clr-accent;
+
+  .project-info {
+    width: 50%;
+    padding: 25px;
+
+    .logo-and-name {
+      display: flex;
+      align-items: center;
+      font-size: 24px;
+
+      span {
+        margin: 0 15px;
+      }
+    }
+    .project-description {
+      padding: 20px 0;
+      font-size: 28px;
+      line-height: 40px;
+    }
+
+    .fancy-labels {
+      padding: 8px 0;
+      display: flex;
+    }
+
+    .people {
+      padding: 28px 0;
+      display: flex;
+      justify-content: space-between;
+
+      .name-and-designation {
+        h4 {
+          text-transform: uppercase;
+          letter-spacing: 0.25em;
+        }
+      }
+    }
+  }
+
+  .image {
+    width: 50%;
+  }
+}
+
+.other-sections {
+  padding: 42px 0;
+  color: $clr-accent;
+  text-align: center;
+
+  h5 {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: rgba($color: $clr-accent, $alpha: 0.5);
+    letter-spacing: 0.2em;
+  }
+  p {
+    padding: 10px;
+    font-size: 36px;
+  }
+
+  .color-scheme{
+      display: flex;
+
+      .colors{
+        margin-top: 42px;
+        height: 288px;
+        width: 20%;
+
+        &:last-child{
+            display: grid;
+            place-items: center;
+            font-size: 24px;
+        }
+    }
+  }
+}
+
+.testimonial {
+    padding: 78px;
+    color: $clr-accent;
+    text-align: center;
+
+    .stars{
+        display: flex;
+        justify-content: center;
+    }
+    .message{
+        font-size: 24px;
+        max-width: 600px;
+        margin: 0 auto;
+        line-height: 40px;
+
+        &::before{
+            content: "\201C";
+            font-size: 100px;
+            color: rgba($color: $clr-accent, $alpha: 0.3);
+        }
+        &::after{
+            content: "\201D";
+            font-size: 100px;
+            vertical-align: text-bottom;
+            position: relative;
+            top: 50px;
+            left: 10px;
+            color: rgba($color: $clr-accent, $alpha: 0.3);
+        }
+    }
+    .more-reviews{
+        margin: 20px 0;
+        a{
+            color: $clr-accent;
+        }
+    }
+}
+
+.footer{
+    color: $clr-accent;
+    background: #030F26;
+    padding: 100px 190px;
+    display: flex;
+    
+    .details{
+        width: 33%;
+        height: fit-content;
+
+        p{
+            margin: 20px 0;
+            width: 250px;
+        }
+    }
+
+    .links{
+        width: 33%;
+        height: fit-content;
+        text-align: center;
+
+        p{
+            margin: 20px;
+
+            a{
+                text-decoration: none;
+                color: $clr-accent;
+            }
+        }
+    }
+    .join-us{
+        width: 33%;
+        height: fit-content;
+        text-align: right;
+
+        p{
+            margin: 20px 0;
+        }
+
+        .social-links{
+            margin-top: 68px;
+
+            img{
+                margin: 0 10px;
+    
+                &:last-child{
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}

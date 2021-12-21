@@ -1,12 +1,16 @@
 @import "variables";
 @import "mixins";
 @import "home.scss";
-@import "backgroundLogo.scss";
+// @import "backgroundLogo.scss";
+@import "movingLogo.scss";
 @import "ryazLogo.scss";
+@import "singleProject.scss";
 
 body {
   margin: 0;
   padding: 0;
+  background: linear-gradient(111.17deg, $bg-gradient-start 0.23%, $bg-gradient-end 100%);
+  font-family: "Brandon";
 }
 
 .ff-brandon {
@@ -43,10 +47,6 @@ img {
   display: block;
   clear: both;
 }
-.container {
-  background: linear-gradient(111.17deg, $bg-gradient-start 0.23%, $bg-gradient-end 100%);
-  min-height: 100vh;
-}
 
 .header-logo{
   width: 25px;
@@ -55,4 +55,37 @@ img {
 
 .highlight-grn{
   color: #4DE5AF;
+}
+
+
+//navIcon
+
+.nav-icon{
+  cursor: pointer;
+  height: 22px;
+  width: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  .line{
+    width: 16px;
+    border: solid 1px $clr-accent;
+    margin-bottom: 6px;
+    border-radius: 2px;
+
+    &:nth-child(2){
+      width: 22px
+    }
+  }
+}
+
+//fancyLabel
+
+.fancy-label{
+  width: fit-content;
+  padding: 5px 25px;
+  border-radius: 100px;
+  color: #000;
+  margin: 0 10px 0 0;
 }

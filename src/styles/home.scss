@@ -88,7 +88,7 @@
 
   .side-header {
     @extend %side-bar;
-    border-bottom: $grey-border;
+    // border-bottom: $grey-border;
     
     @media (min-width: $bp-tablet){
       border-right: $grey-border;
