@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Work from './pages/Work';
 import SingleProject from './pages/SingleProject';
 import './styles/styles.scss';
+import Contact from './pages/Contact';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/work" element={<Work />} />
         <Route path="/work/:name" element={<SingleProject />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<Navigate replace to="/" />} />
       </Routes>
     </Router>
