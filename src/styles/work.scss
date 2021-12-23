@@ -42,18 +42,34 @@
 
       .project-srno {
         width: 150px;
-        font-size: 9rem;
+        font-size: 6rem;
         color: rgba($clr-accent, $alpha: 0.04);
+
+        @media(min-width: $bp-tablet){
+          font-size: 8rem; 
+        }
+        
+        @media (min-width: $bp-desktop){
+          font-size: 9rem;
+        }
       }
 
       div {
         transform: translateX(-20px);
 
         .project-name {
-          font-size: 5rem;
+          font-size: 3rem;
           margin-bottom: 10px;
           
-          a{
+          @media (min-width: $bp-tablet){
+            font-size: 4rem;
+          }
+          @media (min-width: $bp-desktop){
+            font-size: 5rem;
+          }
+
+
+          a {
             color: $clr-accent;
             text-decoration: none;
           }
@@ -64,35 +80,19 @@
 }
 
 .project-image {
-  width: 35%;
-  position: fixed;
-  z-index: 3;
-  top: 25%;
-  left: 53%;
+  display: none;
+  
+  @media (min-width: $bp-desktop) {
+    width: 35%;
+    position: fixed;
+    z-index: 3;
+    top: 25%;
+    left: 53%;
+    display: block;
+  }
 
-    
-    img {
-      border-radius: 10px;
-      transition: ease-in-out 0.7s;
-    }
+  img {
+    border-radius: 10px;
+    transition: ease-in-out 0.7s;
+  }
 }
-// @keyframes mount {
-//   0% {
-//     opacity: 0;
-//     visibility: hidden;
-//   }
-//   100% {
-//     opacity: 1;
-//     visibility: visible;
-//   }
-// }
-
-// @keyframes unmount {
-//   0% {
-//     opacity: 1;
-//   }
-//   100% {
-//     opacity: 0;
-//     visibility: hidden;
-//   }
-// }

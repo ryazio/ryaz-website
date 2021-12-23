@@ -1,0 +1,58 @@
+.ryaz-method {
+  display: flex;
+  color: $clr-accent;
+
+  .info {
+    width: 50%;
+    display: grid;
+    place-items: center;
+    padding: 0 150px;
+
+    h1 {
+      font-size: 36px;
+    }
+    p {
+      padding: 24px 0;
+      font-size: 18px;
+    }
+    button {
+      margin: 24px 0;
+      padding: 17px 42px;
+      border: none;
+      border-radius: 8px;
+      background: #09b477;
+      color: $clr-accent;
+      font-size: 18px;
+    }
+  }
+
+  .ryaz-pillars {
+    width: 50%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 20px;
+
+    .pillar {
+      margin: 15px;
+      height: fit-content;
+      padding: 10px 21px 45px;
+      background: #0d1b35;
+      border-radius: 25px;
+
+      .pillar-info {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+
+        h2 {
+          font-size: 24px;
+        }
+
+        p {
+          font-size: 48px;
+          color: rgba($color: $clr-accent, $alpha: 0.1);
+        }
+      }
+    }
+  }
+}

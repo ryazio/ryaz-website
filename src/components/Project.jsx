@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 function Project({
-  srno, projectName, description, projectImage, setImage,
+  srno, projectName, description, projectImage, setImage, slug,
 }) {
   return (
     <div className="project">
@@ -13,7 +13,7 @@ function Project({
             className="project-name"
             onMouseOver={() => setImage(projectImage)}
           >
-            <Link to={`/work/${projectName.toLowerCase().replaceAll(' ', '')}`}>
+            <Link to={`/work/${slug}`}>
               {projectName}
             </Link>
           </div>

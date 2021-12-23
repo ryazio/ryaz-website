@@ -1,10 +1,11 @@
 @import "variables";
 @import "mixins";
 @import "home.scss";
-// @import "backgroundLogo.scss";
+@import "ryazMethod.scss";
 @import "movingLogo.scss";
 @import "ryazLogo.scss";
 @import "singleProject.scss";
+@import "footer.scss";
 
 body {
   margin: 0;

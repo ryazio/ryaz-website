@@ -22,5 +22,6 @@ module.exports = {
     'jsx-a11y/mouse-events-have-key-events': 'off',
     'no-unused-vars': 'off',
     'react/prop-types': 'off',
+    'react/destructuring-assignment': 'off',
   },
 };

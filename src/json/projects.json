@@ -1,0 +1,62 @@
+[
+  {
+    "id": "01",
+    "slug": "forby", 
+    "name": "Forby",
+    "description": "Designing a minimal and user-friendly for a community where every opionion matters.",
+    "projectLeader": "",
+    "stakeholders": [],
+    "client": "",
+    "mockupImage": "./Cover.png",
+    "labels": [],
+    "DesktopDesign": [],
+    "mobileDesign": [],
+    "colorScheme": [],
+    "clientReviews": []
+  },
+  {
+    "id": "02",
+    "slug": "dev-studio",
+    "name": "Dev Studio",
+    "description": "Designing a minimal and user-friendly for a community where every opionion matters.",
+    "projectLeader": "",
+    "stakeholders": [],
+    "client": "",
+    "mockupImage": "./Cover.png",
+    "labels": [],
+    "DesktopDesign": [],
+    "mobileDesign": [],
+    "colorScheme": [],
+    "clientReviews": []
+  },
+  {
+    "id": "03",
+    "slug": "flamencos-online",
+    "name": "Flamencos Online",
+    "description": "Designing a minimal and user-friendly for a community where every opionion matters.",
+    "projectLeader": "",
+    "stakeholders": [],
+    "client": "",
+    "mockupImage": "./Cover.png",
+    "labels": [],
+    "DesktopDesign": [],
+    "mobileDesign": [],
+    "colorScheme": [],
+    "clientReviews": []
+  },
+  {
+    "id": "04",
+    "slug": "wepath",
+    "name": "Wepath",
+    "description": "Designing a minimal and user-friendly for a community where every opionion matters.",
+    "projectLeader": "",
+    "stakeholders": [],
+    "client": "",
+    "mockupImage": "./Cover.png",
+    "labels": [],
+    "DesktopDesign": [],
+    "mobileDesign": [],
+    "colorScheme": [],
+    "clientReviews": []
+  }
+]
