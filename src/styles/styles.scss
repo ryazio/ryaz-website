@@ -7,11 +7,15 @@
 @import "singleProject.scss";
 @import "footer.scss";
 
+:root{
+  font-size: 18px;
+}
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(111.17deg, $bg-gradient-start 0.23%, $bg-gradient-end 100%);
+  background: linear-gradient(111.17deg, $clr-bg-lighter 0.23%, $clr-bg-darker 100%);
   font-family: "Brandon";
+  color: $clr-accent;
 }
 
 .ff-brandon {
@@ -26,6 +30,9 @@ body {
   font-family: "Brandon-bold";
 }
 
+.ff-brandon-italic {
+  font-family: "Brandon-light-italic";
+}
 * {
   padding: 0;
   margin: 0;
@@ -54,8 +61,8 @@ img {
   height: 25px;
 }
 
-.highlight-grn{
-  color: #4DE5AF;
+.highlighted-txt{
+  color: $clr-primary-light;
 }
 
 
@@ -89,4 +96,27 @@ img {
   border-radius: 100px;
   color: #000;
   margin: 0 10px 0 0;
+}
+
+.arrow-with-shadow {
+  position: absolute;
+  top: 85%;
+  left: 46%;
+  transition: ease-out 0.7s;
+
+  .arrow {
+    margin: 0 auto;
+    height: 25px;
+    width: 25px;
+    transform: rotate(45deg);
+    filter: drop-shadow(28px 28px 18px rgba(77, 229, 175, 0.6));
+  }
+
+  .ellipse {
+    height: 5px;
+    width: 60px;
+    margin-top: 20px;
+    background: rgba(77, 229, 175, 0.3);
+    filter: blur(8px);
+  }
 }
