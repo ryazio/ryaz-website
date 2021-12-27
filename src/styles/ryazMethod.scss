@@ -33,7 +33,7 @@
 
     h2 {
       font-size: 1.5rem;
-      @media (min-width: $bp-desktop){
+      @media (min-width: $bp-tablet){
         font-size: 2rem;
       }
     }
@@ -44,16 +44,6 @@
     }
     button {
       margin-top: 1.5rem;
-      padding: 0.75rem 2.25rem;
-      border: none;
-      border-radius: 0.5rem;
-      background: $clr-primary;
-      color: $clr-accent;
-      font-size: 1rem;
-
-      @media (min-width: $bp-desktop){
-        padding: 1rem 3rem;
-      }
     }
   }
 
@@ -168,12 +158,16 @@
   }
   .contact-form {
     max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
     @media (min-width: $bp-tablet){
       max-width: 75%;
       margin: auto;
       display: grid;
       gap: 1rem;
-      grid-template-columns: 50% 50%;
+      grid-template-columns: 50% 20% 30%;
     }
     @media (min-width: $bp-desktop){
       max-width: 50%;
@@ -182,20 +176,54 @@
       background: $clr-bg-darker;
       font-size: 1rem;
       padding: 1rem;
-      color: $clr-accent;
-      font-family: "Brandon";
       border: none;
       margin: 1rem;
       width: 100%;
       border-radius: 8px;
     }
-
-    textarea {
+    .email-input {
       @media (min-width: $bp-tablet){
         grid-column: span 2;
+      }
+    }
+    textarea {
+      @media (min-width: $bp-tablet){
+        grid-column: span 3;
         margin-top: 0;
       }
     }
-   
+    button {
+      max-width: 200px;
+    }
   }
+}
+
+// slider
+.team-slider{
+  width: 100%;
+  overflow:hidden;
+  height: 500px;
+}
+
+.slider-control {
+  background: rgba(255,255,255,0.4);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border:none;
+  cursor: pointer;
+  outline:none;
+  position: relative;
+  z-index: 100;
+}
+.move-slide-left {
+  left: 7%;
+  top: 250px;
+}
+.move-slide-right {
+  left: 90%;
+  top: 200px;
 }

@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { motion } from 'framer-motion';
+
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import RyazLogo from '../components/RyazLogo';
 
 function RyazMethod() {
+  const [move, setSliderMove] = useState(0);
   return (
     <>
       <Header />
@@ -22,7 +25,7 @@ function RyazMethod() {
               pillars that we stand on for our growth. These four pillars are clearly
               represented through our work.
             </p>
-            <button className="ff-brandon" type="button">Join us now</button>
+            <button className="primary-btn" type="button">Join us now</button>
           </div>
         </div>
         <div className="arrow-with-shadow">
@@ -100,10 +103,45 @@ function RyazMethod() {
           </div>
         </div>
       </div>
-      <div className="team-showcase ">
+      <div className="example-container">
+        {/* <motion.div
+          animate={{
+            scale: [1, 2, 2, 1, 1],
+            rotate: [0, 0, 270, 270, 0],
+            borderRadius: ['20%', '20%', '50%', '50%', '20%'],
+          }}
+          transition={{
+            duration: 2,
+            ease: 'easeInOut',
+            times: [0, 0.2, 0.5, 0.8, 1],
+            repeat: Infinity,
+            repeatDelay: 1,
+          }}
+        /> */}
+      </div>
+      <div className="team-showcase">
         <h3>Our Team</h3>
         <p>Group of people that truly love each other</p>
-        <div className="team-slider">
+        <button
+          type="button"
+          onClick={() => setSliderMove(move - 1)}
+          className="slider-control move-slide-left"
+        >
+          <img src="./left-arrow.svg" alt="left arrow" />
+        </button>
+        <button
+          type="button"
+          onClick={() => setSliderMove(move + 1)}
+          className="slider-control move-slide-right"
+        >
+          <img src="./right-arrow.svg" alt="left arrow" />
+        </button>
+        <motion.div
+          className="team-slider"
+          animate={{
+            x: 100 * move,
+          }}
+        >
           <img src="./images/sahib.svg" alt="sahib-pic" />
           <img src="./images/sahib.svg" alt="sahib-pic" />
           <img src="./images/sahib.svg" alt="sahib-pic" />
@@ -115,7 +153,7 @@ function RyazMethod() {
           <img src="./images/sahib.svg" alt="sahib-pic" />
           <img src="./images/sahib.svg" alt="sahib-pic" />
 
-        </div>
+        </motion.div>
       </div>
       <div className="activities">
         <h3>Our activities</h3>
@@ -172,8 +210,9 @@ function RyazMethod() {
         </div>
         <div className="contact-form">
           <input type="username" name="name" placeholder="Name" />
-          <input type="email" name="email" placeholder="Email Address" />
+          <input className="email-input" type="email" name="email" placeholder="Email Address" />
           <textarea placeholder="Send us a message. We will get back to you" />
+          <button type="submit" className="primary-btn">Send Message</button>
         </div>
       </div>
       {/* end of contact-block */}
