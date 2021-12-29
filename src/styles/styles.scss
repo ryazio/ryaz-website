@@ -71,7 +71,6 @@ img {
 
   .line{
     width: 16px;
-    border: solid 1px $clr-accent;
     margin-bottom: 6px;
     border-radius: 2px;
 
@@ -84,9 +83,15 @@ img {
 //fancyLabel
 
 .fancy-label{
+  height: fit-content;
   width: fit-content;
-  padding: 5px 25px;
+  padding: 8px 16px;
   border-radius: 100px;
   color: #000;
-  margin: 0 10px 0 0;
+  margin: 10px 10px 0 0;
+  font-size: .75rem;   
+
+  @media (min-width: $bp-desktop){
+  font-size: 0.9rem;
+  }
 }

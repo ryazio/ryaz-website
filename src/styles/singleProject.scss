@@ -1,11 +1,20 @@
 .project-details {
   display: flex;
+  flex-direction: column;
   padding: 30px;
   color: $clr-accent;
 
+  @media (min-width: $bp-tablet){
+    flex-direction: row;
+  }
+
   .project-info {
-    width: 50%;
-    padding: 25px;
+    width: 100%;
+    
+    @media (min-width: $bp-tablet){
+      width: 50%;
+      padding: 25px;
+    }
 
     .logo-and-name {
       display: flex;
@@ -18,19 +27,28 @@
     }
     .project-description {
       padding: 20px 0;
-      font-size: 28px;
+      font-size: 1.35rem;
       line-height: 40px;
+      
+      @media (min-width: $bp-tablet){
+        font-size: 2rem;
+      }
     }
 
     .fancy-labels {
       padding: 8px 0;
       display: flex;
+      flex-wrap: wrap;
     }
 
     .people {
+      display: none;
       padding: 28px 0;
-      display: flex;
-      justify-content: space-between;
+      
+      @media (min-width: $bp-tablet){
+        display: flex;
+        justify-content: space-between;
+      }
 
       .name-and-designation {
         h4 {
@@ -42,7 +60,11 @@
   }
 
   .image {
-    width: 50%;
+    width: 100%; 
+    
+    @media (min-width: $bp-tablet){
+      width: 50%;
+    }
   }
 }
 

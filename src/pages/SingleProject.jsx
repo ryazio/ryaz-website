@@ -34,7 +34,7 @@ function SingleProject(props) {
         <div className="project-info">
           <div className="logo-and-name">
             <img src={forby} alt="" />
-            <span>Forby</span>
+            <span>{projectData.name}</span>
           </div>
           <div className="project-description">
             <p>

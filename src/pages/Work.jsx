@@ -11,7 +11,7 @@ function Work() {
 
   return (
     <>
-      <Header />
+      <Header position="fixed" />
 
       <div className="work-container">
 

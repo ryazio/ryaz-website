@@ -3,9 +3,9 @@ import React from 'react';
 function NavIcon() {
   return (
     <>
-      <div className="line" />
-      <div className="line" />
-      <div className="line" />
+      <hr className="line" color="#fff" />
+      <hr className="line" color="#fff" />
+      <hr className="line" color="#fff" />
     </>
   );
 }
