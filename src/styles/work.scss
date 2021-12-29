@@ -7,11 +7,12 @@
   padding: 1rem;
   width: 100%;
   z-index: 6;
-  
-  @media (min-width: $bp-desktop){
+
+  @media (min-width: $bp-desktop) {
     padding: 1.25rem 2.25rem;
   }
 }
+
 .work-container {
   color: $clr-accent;
   padding: 1.5rem;
@@ -23,14 +24,15 @@
   align-items: center;
   z-index: 5;
 }
+
 .work-tagline {
   font-size: 1.25rem;
   max-width: 555px;
   margin: 30px 10px;
   text-align: center;
   padding: 40px 0;
-  
-  @media (min-width: $bp-desktop){
+
+  @media (min-width: $bp-desktop) {
     font-size: 1.5rem;
   }
 }
@@ -38,8 +40,8 @@
 .projects-block {
   width: 100%;
   transform: translateY(0%);
-  
-  @media (min-width: $bp-desktop){
+
+  @media (min-width: $bp-desktop) {
     width: 85vw;
     // transform: translateY(-30%);
   }
@@ -64,11 +66,11 @@
         font-size: 5rem;
         color: rgba($clr-accent, $alpha: 0.04);
 
-        @media(min-width: $bp-tablet){
-          font-size: 8rem; 
+        @media(min-width: $bp-tablet) {
+          font-size: 8rem;
         }
-        
-        @media (min-width: $bp-desktop){
+
+        @media (min-width: $bp-desktop) {
           font-size: 9rem;
         }
       }
@@ -79,11 +81,12 @@
         .project-name {
           font-size: 2rem;
           margin-bottom: 10px;
-          
-          @media (min-width: $bp-tablet){
+
+          @media (min-width: $bp-tablet) {
             font-size: 4rem;
           }
-          @media (min-width: $bp-desktop){
+
+          @media (min-width: $bp-desktop) {
             font-size: 5rem;
           }
 
@@ -100,7 +103,7 @@
 
 .project-image {
   display: none;
-  
+
   @media (min-width: $bp-desktop) {
     transform: translateY(-20%);
     position: sticky;
@@ -113,7 +116,7 @@
     left: 55%;
     display: block;
   }
-  
+
   img {
     top: 25%;
     border-radius: 4px;
