@@ -5,6 +5,11 @@ import {
 import Home from './pages/Home';
 import Work from './pages/Work';
 import SingleProject from './pages/SingleProject';
+import 'swiper/swiper.min.css';
+import 'swiper/modules/free-mode/free-mode.min.css';
+import 'swiper/modules/navigation/navigation.min.css';
+
+import './styles/swiper-slider.scss';
 import './styles/styles.scss';
 import RyazMethod from './pages/RyazMethod';
 

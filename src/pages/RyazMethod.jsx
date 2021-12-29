@@ -1,9 +1,16 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
+import { Swiper, SwiperSlide } from 'swiper/react/swiper-react';
+
+import SwiperCore, {
+  FreeMode, Navigation,
+} from 'swiper';
 
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import RyazLogo from '../components/RyazLogo';
+
+SwiperCore.use([FreeMode, Navigation]);
 
 function RyazMethod() {
   const [move, setSliderMove] = useState(0);
@@ -122,7 +129,7 @@ function RyazMethod() {
       <div className="team-showcase">
         <h3>Our Team</h3>
         <p>Group of people that truly love each other</p>
-        <button
+        {/* <button
           type="button"
           onClick={() => setSliderMove(move - 1)}
           className="slider-control move-slide-left"
@@ -135,25 +142,38 @@ function RyazMethod() {
           className="slider-control move-slide-right"
         >
           <img src="./right-arrow.svg" alt="left arrow" />
-        </button>
-        <motion.div
-          className="team-slider"
-          animate={{
-            x: 100 * move,
+        </button> */}
+        <Swiper
+          style={{
+            '--swiper-navigation-color': '#fff',
+            '--swiper-navigation-size': '1rem',
           }}
+          breakpoints={{
+            600: {
+              slidesPerView: 5,
+            },
+            900: {
+              slidesPerView: 7,
+            },
+          }}
+          slidesPerView={3}
+          spaceBetween={0}
+          navigation
+          loop
+          className="mySwiper"
         >
-          <img src="./images/sahib.svg" alt="sahib-pic" />
-          <img src="./images/sahib.svg" alt="sahib-pic" />
-          <img src="./images/sahib.svg" alt="sahib-pic" />
-          <img src="./images/sahib.svg" alt="sahib-pic" />
-          <img src="./images/sahib.svg" alt="sahib-pic" />
-          <img src="./images/sahib.svg" alt="sahib-pic" />
-          <img src="./images/sahib.svg" alt="sahib-pic" />
-          <img src="./images/sahib.svg" alt="sahib-pic" />
-          <img src="./images/sahib.svg" alt="sahib-pic" />
-          <img src="./images/sahib.svg" alt="sahib-pic" />
+          <SwiperSlide><img src="./images/sahib.svg" alt="sahib-pic" /></SwiperSlide>
+          <SwiperSlide><img src="./images/sahib.svg" alt="sahib-pic" /></SwiperSlide>
+          <SwiperSlide><img src="./images/sahib.svg" alt="sahib-pic" /></SwiperSlide>
+          <SwiperSlide><img src="./images/sahib.svg" alt="sahib-pic" /></SwiperSlide>
+          <SwiperSlide><img src="./images/sahib.svg" alt="sahib-pic" /></SwiperSlide>
+          <SwiperSlide><img src="./images/sahib.svg" alt="sahib-pic" /></SwiperSlide>
+          <SwiperSlide><img src="./images/sahib.svg" alt="sahib-pic" /></SwiperSlide>
+          <SwiperSlide><img src="./images/sahib.svg" alt="sahib-pic" /></SwiperSlide>
+          <SwiperSlide><img src="./images/sahib.svg" alt="sahib-pic" /></SwiperSlide>
+          <SwiperSlide><img src="./images/sahib.svg" alt="sahib-pic" /></SwiperSlide>
 
-        </motion.div>
+        </Swiper>
       </div>
       <div className="activities">
         <h3>Our activities</h3>
