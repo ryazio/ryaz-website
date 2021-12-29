@@ -159,16 +159,14 @@
   }
   .contact-form {
     max-width: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    display: grid;
+    grid-template-columns: 60% 40%;
 
     @media (min-width: $bp-tablet){
       max-width: 75%;
       margin: auto;
-      display: grid;
       gap: 1rem;
-      grid-template-columns: 50% 20% 30%;
+      grid-template-columns: 50% 10% 40%;
     }
     @media (min-width: $bp-desktop){
       max-width: 50%;
@@ -182,19 +180,30 @@
       width: 100%;
       border-radius: 8px;
     }
-    .email-input {
-      @media (min-width: $bp-tablet){
+    input{
         grid-column: span 2;
-      }
+        @media (min-width: $bp-tablet){
+          grid-column: span 1;
+        }
+    }
+    .email-input {
+        grid-column: span 2;
+        @media (min-width: $bp-tablet){
+          grid-column: span 2/4;
+        }
     }
     textarea {
+      grid-column: span 2;
       @media (min-width: $bp-tablet){
         grid-column: span 3;
         margin-top: 0;
       }
     }
     button {
-      max-width: 200px;
+      grid-column: 2;
+      @media (min-width: $bp-tablet){
+        grid-column: 3;
+      }
     }
   }
 }
