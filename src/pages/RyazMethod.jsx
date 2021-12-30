@@ -1,10 +1,7 @@
-import React, { useRef, useState } from 'react';
-import { motion } from 'framer-motion';
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react/swiper-react';
 
-import SwiperCore, {
-  FreeMode, Navigation,
-} from 'swiper';
+import SwiperCore, { FreeMode, Navigation } from 'swiper';
 
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -12,8 +9,9 @@ import RyazLogo from '../components/RyazLogo';
 
 SwiperCore.use([FreeMode, Navigation]);
 
+const image = 'https://cdn.discordapp.com/attachments/664914752648118292/926083345220272149/unknown.png';
+
 function RyazMethod() {
-  const [move, setSliderMove] = useState(0);
   return (
     <>
       <Header />
@@ -110,108 +108,28 @@ function RyazMethod() {
           </div>
         </div>
       </div>
-      <div className="example-container">
-        {/* <motion.div
-          animate={{
-            scale: [1, 2, 2, 1, 1],
-            rotate: [0, 0, 270, 270, 0],
-            borderRadius: ['20%', '20%', '50%', '50%', '20%'],
-          }}
-          transition={{
-            duration: 2,
-            ease: 'easeInOut',
-            times: [0, 0.2, 0.5, 0.8, 1],
-            repeat: Infinity,
-            repeatDelay: 1,
-          }}
-        /> */}
-      </div>
+
       <div className="team-showcase">
         <h3>Our Team</h3>
         <p className="team-tagline">Group of people that truly love each other</p>
-        {/* <button
-          type="button"
-          onClick={() => setSliderMove(move - 1)}
-          className="slider-control move-slide-left"
-        >
-          <img src="./left-arrow.svg" alt="left arrow" />
-        </button>
-        <button
-          type="button"
-          onClick={() => setSliderMove(move + 1)}
-          className="slider-control move-slide-right"
-        >
-          <img src="./right-arrow.svg" alt="left arrow" />
-        </button> */}
         <Swiper
+          className="team-swiper"
           style={{
             '--swiper-navigation-color': '#fff',
             '--swiper-navigation-size': '1rem',
           }}
-          breakpoints={{
-            600: {
-              slidesPerView: 5,
-            },
-            900: {
-              slidesPerView: 7,
-            },
-          }}
-          onSlideChange={(swiper) => {
-            console.log('slide current', swiper.activeIndex);
-            const currentIndex = swiper.activeIndex - 2;
-            const currentSlideOverlay = document.querySelectorAll(`[data-swiper-slide-index="${currentIndex}"] div`);
-            const allSlides = document.querySelectorAll('.swiper-slide div');
-            console.log(currentIndex, currentSlideOverlay);
-            allSlides.forEach((e) => { e.style.display = 'block'; });
-            currentSlideOverlay[0].style.display = 'none';
-          }}
-          slidesPerView={3}
+          slidesPerView="auto"
           spaceBetween={0}
+          centeredSlides
           navigation
           loop
-          className="mySwiper"
         >
-          <SwiperSlide>
-            <img src="./images/sahib.svg" alt="sahib-pic" />
-            <div />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="./images/sahib.svg" alt="sahib-pic" />
-            <div />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="./images/sahib.svg" alt="sahib-pic" />
-            <div />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="./images/sahib.svg" alt="sahib-pic" />
-            <div />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="./images/sahib.svg" alt="sahib-pic" />
-            <div />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="./images/sahib.svg" alt="sahib-pic" />
-            <div />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="./images/sahib.svg" alt="sahib-pic" />
-            <div />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="./images/sahib.svg" alt="sahib-pic" />
-            <div />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="./images/sahib.svg" alt="sahib-pic" />
-            <div />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="./images/sahib.svg" alt="sahib-pic" />
-            <div />
-          </SwiperSlide>
-
+          {Object.keys([...new Array(10)]).map((key) => (
+            <SwiperSlide key={key}>
+              <img src={image} alt="sahib-pic" />
+              <div />
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
       <div className="activities">
