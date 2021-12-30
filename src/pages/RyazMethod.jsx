@@ -128,7 +128,7 @@ function RyazMethod() {
       </div>
       <div className="team-showcase">
         <h3>Our Team</h3>
-        <p>Group of people that truly love each other</p>
+        <p className="team-tagline">Group of people that truly love each other</p>
         {/* <button
           type="button"
           onClick={() => setSliderMove(move - 1)}
@@ -216,7 +216,7 @@ function RyazMethod() {
       </div>
       <div className="activities">
         <h3>Our activities</h3>
-        <p>What makes us different?</p>
+        <p className="activities-tagline">What makes us different?</p>
         <div className="activity-types">
           <div className="activity">
             <div className="top-cover-bar" />

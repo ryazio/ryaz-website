@@ -2,6 +2,7 @@
   display: flex;
   color: $clr-accent;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
 
   @media (min-width: $bp-tablet){
@@ -41,14 +42,15 @@
       font-size: 1rem;
       font-family: "Brandon-light-italic";
       padding: 0.5rem 0;
+      line-height: 2;
     }
     button {
-      margin-top: 1.5rem;
+      margin-top: 2rem;
     }
   }
 
   .ryaz-pillars {
-    padding: 20px;
+    padding:0 1rem;
     @media (min-width: $bp-desktop){
       display: grid; 
       gap: 1rem;
@@ -70,12 +72,17 @@
         justify-content: space-between;
 
         h2 {
-          font-size: 24px;
+          font-size: 1.8rem;
         }
-
         p {
-          font-size: 48px;
+          font-size: 3rem;
           color: rgba($color: $clr-accent, $alpha: 0.1);
+        }
+      }
+      .pillar-description {
+         p:first-child{
+          font-family: "Brandon-light-italic";
+          margin-bottom: 1rem;
         }
       }
     }
@@ -89,16 +96,18 @@
     text-transform: uppercase;
     font-size: 0.75rem;
     letter-spacing: 2px;
-  }
-  p {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-    @media (min-width: $bp-desktop){
-      font-size: 2rem;
-    }
+    font-family: "Brandon-light";
+
   }
 }
-
+.team-tagline, .activities-tagline {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  padding: 0 1.5rem;
+  @media (min-width: $bp-desktop){
+    font-size: 2rem;
+  }
+}
 //overlay images
 .swiper-slide div {
   width: 100%;
@@ -127,7 +136,7 @@
     h4 {
       color: $clr-primary-light;
       font-size: 2.5rem;
-      padding: 1rem 0;
+      padding: 1.5rem 0;
     }
     .activity-tagline {
       font-size: 1.1rem;
@@ -156,8 +165,11 @@
   }
   .contact-tagline {  
     font-size: 1rem;
-    max-width: 28rem;
+    max-width: 30rem;
+    padding: 0 1.5rem;
+    font-family: "Brandon-light";
     margin: auto auto 2.5rem auto;
+    line-height: 2;
   }
   .contact-form {
     display: grid;
