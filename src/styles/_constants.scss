@@ -1,0 +1,68 @@
+$primary-font:"Styrene A Web";
+$secondary-font:"Helvetica";
+$tertiary-font:"Helvetica Neue";
+
+$scroll-bg:red;
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin text-ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@function radius($value:200) {
+  @return $value * 5px;
+}
+
+@mixin scroll-bar {
+  scrollbar-width: thin;
+  scrollbar-color: $scroll-bg transparent;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  &::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $scroll-bg;
+    border: 0 none $scroll-bg;
+    border-radius: 100px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+    border: 0 none $scroll-bg;
+    border-radius: radius(4);
+  }
+
+  &::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: $scroll-bg;
+  }
+
+  &::-webkit-scrollbar-thumb:active {
+    background: $scroll-bg;
+  }
+
+  &::-webkit-scrollbar-track:hover {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-track:active {
+    background: transparent;
+  }
+}

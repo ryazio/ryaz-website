@@ -5,11 +5,15 @@
 @import "movingLogo.scss";
 @import "ryazLogo.scss";
 @import "singleProject.scss";
+@import "contact.scss";
 @import "footer.scss";
 
-:root{
+:root {
   font-size: 18px;
 }
+
+@import "./components";
+
 body {
   margin: 0;
   padding: 0;
@@ -33,6 +37,11 @@ body {
 .ff-brandon-italic {
   font-family: "Brandon-light-italic";
 }
+
+.ff-brandon-medium {
+  font-family: "Brandon-medium";
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -42,9 +51,11 @@ body {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 html {
-    -webkit-text-size-adjust:none;
+  -webkit-text-size-adjust: none;
 }
+
 img {
   max-width: 100%;
   width: auto;
@@ -57,19 +68,23 @@ img {
   clear: both;
 }
 
-.header-logo{
+.header-logo {
   width: 25px;
   height: 25px;
 }
 
-.highlighted-txt{
+.highlighted-txt {
   color: $clr-primary-light;
+}
+
+.highlight-grn {
+  color: #4DE5AF;
 }
 
 
 //navIcon
 
-.nav-icon{
+.nav-icon {
   cursor: pointer;
   height: 22px;
   width: 22px;
@@ -77,13 +92,12 @@ img {
   flex-direction: column;
   align-items: flex-end;
 
-  .line{
+  .line {
     width: 16px;
-    border: solid 1px $clr-accent;
     margin-bottom: 6px;
     border-radius: 2px;
 
-    &:nth-child(2){
+    &:nth-child(2) {
       width: 22px
     }
   }
@@ -91,9 +105,10 @@ img {
 
 //fancyLabel
 
-.fancy-label{
+.fancy-label {
+  height: fit-content;
   width: fit-content;
-  padding: 5px 25px;
+  padding: 8px 16px;
   border-radius: 100px;
   color: #000;
   margin: 0 10px 0 0;
@@ -123,14 +138,14 @@ img {
 }
 
 .primary-btn {
-    padding: 0.75rem 2.25rem;
-    border: none;
-    border-radius: 0.5rem;
-    background: $clr-primary;
-    color: $clr-accent;
-    font-size: 1rem;
+  padding: 0.75rem 2.25rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: $clr-primary;
+  color: $clr-accent;
+  font-size: 1rem;
 
-    @media (min-width: $bp-desktop){
-      padding: 1rem 3rem;
-    }
+  @media (min-width: $bp-desktop) {
+    padding: 1rem 3rem;
+  }
 }

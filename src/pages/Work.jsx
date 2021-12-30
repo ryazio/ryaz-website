@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../styles/styles.scss';
+import '../styles/index.scss';
 import '../styles/work.scss';
 import Project from '../components/Project';
 import Footer from '../components/Footer';
@@ -11,7 +11,7 @@ function Work() {
 
   return (
     <>
-      <Header />
+      <Header position="fixed" />
 
       <div className="work-container">
 

@@ -4,10 +4,15 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 1.25rem 2.25rem;
+  padding: 1rem;
   width: 100%;
   z-index: 6;
+
+  @media (min-width: $bp-desktop) {
+    padding: 1.25rem 2.25rem;
+  }
 }
+
 .work-container {
   color: $clr-accent;
   padding: 1.5rem;
@@ -19,22 +24,38 @@
   align-items: center;
   z-index: 5;
 }
+
 .work-tagline {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   max-width: 555px;
-  margin: auto;
+  margin: 30px 10px;
   text-align: center;
   padding: 40px 0;
+
+  @media (min-width: $bp-desktop) {
+    font-size: 1.5rem;
+  }
 }
 
 .projects-block {
-  width: 85vw;
+  width: 100%;
+  transform: translateY(0%);
+
+  @media (min-width: $bp-desktop) {
+    width: 85vw;
+    // transform: translateY(-30%);
+  }
 
   .project {
+    width: 100%;
     display: flex;
     margin-bottom: 40px;
     position: relative;
     z-index: 5;
+
+    @media (min-width: $bp-desktop) {
+      width: 50%;
+    }
 
     .project-info {
       display: flex;
@@ -42,14 +63,14 @@
 
       .project-srno {
         width: 150px;
-        font-size: 6rem;
+        font-size: 5rem;
         color: rgba($clr-accent, $alpha: 0.04);
 
-        @media(min-width: $bp-tablet){
-          font-size: 8rem; 
+        @media(min-width: $bp-tablet) {
+          font-size: 8rem;
         }
-        
-        @media (min-width: $bp-desktop){
+
+        @media (min-width: $bp-desktop) {
           font-size: 9rem;
         }
       }
@@ -58,13 +79,14 @@
         transform: translateX(-20px);
 
         .project-name {
-          font-size: 3rem;
+          font-size: 2rem;
           margin-bottom: 10px;
-          
-          @media (min-width: $bp-tablet){
+
+          @media (min-width: $bp-tablet) {
             font-size: 4rem;
           }
-          @media (min-width: $bp-desktop){
+
+          @media (min-width: $bp-desktop) {
             font-size: 5rem;
           }
 
@@ -81,18 +103,23 @@
 
 .project-image {
   display: none;
-  
+
   @media (min-width: $bp-desktop) {
+    transform: translateY(-20%);
+    position: sticky;
+    background: rgba($color: $clr-accent, $alpha: 0.05);
+    padding: 15px;
+    border-radius: 10px;
     width: 35%;
-    position: fixed;
     z-index: 3;
-    top: 25%;
-    left: 53%;
+    top: 35%;
+    left: 55%;
     display: block;
   }
 
   img {
-    border-radius: 10px;
+    top: 25%;
+    border-radius: 4px;
     transition: ease-in-out 0.7s;
   }
 }

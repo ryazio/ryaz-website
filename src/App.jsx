@@ -9,7 +9,8 @@ import 'swiper/swiper.min.css';
 // import 'swiper/modules/free-mode/free-mode.min.css';
 // import 'swiper/modules/navigation/navigation.min.css';
 
-import './styles/styles.scss';
+import './styles/index.scss';
+import Contact from './pages/Contact';
 import RyazMethod from './pages/RyazMethod';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/work" element={<Work />} />
         <Route path="/work/:name" element={<SingleProject />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="/ryaz-method" element={<RyazMethod />} />
         <Route path="*" element={<Navigate replace to="/" />} />
       </Routes>
