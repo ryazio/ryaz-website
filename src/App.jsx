@@ -5,7 +5,7 @@ import {
 import Home from './pages/Home';
 import Work from './pages/Work';
 import SingleProject from './pages/SingleProject';
-import './styles/styles.scss';
+import './styles/index.scss';
 import RyazMethod from './pages/RyazMethod';
 
 function App() {
