@@ -60,3 +60,16 @@
     padding: 1.25rem 0;
   }
 }
+
+%block-title {
+  width: 100%;
+  text-align:center;
+  margin: 6rem 0;
+  h3 {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    font-family: "Brandon-light";
+
+  }
+}
