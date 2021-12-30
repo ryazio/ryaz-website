@@ -22,6 +22,7 @@ module.exports = {
     'jsx-a11y/mouse-events-have-key-events': 'off',
     'no-unused-vars': 'off',
     'react/prop-types': 'off',
+    'linebreak-style': 0,
     'react/destructuring-assignment': 'off',
     'import/prefer-default-export': 'off',
   },

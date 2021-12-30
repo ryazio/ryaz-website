@@ -5,6 +5,7 @@
 @import "movingLogo.scss";
 @import "ryazLogo.scss";
 @import "singleProject.scss";
+@import "contact.scss";
 @import "footer.scss";
 
 @import "./components";
@@ -26,6 +27,10 @@ body {
 
 .ff-brandon-bold {
   font-family: "Brandon-bold";
+}
+
+.ff-brandon-medium {
+  font-family: "Brandon-medium";
 }
 
 * {

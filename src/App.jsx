@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Work from './pages/Work';
 import SingleProject from './pages/SingleProject';
 import './styles/index.scss';
+import Contact from './pages/Contact';
 import RyazMethod from './pages/RyazMethod';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/work" element={<Work />} />
         <Route path="/work/:name" element={<SingleProject />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="/ryaz-method" element={<RyazMethod />} />
         <Route path="*" element={<Navigate replace to="/" />} />
       </Routes>
