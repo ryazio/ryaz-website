@@ -40,8 +40,16 @@ code {
   font-display: swap;
 }
 @font-face {
-  font-family: 'Brandon_regular_italic';
-  src: url('fonts/Brandon_reg_it.otf');
+  font-family: 'Brandon-light-italic';
+  src: url('fonts/Brandon-light-italic.otf');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Brandon-light';
+  src: url('fonts/Brandon-light.otf');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
