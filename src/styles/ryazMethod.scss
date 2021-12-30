@@ -5,58 +5,66 @@
   align-items: center;
   flex-direction: column;
 
-  @media (min-width: $bp-tablet){
+  @media (min-width: $bp-tablet) {
     width: 75%;
-    margin:auto;
+    margin: auto;
   }
-  @media (min-width: $bp-desktop){
+
+  @media (min-width: $bp-desktop) {
     width: 100%;
     flex-direction: row;
   }
+
   .info {
     min-height: 100vh;
-    text-align:center;
+    text-align: center;
     display: flex;
     max-width: 90%;
-    margin:auto;
+    margin: auto;
     margin-top: 0;
-    padding:5rem 0 0 0;
+    padding: 5rem 0 0 0;
 
-    @media (min-width: $bp-desktop){
+    @media (min-width: $bp-desktop) {
       min-width: 50%;
       margin-right: 5%;
-      padding:0 7rem;
+      padding: 0 7rem;
       text-align: left;
       align-items: center;
     }
 
     h2 {
       font-size: 1.5rem;
-      @media (min-width: $bp-tablet){
+
+      @media (min-width: $bp-tablet) {
         font-size: 2rem;
       }
     }
+
     p {
       font-size: 1rem;
       font-family: "Brandon-light-italic";
       padding: 0.5rem 0;
       line-height: 2;
     }
+
     button {
       margin-top: 2rem;
     }
   }
 
   .ryaz-pillars {
-    padding:0 1rem;
-    @media (min-width: $bp-desktop){
-      display: grid; 
+    padding: 0 1rem;
+
+    @media (min-width: $bp-desktop) {
+      display: grid;
       gap: 1rem;
       grid-template-columns: 50% 50%;
     }
-    .pillar:first-child{
+
+    .pillar:first-child {
       margin-bottom: 3rem;
     }
+
     .pillar {
       margin: 15px;
       height: fit-content;
@@ -72,13 +80,15 @@
         h2 {
           font-size: 1.8rem;
         }
+
         p {
           font-size: 3rem;
           color: rgba($color: $clr-accent, $alpha: 0.1);
         }
       }
+
       .pillar-description {
-         p:first-child{
+        p:first-child {
           font-family: "Brandon-light-italic";
           margin-bottom: 1rem;
         }
@@ -86,32 +96,86 @@
     }
   }
 }
-.team-showcase, .activities {
+
+.team-showcase,
+.activities {
   @extend %block-title;
 }
 
 //overlay team slider images
-.swiper-slide div {
+.team-swiper {
   width: 100%;
-  height: 100%;
-  position: absolute;
-  top:0;
-  left: 0;
-  background: rgba(0,0,0,0.6);
-  z-index: 100;
+  height: 500px;
+
+  .swiper-button {
+
+    &-prev:after,
+    &-next:after {
+      background: rgba($color: $clr-accent, $alpha: 0.4);
+      padding: 17px 20px;
+      border-radius: 50%;
+    }
+
+    &-next,
+    &-prev {
+      right: 2rem !important;
+      width: var(--swiper-navigation-size) !important;
+    }
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    width: 250px !important;
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    div {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.6);
+      transition: 0.3s background ease;
+      z-index: 100;
+    }
+
+    &-active {
+      div {
+        background: transparent;
+      }
+    }
+  }
 }
-.team-tagline, .activities-tagline {
+
+.team-tagline,
+.activities-tagline {
   font-size: 1.5rem;
   margin-bottom: 2rem;
   padding: 0 1.5rem;
-  @media (min-width: $bp-desktop){
+
+  @media (min-width: $bp-desktop) {
     font-size: 2rem;
   }
 }
+
 .activities {
   @extend %block-title;
   width: 90%;
   margin: 6rem auto;
+
   .activity-types {
     display: grid;
     gap: 10%;
@@ -119,30 +183,36 @@
     text-align: left;
     padding: 1rem 0;
   }
+
   .activity {
-    .top-cover-bar{
-      border-top:1px solid $clr-primary;
+    .top-cover-bar {
+      border-top: 1px solid $clr-primary;
       height: 1px;
     }
+
     h4 {
       color: $clr-primary-light;
       font-size: 2.5rem;
       padding: 1.5rem 0;
     }
+
     .activity-tagline {
       font-size: 1.1rem;
       padding: 1.5rem 0;
       font-family: "Brandon-light-italic";
     }
+
     .activity-detail {
       font-size: 1rem;
       line-height: 2;
     }
   }
-  @media (max-width:$bp-tablet){
+
+  @media (max-width:$bp-tablet) {
     display: none;
   }
 }
+
 .contact-block {
   text-align: center;
 
@@ -150,30 +220,35 @@
     font-size: 1.5rem;
     margin-top: 2.5rem;
 
-    @media (min-width: $bp-desktop){
+    @media (min-width: $bp-desktop) {
       font-size: 2rem;
     }
   }
-  .contact-tagline {  
+
+  .contact-tagline {
     font-size: 1rem;
     max-width: 30rem;
     padding: 0 1.5rem;
     margin: auto auto 2.5rem auto;
     line-height: 2;
   }
+
   .contact-form {
     display: grid;
     gap: 1rem;
     width: 90%;
     margin: auto;
-    @media (min-width: $bp-tablet){
+
+    @media (min-width: $bp-tablet) {
       grid-template-columns: 1fr 1fr;
     }
-    @media (min-width: $bp-desktop){
+
+    @media (min-width: $bp-desktop) {
       width: 50%;
     }
-  
-    input, textarea {
+
+    input,
+    textarea {
       background: $clr-bg-darker;
       font-size: 1rem;
       padding: 1rem;
@@ -181,62 +256,22 @@
       border-radius: 8px;
       color: $clr-accent;
     }
+
     textarea {
       min-height: 13rem;
-      @media (min-width: $bp-tablet){
+
+      @media (min-width: $bp-tablet) {
         grid-column: span 2;
       }
     }
+
     button {
       max-width: 13rem;
       justify-self: end;
-      @media (min-width: $bp-tablet){
+
+      @media (min-width: $bp-tablet) {
         grid-column-end: 3;
       }
     }
   }
 }
-
-
-
-// .slider-control {
-//   background: rgba(255,255,255,0.4);
-//   border-radius: 50%;
-//   width: 50px;
-//   height: 50px;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   border:none;
-//   cursor: pointer;
-//   outline:none;
-//   position: relative;
-//   z-index: 100;
-// }
-// .move-slide-left {
-//   left: 7%;
-//   top: 250px;
-// }
-// .move-slide-right {
-//   left: 90%;
-//   top: 200px;
-// }
-.swiper-button-prev:after,
-.swiper-button-next:after {
-  background:rgba($color: $clr-accent, $alpha: 0.4);
-  padding: 17px 20px;
-  border-radius: 50%;
-}
-.swiper-button-prev {
-  left: 2rem !important;
-  width: var(--swiper-navigation-size) !important;
-}
-.swiper-button-next {
-  right: 2rem !important;
-  width: var(--swiper-navigation-size) !important;
-}
-
-
-
-
-
