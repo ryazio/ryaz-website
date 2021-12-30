@@ -1,18 +1,21 @@
 @import "variables";
+@import "constants";
+@import "media";
 @import "mixins";
+
 @import "home.scss";
 @import "ryazMethod.scss";
-@import "movingLogo.scss";
-@import "ryazLogo.scss";
 @import "singleProject.scss";
 @import "contact.scss";
 @import "footer.scss";
+
+@import "./components";
+@import "./icons";
 
 :root {
   font-size: 18px;
 }
 
-@import "./components";
 
 body {
   margin: 0;
@@ -20,6 +23,9 @@ body {
   background: linear-gradient(111.17deg, $clr-bg-lighter 0.23%, $clr-bg-darker 100%);
   font-family: "Brandon";
   color: $clr-accent;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
 }
 
 .ff-brandon {
@@ -27,19 +33,24 @@ body {
 }
 
 .ff-brandon-light {
-  font-family: "Brandon-light";
+  font-family: "Brandon";
+  font-weight: 300;
 }
 
 .ff-brandon-bold {
-  font-family: "Brandon-bold";
+  font-family: "Brandon";
+  font-weight: bold;
 }
 
 .ff-brandon-italic {
-  font-family: "Brandon-light-italic";
+  font-family: "Brandon";
+  font-weight: 300;
+  font-style: italic;
 }
 
 .ff-brandon-medium {
-  font-family: "Brandon-medium";
+  font-family: "Brandon";
+  font-weight: 500;
 }
 
 * {
@@ -79,28 +90,6 @@ img {
 
 .highlight-grn {
   color: #4DE5AF;
-}
-
-
-//navIcon
-
-.nav-icon {
-  cursor: pointer;
-  height: 22px;
-  width: 22px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-
-  .line {
-    width: 16px;
-    margin-bottom: 6px;
-    border-radius: 2px;
-
-    &:nth-child(2) {
-      width: 22px
-    }
-  }
 }
 
 //fancyLabel

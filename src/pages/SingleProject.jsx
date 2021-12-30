@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import FancyLabel from '../components/FancyLabel';
-import RyazLogo from '../components/RyazLogo';
-import NavIcon from '../icons/NavIcon';
 import Footer from '../components/Footer';
 import forby from '../icons/projectLogos/forby.svg';
 import stars from '../icons/stars.svg';
 import projects from '../json/projects.json';
+import { RyazLogo, NavIcon } from '../icons';
 
 function SingleProject(props) {
   const params = useParams();
@@ -26,9 +25,7 @@ function SingleProject(props) {
             <RyazLogo />
           </Link>
         </div>
-        <div className="nav-icon">
-          <NavIcon />
-        </div>
+        <NavIcon />
       </div>
       <div className="project-details ff-brandon">
         <div className="project-info">

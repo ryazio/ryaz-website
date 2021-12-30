@@ -2,9 +2,7 @@ import React from 'react';
 // import '../styles/home.scss';
 import Header from '../components/SideHeader';
 import Footer from '../components/SideFooter';
-import MovingLogo from '../icons/MovingLogo';
-// import BackgroundLogo from '../icons/BackgroundLogo';
-import RyazLogo from '../components/RyazLogo';
+import { RyazLogo, FloatingRyazLogo } from '../icons';
 
 function Home() {
   return (
@@ -30,7 +28,7 @@ function Home() {
         </div>
       </div>
       <Footer />
-      <MovingLogo />
+      <FloatingRyazLogo />
     </div>
   );
 }

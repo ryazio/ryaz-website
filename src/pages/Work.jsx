@@ -6,8 +6,10 @@ import Footer from '../components/Footer';
 import Header from '../components/Header';
 import projects from '../json/projects.json';
 
+import projectImage from '../images/projectImage.png';
+
 function Work() {
-  const [image, setImage] = useState(projects[0].mockupImage);
+  // const [image, setImage] = useState(projects[0].mockupImage);
 
   return (
     <>
@@ -20,7 +22,7 @@ function Work() {
           guarantees on quality & performance.
         </div>
         <div className="project-image">
-          <img src={image} alt="" />
+          <img src={projectImage} alt="" />
         </div>
 
         <div className="projects-block ff-brandon">
@@ -32,7 +34,7 @@ function Work() {
               projectName={project.name}
               description={project.description}
               projectImage={project.mockupImage}
-              setImage={setImage}
+              setImage={() => {}}
             />
           ))}
         </div>

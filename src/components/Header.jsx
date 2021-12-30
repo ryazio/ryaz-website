@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import RyazLogo from './RyazLogo';
-import NavIcon from '../icons/NavIcon';
+import { RyazLogo, NavIcon } from '../icons';
 
 function Header({ position }) {
   const fixedPosition = {
@@ -15,9 +14,7 @@ function Header({ position }) {
           <RyazLogo />
         </Link>
       </div>
-      <div className="nav-icon">
-        <NavIcon />
-      </div>
+      <NavIcon />
     </div>
   );
 }

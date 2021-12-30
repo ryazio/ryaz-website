@@ -5,7 +5,7 @@ import SwiperCore, { FreeMode, Navigation } from 'swiper';
 
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import RyazLogo from '../components/RyazLogo';
+import { RyazLogo } from '../icons';
 
 SwiperCore.use([FreeMode, Navigation]);
 
