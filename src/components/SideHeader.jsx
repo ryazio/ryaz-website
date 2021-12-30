@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import NavIcon from '../icons/NavIcon';
-import RyazLogo from './RyazLogo';
+import { RyazLogo, NavIcon } from '../icons';
 
 function Header() {
   return (
@@ -17,9 +16,7 @@ function Header() {
           <span>Our Work</span>
         </Link>
 
-        <div className="nav-icon">
-          <NavIcon />
-        </div>
+        <NavIcon />
 
       </div>
       {/*

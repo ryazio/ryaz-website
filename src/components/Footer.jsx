@@ -1,17 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { RyazLogo } from '../icons';
 import {
   LinkedIn, Twitter, Facebook, Instagram, Youtube,
 } from '../icons/social';
-import RyazLogo from './RyazLogo';
 
 function Footer() {
   return (
     <div className="footer">
       <div className="footer-sections">
-        <div className="header-logo">
-          <RyazLogo />
-        </div>
+        <RyazLogo className="header-logo" />
         <p>#250, Ward no. 2, Near water tank Samrala 141114 IN</p>
         <p>+91 6280256990</p>
       </div>

@@ -1,0 +1,64 @@
+.floating-logo {
+  z-index: 0;
+  position: fixed;
+  display: flex;
+  width: 304px;
+  height: 304px;
+  transform: translate(-50%, -50%) rotate(45deg);
+  top: 50%;
+  left: 50%;
+  animation: breathe 3s ease-in-out infinite;
+
+  .floating-wireframe {
+    position: relative;
+    display: flex;
+    width: 100%;
+    z-index: 0;
+
+    div {
+      border: solid 1px transparent;
+      border-image: linear-gradient(to bottom, rgba(77, 229, 175, 0.2), rgba(77, 229, 175, 0.068));
+      border-image-slice: 1;
+      width: 152px;
+    }
+
+    &-left {
+      border-radius: radius(0.4) 0 radius(0.4) radius(0.4);
+      height: 304px;
+    }
+
+    &-right {
+      border-radius: 0 radius(0.4) radius(0.4) 0;
+      border-left: none !important;
+      height: 152px;
+    }
+
+    &:nth-child(2) {
+      opacity: 0.6;
+      top: 10px;
+      left: -294px;
+      z-index: 1;
+    }
+
+    &:nth-child(3) {
+      opacity: 0.3;
+      top: 20px;
+      left: -588px;
+    }
+  }
+}
+
+// Background Logo Animation
+@keyframes breathe {
+  0% {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  50% {
+    transform: translate(-50%, -52%) rotate(45deg);
+  }
+
+  100% {
+    transform: translateY(-50%, -50%) rotate(45deg);
+  }
+}

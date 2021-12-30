@@ -1,22 +1,19 @@
-@import 'variables';
-
-.ryaz-logo{
+.ryaz-logo {
   display: flex;
   width: 100%;
   height: 100%;
 
-  .left{
+  &-left {
     width: 50%;
     height: 100%;
     background: linear-gradient($clr-primary-light, $clr-primary-dark);
-    border-radius: 2px 0 2px 2px;
+    border-radius: radius(0.4) 0 radius(0.4) radius(0.4);
   }
-  
-  .right{
+
+  &-right {
     width: 50%;
     height: 50%;
     background: linear-gradient($clr-primary-light, $clr-primary-dark);
-    border-radius: 0 2px 2px 0;
+    border-radius: 0 radius(0.4) radius(0.4) 0;
   }
 }
-
