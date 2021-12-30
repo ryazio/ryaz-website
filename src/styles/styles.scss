@@ -1,11 +1,12 @@
 @import "variables";
 @import "mixins";
 @import "home.scss";
-// @import "backgroundLogo.scss";
+@import "ryazMethod.scss";
 @import "movingLogo.scss";
 @import "ryazLogo.scss";
 @import "singleProject.scss";
 @import "contact.scss";
+@import "footer.scss";
 
 body {
   margin: 0;
@@ -38,9 +39,11 @@ body {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 html {
-    -webkit-text-size-adjust:none;
+  -webkit-text-size-adjust: none;
 }
+
 img {
   max-width: 100%;
   width: auto;
@@ -53,19 +56,19 @@ img {
   clear: both;
 }
 
-.header-logo{
+.header-logo {
   width: 25px;
   height: 25px;
 }
 
-.highlight-grn{
+.highlight-grn {
   color: #4DE5AF;
 }
 
 
 //navIcon
 
-.nav-icon{
+.nav-icon {
   cursor: pointer;
   height: 22px;
   width: 22px;
@@ -73,13 +76,12 @@ img {
   flex-direction: column;
   align-items: flex-end;
 
-  .line{
+  .line {
     width: 16px;
-    border: solid 1px $clr-accent;
     margin-bottom: 6px;
     border-radius: 2px;
 
-    &:nth-child(2){
+    &:nth-child(2) {
       width: 22px
     }
   }
@@ -87,10 +89,16 @@ img {
 
 //fancyLabel
 
-.fancy-label{
+.fancy-label {
+  height: fit-content;
   width: fit-content;
-  padding: 5px 25px;
+  padding: 8px 16px;
   border-radius: 100px;
   color: #000;
-  margin: 0 10px 0 0;
+  margin: 10px 10px 0 0;
+  font-size: .75rem;
+
+  @media (min-width: $bp-desktop) {
+    font-size: 0.9rem;
+  }
 }

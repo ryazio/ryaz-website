@@ -1,7 +1,7 @@
 import React from 'react';
 // import '../styles/home.scss';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+import Header from '../components/SideHeader';
+import Footer from '../components/SideFooter';
 import MovingLogo from '../icons/MovingLogo';
 // import BackgroundLogo from '../icons/BackgroundLogo';
 import RyazLogo from '../components/RyazLogo';

@@ -1,17 +1,23 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useParams } from 'react-router-dom';
 import FancyLabel from '../components/FancyLabel';
 import RyazLogo from '../components/RyazLogo';
 import NavIcon from '../icons/NavIcon';
+import Footer from '../components/Footer';
 import forby from '../icons/projectLogos/forby.svg';
-import linkedIn from '../icons/social/linkedIn.svg';
-import twitter from '../icons/social/twitter.svg';
-import facebook from '../icons/social/facebook.svg';
-import instagram from '../icons/social/instagram.svg';
-import youtube from '../icons/social/youtube.svg';
 import stars from '../icons/stars.svg';
+import projects from '../json/projects.json';
 
-function SingleProject() {
+function SingleProject(props) {
+  const params = useParams();
+  const [projectData, setProjectData] = useState('');
+
+  useEffect(() => {
+    // find project from slug in the url and set the data in the react state
+    const res = projects.find((project) => project.slug === params.name);
+    setProjectData(res);
+  }, []);
+
   return (
     <>
       <div className="top-nav">
@@ -28,7 +34,7 @@ function SingleProject() {
         <div className="project-info">
           <div className="logo-and-name">
             <img src={forby} alt="" />
-            <span>Forby</span>
+            <span>{projectData.name}</span>
           </div>
           <div className="project-description">
             <p>
@@ -105,32 +111,7 @@ function SingleProject() {
         </p>
       </div>
 
-      <div className="footer">
-        <div className="details">
-          <div className="header-logo">
-            <RyazLogo />
-          </div>
-          <p>#250, Ward no. 2, Near water tank Samrala 141114 IN</p>
-          <p>+91 6280256990</p>
-        </div>
-        <div className="links">
-          <p><Link to="/ ">Home</Link></p>
-          <p><Link to="/ ">About Us</Link></p>
-          <p><Link to="/ ">Our Work</Link></p>
-          <p><Link to="/ ">Contact</Link></p>
-        </div>
-        <div className="join-us">
-          <p>Hire Us</p>
-          <p>Join Us</p>
-          <div className="social-links">
-            <img src={linkedIn} alt="linkedIn" />
-            <img src={facebook} alt="facebook" />
-            <img src={instagram} alt="instagram" />
-            <img src={twitter} alt="twitter" />
-            <img src={youtube} alt="youtube" />
-          </div>
-        </div>
-      </div>
+      <Footer />
     </>
   );
 }
