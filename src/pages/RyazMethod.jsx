@@ -156,22 +156,61 @@ function RyazMethod() {
               slidesPerView: 7,
             },
           }}
+          onSlideChange={(swiper) => {
+            console.log('slide current', swiper.activeIndex);
+            const currentIndex = swiper.activeIndex - 2;
+            const currentSlideOverlay = document.querySelectorAll(`[data-swiper-slide-index="${currentIndex}"] div`);
+            const allSlides = document.querySelectorAll('.swiper-slide div');
+            console.log(currentIndex, currentSlideOverlay);
+            allSlides.forEach((e) => { e.style.display = 'block'; });
+            currentSlideOverlay[0].style.display = 'none';
+          }}
           slidesPerView={3}
           spaceBetween={0}
           navigation
           loop
           className="mySwiper"
         >
-          <SwiperSlide><img src="./images/sahib.svg" alt="sahib-pic" /></SwiperSlide>
-          <SwiperSlide><img src="./images/sahib.svg" alt="sahib-pic" /></SwiperSlide>
-          <SwiperSlide><img src="./images/sahib.svg" alt="sahib-pic" /></SwiperSlide>
-          <SwiperSlide><img src="./images/sahib.svg" alt="sahib-pic" /></SwiperSlide>
-          <SwiperSlide><img src="./images/sahib.svg" alt="sahib-pic" /></SwiperSlide>
-          <SwiperSlide><img src="./images/sahib.svg" alt="sahib-pic" /></SwiperSlide>
-          <SwiperSlide><img src="./images/sahib.svg" alt="sahib-pic" /></SwiperSlide>
-          <SwiperSlide><img src="./images/sahib.svg" alt="sahib-pic" /></SwiperSlide>
-          <SwiperSlide><img src="./images/sahib.svg" alt="sahib-pic" /></SwiperSlide>
-          <SwiperSlide><img src="./images/sahib.svg" alt="sahib-pic" /></SwiperSlide>
+          <SwiperSlide>
+            <img src="./images/sahib.svg" alt="sahib-pic" />
+            <div />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="./images/sahib.svg" alt="sahib-pic" />
+            <div />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="./images/sahib.svg" alt="sahib-pic" />
+            <div />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="./images/sahib.svg" alt="sahib-pic" />
+            <div />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="./images/sahib.svg" alt="sahib-pic" />
+            <div />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="./images/sahib.svg" alt="sahib-pic" />
+            <div />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="./images/sahib.svg" alt="sahib-pic" />
+            <div />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="./images/sahib.svg" alt="sahib-pic" />
+            <div />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="./images/sahib.svg" alt="sahib-pic" />
+            <div />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="./images/sahib.svg" alt="sahib-pic" />
+            <div />
+          </SwiperSlide>
 
         </Swiper>
       </div>
