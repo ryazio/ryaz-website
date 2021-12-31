@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react/swiper-react';
 import SwiperCore, { FreeMode, Navigation } from 'swiper';
 
 import { RyazLogo } from '../icons';
-import { Layout } from '../components';
+import { ContactForm, Layout } from '../components';
 
 SwiperCore.use([FreeMode, Navigation]);
 
@@ -175,19 +175,7 @@ function RyazMethod() {
             </p>
           </div>
         </div>
-        <div className="contact-block">
-          <div className="contact-title">Let&apos;s make it happen.</div>
-          <div className="contact-tagline">
-            It doesn&apos;t matter where you are coming from, or any other aspect.
-            If you are passionate about your work, we can&apos;t wait to meet you.
-          </div>
-          <div className="contact-form">
-            <input type="username" name="name" placeholder="Name" />
-            <input className="email-input" type="email" name="email" placeholder="Email Address" />
-            <textarea placeholder="Send us a message. We will get back to you" />
-            <button type="submit" className="primary-btn">Send Message</button>
-          </div>
-        </div>
+        <ContactForm />
       </div>
     </Layout>
   );

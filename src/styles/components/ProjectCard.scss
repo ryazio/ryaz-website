@@ -1,0 +1,58 @@
+.project {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  @include over-tablet {
+    margin-left: 48px;
+    width: calc(100% - 48px);
+  }
+
+  &-sno {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -35%);
+    font-size: 64px;
+    line-height: 64px;
+    color: rgba(white, 0.05);
+
+    @include over-tablet {
+      font-size: 144px;
+      line-height: 144px;
+    }
+  }
+
+  &-title {
+    font-size: 28px;
+    line-height: 42px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #FFFFFF;
+    width: fit-content;
+
+    @include over-tablet {
+      font-size: 64px;
+      line-height: 92px;
+    }
+  }
+
+  &-description {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 12px;
+    color: #D7D7D7;
+  }
+
+  &-image {
+    border-radius: radius(1);
+    object-fit: cover;
+    max-height: 400px;
+    max-width: 600px;
+
+    @include over-tablet {
+      display: none;
+    }
+  }
+}

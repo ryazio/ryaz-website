@@ -1,11 +1,11 @@
 .home {
   display: grid;
   grid-template-columns: auto;
-  height: calc(100vh - 48px);
+  height: calc(100vh - $nav-height-mobile);
 
   @include over-mobile {
     grid-template-columns: 100px auto 100px;
-    height: calc(100vh - 84px);
+    height: calc(100vh - $nav-height-desktop);
   }
 
   &-left,

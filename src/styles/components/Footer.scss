@@ -7,7 +7,7 @@ footer {
     color: $clr-accent;
     display: flex;
     flex-wrap: wrap;
-    padding: 30px;
+    padding: 60px 30px;
     margin: auto;
     width: 100%;
     max-width: 1000px;
@@ -15,6 +15,7 @@ footer {
     @include over-tablet-medium {
       justify-content: space-between;
       flex-wrap: nowrap;
+      padding-top: 100px;
     }
 
     section {

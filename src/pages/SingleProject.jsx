@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import forby from '../icons/projectLogos/forby.svg';
 import projects from '../json/projects.json';
-import { RyazLogo, NavIcon, Star } from '../icons';
+import { RyazLogo, NavIcon, StarIcon } from '../icons';
 import { FancyLabel } from '../components/common';
 import { Layout } from '../components';
 
@@ -76,11 +76,11 @@ function SingleProject(props) {
 
       <div className="testimonial">
         <div className="stars">
-          <Star />
-          <Star />
-          <Star />
-          <Star />
-          <Star />
+          <StarIcon />
+          <StarIcon />
+          <StarIcon />
+          <StarIcon />
+          <StarIcon />
         </div>
         <p className="message">
           I’ve had nothing but the best interactions and experiences
