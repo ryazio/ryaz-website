@@ -3,9 +3,8 @@ import { Swiper, SwiperSlide } from 'swiper/react/swiper-react';
 
 import SwiperCore, { FreeMode, Navigation } from 'swiper';
 
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 import { RyazLogo } from '../icons';
+import { Layout } from '../components';
 
 SwiperCore.use([FreeMode, Navigation]);
 
@@ -13,9 +12,9 @@ const image = 'https://cdn.discordapp.com/attachments/664914752648118292/9260833
 
 function RyazMethod() {
   return (
-    <>
-      <Header />
-      <div className="ryaz-method">
+    <Layout className="ryaz-method">
+
+      <div>
         <div className="info">
           <div>
             <h2>
@@ -37,7 +36,7 @@ function RyazMethod() {
           <div className="arrow">
             <RyazLogo />
           </div>
-          <div className="ellipse">&nbsp;</div>
+          <div className="ellipse" />
         </div>
         <div className="ryaz-pillars">
           <div className="pillar-line">
@@ -176,25 +175,21 @@ function RyazMethod() {
             </p>
           </div>
         </div>
-      </div>
-      {/* end of activities */}
-
-      <div className="contact-block">
-        <div className="contact-title">Let&apos;s make it happen.</div>
-        <div className="contact-tagline">
-          It doesn&apos;t matter where you are coming from, or any other aspect.
-          If you are passionate about your work, we can&apos;t wait to meet you.
-        </div>
-        <div className="contact-form">
-          <input type="username" name="name" placeholder="Name" />
-          <input className="email-input" type="email" name="email" placeholder="Email Address" />
-          <textarea placeholder="Send us a message. We will get back to you" />
-          <button type="submit" className="primary-btn">Send Message</button>
+        <div className="contact-block">
+          <div className="contact-title">Let&apos;s make it happen.</div>
+          <div className="contact-tagline">
+            It doesn&apos;t matter where you are coming from, or any other aspect.
+            If you are passionate about your work, we can&apos;t wait to meet you.
+          </div>
+          <div className="contact-form">
+            <input type="username" name="name" placeholder="Name" />
+            <input className="email-input" type="email" name="email" placeholder="Email Address" />
+            <textarea placeholder="Send us a message. We will get back to you" />
+            <button type="submit" className="primary-btn">Send Message</button>
+          </div>
         </div>
       </div>
-      {/* end of contact-block */}
-      <Footer />
-    </>
+    </Layout>
   );
 }
 

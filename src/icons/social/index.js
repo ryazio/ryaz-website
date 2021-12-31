@@ -1,9 +1,5 @@
-import Facebook from './facebook.svg';
-import LinkedIn from './linkedIn.svg';
-import Twitter from './twitter.svg';
-import Instagram from './instagram.svg';
-import Youtube from './youtube.svg';
-
-export {
-  Facebook, LinkedIn, Twitter, Instagram, Youtube,
-};
+export { default as Facebook } from './Facebook.icon';
+export { default as LinkedIn } from './LinkedIn.icon';
+export { default as Twitter } from './Twitter.icon';
+export { default as Instagram } from './Instagram.icon';
+export { default as Youtube } from './Youtube.icon';
