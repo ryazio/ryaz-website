@@ -17,6 +17,7 @@
     font-size: 64px;
     line-height: 64px;
     color: rgba(white, 0.05);
+    z-index: -1;
 
     @include over-tablet {
       font-size: 144px;
