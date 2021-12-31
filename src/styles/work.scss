@@ -1,18 +1,5 @@
 @import "variables";
 
-.top-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 1rem;
-  width: 100%;
-  z-index: 6;
-
-  @media (min-width: $bp-desktop) {
-    padding: 1.25rem 2.25rem;
-  }
-}
-
 .work-container {
   color: $clr-accent;
   padding: 1.5rem;

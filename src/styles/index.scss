@@ -3,14 +3,13 @@
 @import "media";
 @import "mixins";
 
-@import "home.scss";
+@import "./icons";
+@import "./components";
+
+@import "Home.scss";
 @import "ryazMethod.scss";
 @import "singleProject.scss";
 @import "contact.scss";
-@import "footer.scss";
-
-@import "./components";
-@import "./icons";
 
 :root {
   font-size: 18px;
@@ -53,16 +52,6 @@ body {
   font-weight: 500;
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  font-family: "Brandon";
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
 html {
   -webkit-text-size-adjust: none;
 }
@@ -79,51 +68,12 @@ img {
   clear: both;
 }
 
-.header-logo {
-  width: 25px;
-  height: 25px;
-}
-
 .highlighted-txt {
   color: $clr-primary-light;
 }
 
 .highlight-grn {
   color: #4DE5AF;
-}
-
-//fancyLabel
-
-.fancy-label {
-  height: fit-content;
-  width: fit-content;
-  padding: 8px 16px;
-  border-radius: 100px;
-  color: #000;
-  margin: 0 10px 0 0;
-}
-
-.arrow-with-shadow {
-  position: absolute;
-  top: 85%;
-  left: 46%;
-  transition: ease-out 0.7s;
-
-  .arrow {
-    margin: 0 auto;
-    height: 25px;
-    width: 25px;
-    transform: rotate(45deg);
-    filter: drop-shadow(28px 28px 18px rgba(77, 229, 175, 0.6));
-  }
-
-  .ellipse {
-    height: 5px;
-    width: 60px;
-    margin-top: 20px;
-    background: rgba(77, 229, 175, 0.3);
-    filter: blur(8px);
-  }
 }
 
 .primary-btn {

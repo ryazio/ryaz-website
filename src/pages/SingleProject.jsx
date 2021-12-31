@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import FancyLabel from '../components/FancyLabel';
-import Footer from '../components/Footer';
 import forby from '../icons/projectLogos/forby.svg';
-import stars from '../icons/stars.svg';
 import projects from '../json/projects.json';
-import { RyazLogo, NavIcon } from '../icons';
+import { RyazLogo, NavIcon, Star } from '../icons';
+import { FancyLabel } from '../components/common';
+import { Layout } from '../components';
 
 function SingleProject(props) {
   const params = useParams();
@@ -18,15 +17,7 @@ function SingleProject(props) {
   }, []);
 
   return (
-    <>
-      <div className="top-nav">
-        <div className="header-logo">
-          <Link to="/">
-            <RyazLogo />
-          </Link>
-        </div>
-        <NavIcon />
-      </div>
+    <Layout>
       <div className="project-details ff-brandon">
         <div className="project-info">
           <div className="logo-and-name">
@@ -40,17 +31,9 @@ function SingleProject(props) {
             </p>
           </div>
           <div className="fancy-labels">
-            <FancyLabel colorA="#DEAAFF" colorB="#D8BBFF" text="Designing" />
-            <FancyLabel
-              colorA="#FAE1DD"
-              colorB="#FEC5BB"
-              text="Frontend Development"
-            />
-            <FancyLabel
-              colorA="#E8FFFA"
-              colorB="#D3FEF5"
-              text="Backend Development"
-            />
+            <FancyLabel type="purple">Designing</FancyLabel>
+            <FancyLabel type="orange">Frontend Development</FancyLabel>
+            <FancyLabel type="teal">Backend Development</FancyLabel>
           </div>
           <div className="people">
             <div className="name-and-designation">
@@ -93,11 +76,11 @@ function SingleProject(props) {
 
       <div className="testimonial">
         <div className="stars">
-          <img src={stars} alt="star" />
-          <img src={stars} alt="star" />
-          <img src={stars} alt="star" />
-          <img src={stars} alt="star" />
-          <img src={stars} alt="star" />
+          <Star />
+          <Star />
+          <Star />
+          <Star />
+          <Star />
         </div>
         <p className="message">
           I’ve had nothing but the best interactions and experiences
@@ -107,9 +90,7 @@ function SingleProject(props) {
           <Link to="/">Read our client review.</Link>
         </p>
       </div>
-
-      <Footer />
-    </>
+    </Layout>
   );
 }
 

@@ -1,16 +1,10 @@
 /* eslint-disable max-len */
 import React from 'react';
-import { RyazLogo, NavIcon } from '../icons';
+import { Layout } from '../components';
 
 function Contact() {
   return (
-    <div className="contact">
-      <div className="header">
-        <div className="logo">
-          <RyazLogo />
-        </div>
-        <NavIcon />
-      </div>
+    <Layout className="contact">
       <div className="max-width-container">
         <div className="container">
           <div className="content">
@@ -33,7 +27,7 @@ function Contact() {
           </div>
         </div>
       </div>
-    </div>
+    </Layout>
   );
 }
 

@@ -1,37 +1,29 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { RyazLogo } from '../icons';
-import {
-  LinkedIn, Twitter, Facebook, Instagram, Youtube,
-} from '../icons/social';
 
-function Footer() {
-  return (
+import { SocialLinks } from './common';
+
+export const Footer = () => (
+  <footer>
     <div className="footer">
-      <div className="footer-sections">
-        <RyazLogo className="header-logo" />
+      <section>
+        <RyazLogo className="footer-logo" />
         <p>#250, Ward no. 2, Near water tank Samrala 141114 IN</p>
         <p>+91 6280256990</p>
-      </div>
-      <div className="footer-sections links">
-        <p><Link to="/ ">Home</Link></p>
-        <p><Link to="/ ">About Us</Link></p>
-        <p><Link to="/ ">Our Work</Link></p>
-        <p><Link to="/ ">Contact</Link></p>
-      </div>
-      <div className="footer-sections join-us">
-        <p>Hire Us</p>
-        <p>Join Us</p>
-        <div className="social-links">
-          <img src={LinkedIn} alt="linkedIn" />
-          <img src={Facebook} alt="facebook" />
-          <img src={Instagram} alt="instagram" />
-          <img src={Twitter} alt="twitter" />
-          <img src={Youtube} alt="youtube" />
-        </div>
-      </div>
+      </section>
+      <section>
+        <p><Link to="/">Home</Link></p>
+        <p><Link to="/">About Us</Link></p>
+        <p><Link to="/">Our Work</Link></p>
+        <p><Link to="/">Contact</Link></p>
+      </section>
+      <section>
+        <p><Link to="/">Hire Us</Link></p>
+        <p><Link to="/">Join Us</Link></p>
+        <SocialLinks className="footer-links-desktop" />
+      </section>
+      <SocialLinks className="footer-links-mobile" />
     </div>
-  );
-}
-
-export default Footer;
+  </footer>
+);

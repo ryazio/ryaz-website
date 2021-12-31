@@ -1,35 +1,33 @@
 import React from 'react';
-// import '../styles/home.scss';
-import Header from '../components/SideHeader';
-import Footer from '../components/SideFooter';
-import { RyazLogo, FloatingRyazLogo } from '../icons';
+import { Link } from 'react-router-dom';
+import { Layout } from '../components';
 
 function Home() {
   return (
-    <div className="home">
-      <Header />
-      <div className="middle-section">
-
-        <div className="home-text">
-          <div className="tagline ff-brandon-bold">
+    <Layout className="home" noFooter isShadowLogo>
+      <div className="home-left">
+        <Link to="/work">
+          Our Work
+        </Link>
+      </div>
+      <div className="home-middle">
+        <div className="home-middle-text">
+          <div className="home-tagline">
             Tech Leadership that your startup deserves.
           </div>
-          <div className="info ff-brandon">
+          <div className="home-info">
             Ryaz builds, ships and launches your digital product with
-            <span className="highlight-grn"> gaurantees </span>
+            <span> gaurantees </span>
             on quality and performance.
           </div>
         </div>
-        <div className="arrow-with-shadow">
-          <div className="arrow">
-            <RyazLogo />
-          </div>
-          <div className="ellipse">&nbsp;</div>
-        </div>
       </div>
-      <Footer />
-      <FloatingRyazLogo />
-    </div>
+      <div className="home-right">
+        <Link to="/ryaz-method">
+          THE RYAZ METHOD
+        </Link>
+      </div>
+    </Layout>
   );
 }
 
