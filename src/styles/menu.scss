@@ -1,0 +1,16 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  a {
+    color: $clr-accent;
+    text-decoration: none;
+    font-size: 1.5rem;
+    line-height: 4rem;
+  }
+}
+
+ 

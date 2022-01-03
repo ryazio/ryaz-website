@@ -12,7 +12,9 @@ function Header() {
         </Link>
       </div>
       <div className="nav-icon">
-        <NavIcon />
+        <Link to="/menu">
+          <NavIcon />
+        </Link>
       </div>
     </div>
   );

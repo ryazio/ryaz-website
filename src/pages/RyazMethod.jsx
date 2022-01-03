@@ -1,5 +1,4 @@
-import React, { useRef, useState } from 'react';
-import { motion } from 'framer-motion';
+import React, { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react/swiper-react';
 
 import SwiperCore, {
