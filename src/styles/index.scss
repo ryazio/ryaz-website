@@ -1,0 +1,130 @@
+@import "variables";
+@import "constants";
+@import "media";
+
+@import "./icons";
+@import "./components";
+
+@import "Home.scss";
+@import "./Work.scss";
+@import "Contact.scss";
+@import "ryazMethod.scss";
+@import "singleProject.scss";
+
+:root {
+  font-size: 18px;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(111.17deg, $clr-bg-lighter 0.23%, $clr-bg-darker 100%);
+  font-family: "Brandon";
+  color: $clr-accent;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+.ff-brandon {
+  font-family: "Brandon";
+}
+
+.ff-brandon-light {
+  font-family: "Brandon";
+  font-weight: 300;
+}
+
+.ff-brandon-bold {
+  font-family: "Brandon";
+  font-weight: bold;
+}
+
+.ff-brandon-italic {
+  font-family: "Brandon";
+  font-weight: 300;
+  font-style: italic;
+}
+
+.ff-brandon-medium {
+  font-family: "Brandon";
+  font-weight: 500;
+}
+
+html {
+  -webkit-text-size-adjust: none;
+}
+
+img {
+  max-width: 100%;
+  width: auto;
+}
+
+.clear:before,
+.clear:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.highlighted-txt {
+  color: $clr-primary-light;
+}
+
+.highlight-grn {
+  color: #4DE5AF;
+}
+
+.primary-input {
+  background: #030F26;
+  border: 0;
+  border-radius: 8px;
+  padding: 0 18px;
+  height: 48px;
+  width: 100%;
+  font-family: $primary-font;
+  font-size: 16px;
+  padding: 12px 18px;
+  color: white;
+
+  @include over-tablet {
+    font-size: 18px;
+    padding: 18px;
+    height: 60px;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+
+  &--textarea {
+    height: 225px;
+    resize: none;
+
+    @include over-tablet {
+      height: 188px;
+    }
+
+  }
+}
+
+.primary-btn {
+  cursor: pointer;
+  padding: 12px 30px;
+  border: none;
+  border-radius: radius(1.6);
+  background: $clr-primary;
+  color: $clr-accent;
+  font-size: 18px;
+  width: fit-content;
+
+  @include over-tablet {
+    padding: 18px 36px;
+  }
+}

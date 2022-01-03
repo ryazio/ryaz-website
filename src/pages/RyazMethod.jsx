@@ -1,22 +1,20 @@
 import React, { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react/swiper-react';
 
-import SwiperCore, {
-  FreeMode, Navigation,
-} from 'swiper';
+import SwiperCore, { FreeMode, Navigation } from 'swiper';
 
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import RyazLogo from '../components/RyazLogo';
+import { RyazLogo } from '../icons';
+import { ContactForm, Layout } from '../components';
 
 SwiperCore.use([FreeMode, Navigation]);
 
+const image = 'https://cdn.discordapp.com/attachments/664914752648118292/926083345220272149/unknown.png';
+
 function RyazMethod() {
-  const [move, setSliderMove] = useState(0);
   return (
-    <>
-      <Header />
-      <div className="ryaz-method">
+    <Layout className="ryaz-method">
+
+      <div>
         <div className="info">
           <div>
             <h2>
@@ -38,7 +36,7 @@ function RyazMethod() {
           <div className="arrow">
             <RyazLogo />
           </div>
-          <div className="ellipse">&nbsp;</div>
+          <div className="ellipse" />
         </div>
         <div className="ryaz-pillars">
           <div className="pillar-line">
@@ -109,108 +107,28 @@ function RyazMethod() {
           </div>
         </div>
       </div>
-      <div className="example-container">
-        {/* <motion.div
-          animate={{
-            scale: [1, 2, 2, 1, 1],
-            rotate: [0, 0, 270, 270, 0],
-            borderRadius: ['20%', '20%', '50%', '50%', '20%'],
-          }}
-          transition={{
-            duration: 2,
-            ease: 'easeInOut',
-            times: [0, 0.2, 0.5, 0.8, 1],
-            repeat: Infinity,
-            repeatDelay: 1,
-          }}
-        /> */}
-      </div>
+
       <div className="team-showcase">
         <h3>Our Team</h3>
         <p className="team-tagline">Group of people that truly love each other</p>
-        {/* <button
-          type="button"
-          onClick={() => setSliderMove(move - 1)}
-          className="slider-control move-slide-left"
-        >
-          <img src="./left-arrow.svg" alt="left arrow" />
-        </button>
-        <button
-          type="button"
-          onClick={() => setSliderMove(move + 1)}
-          className="slider-control move-slide-right"
-        >
-          <img src="./right-arrow.svg" alt="left arrow" />
-        </button> */}
         <Swiper
+          className="team-swiper"
           style={{
             '--swiper-navigation-color': '#fff',
             '--swiper-navigation-size': '1rem',
           }}
-          breakpoints={{
-            600: {
-              slidesPerView: 5,
-            },
-            900: {
-              slidesPerView: 7,
-            },
-          }}
-          onSlideChange={(swiper) => {
-            console.log('slide current', swiper.activeIndex);
-            const currentIndex = swiper.activeIndex - 2;
-            const currentSlideOverlay = document.querySelectorAll(`[data-swiper-slide-index="${currentIndex}"] div`);
-            const allSlides = document.querySelectorAll('.swiper-slide div');
-            console.log(currentIndex, currentSlideOverlay);
-            allSlides.forEach((e) => { e.style.display = 'block'; });
-            currentSlideOverlay[0].style.display = 'none';
-          }}
-          slidesPerView={3}
+          slidesPerView="auto"
           spaceBetween={0}
+          centeredSlides
           navigation
           loop
-          className="mySwiper"
         >
-          <SwiperSlide>
-            <img src="./images/sahib.svg" alt="sahib-pic" />
-            <div />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="./images/sahib.svg" alt="sahib-pic" />
-            <div />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="./images/sahib.svg" alt="sahib-pic" />
-            <div />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="./images/sahib.svg" alt="sahib-pic" />
-            <div />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="./images/sahib.svg" alt="sahib-pic" />
-            <div />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="./images/sahib.svg" alt="sahib-pic" />
-            <div />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="./images/sahib.svg" alt="sahib-pic" />
-            <div />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="./images/sahib.svg" alt="sahib-pic" />
-            <div />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="./images/sahib.svg" alt="sahib-pic" />
-            <div />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="./images/sahib.svg" alt="sahib-pic" />
-            <div />
-          </SwiperSlide>
-
+          {Object.keys([...new Array(10)]).map((key) => (
+            <SwiperSlide key={key}>
+              <img src={image} alt="sahib-pic" />
+              <div />
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
       <div className="activities">
@@ -257,25 +175,9 @@ function RyazMethod() {
             </p>
           </div>
         </div>
+        <ContactForm />
       </div>
-      {/* end of activities */}
-
-      <div className="contact-block">
-        <div className="contact-title">Let&apos;s make it happen.</div>
-        <div className="contact-tagline">
-          It doesn&apos;t matter where you are coming from, or any other aspect.
-          If you are passionate about your work, we can&apos;t wait to meet you.
-        </div>
-        <div className="contact-form">
-          <input type="username" name="name" placeholder="Name" />
-          <input className="email-input" type="email" name="email" placeholder="Email Address" />
-          <textarea placeholder="Send us a message. We will get back to you" />
-          <button type="submit" className="primary-btn">Send Message</button>
-        </div>
-      </div>
-      {/* end of contact-block */}
-      <Footer />
-    </>
+    </Layout>
   );
 }
 

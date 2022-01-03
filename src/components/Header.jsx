@@ -1,23 +1,34 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import { Link } from 'react-router-dom';
-import RyazLogo from './RyazLogo';
-import NavIcon from '../icons/NavIcon';
+import { RyazLogo, NavIcon, CrossIcon } from '../icons';
 
-function Header() {
-  return (
-    <div className="top-nav">
-      <div className="header-logo">
-        <Link to="/">
-          <RyazLogo />
-        </Link>
-      </div>
-      <div className="nav-icon">
-        <Link to="/menu">
-          <NavIcon />
-        </Link>
-      </div>
-    </div>
-  );
-}
+export const Header = ({ className, isOpen, setIsOpen }) => (
+  <header className={className}>
+    <Link className="header-logo" to="/">
+      <RyazLogo />
+    </Link>
+    {!isOpen
+      ? (<NavIcon className="header-burger" onClick={setIsOpen} />)
+      : (
+        <button
+          type="button"
+          className="header-close"
+          onClick={setIsOpen}
+        >
+          <CrossIcon />
+        </button>
+      )}
+  </header>
+);
 
-export default Header;
+Header.propTypes = {
+  className: PropTypes.string,
+  isOpen: PropTypes.bool,
+  setIsOpen: PropTypes.func,
+};
+Header.defaultProps = {
+  className: '',
+  isOpen: false,
+  setIsOpen: () => {},
+};
