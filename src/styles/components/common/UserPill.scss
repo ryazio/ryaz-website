@@ -1,0 +1,15 @@
+.user-pill {
+  display: flex;
+  column-gap: 8px;
+
+  img {
+    height: 24px;
+    width: 24px;
+    border-radius: radius();
+    object-fit: cover;
+  }
+
+  p {
+    line-height: 24px;
+  }
+}
