@@ -1,0 +1,44 @@
+  .ryaz-pillars {
+    padding: 0 1rem;
+
+    @media (min-width: $bp-desktop) {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: 50% 50%;
+    }
+
+    .pillar:first-child {
+      margin-bottom: 3rem;
+    }
+
+    .pillar {
+      margin: 15px;
+      height: fit-content;
+      padding: 10px 21px 45px;
+      background: #0d1b35;
+      border-radius: 25px;
+
+      .pillar-info {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+
+        h2 {
+          font-size: 1.8rem;
+        }
+
+        p {
+          font-size: 3rem;
+          font-weight: 700;
+          color: rgba($color: $clr-accent, $alpha: 0.1);
+        }
+      }
+
+      .pillar-description {
+        p:first-child {
+          font-style: italic;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }

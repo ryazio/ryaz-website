@@ -52,49 +52,6 @@
     }
   }
 
-  .ryaz-pillars {
-    padding: 0 1rem;
-
-    @media (min-width: $bp-desktop) {
-      display: grid;
-      gap: 1rem;
-      grid-template-columns: 50% 50%;
-    }
-
-    .pillar:first-child {
-      margin-bottom: 3rem;
-    }
-
-    .pillar {
-      margin: 15px;
-      height: fit-content;
-      padding: 10px 21px 45px;
-      background: #0d1b35;
-      border-radius: 25px;
-
-      .pillar-info {
-        display: flex;
-        align-items: baseline;
-        justify-content: space-between;
-
-        h2 {
-          font-size: 1.8rem;
-        }
-
-        p {
-          font-size: 3rem;
-          color: rgba($color: $clr-accent, $alpha: 0.1);
-        }
-      }
-
-      .pillar-description {
-        p:first-child {
-          font-family: "Brandon-light-italic";
-          margin-bottom: 1rem;
-        }
-      }
-    }
-  }
 }
 
 .team-showcase,
@@ -107,8 +64,7 @@
     text-transform: uppercase;
     font-size: 0.75rem;
     letter-spacing: 2px;
-    font-family: "Brandon-light";
-
+    font-weight: 300;
   }
 }
 
@@ -192,31 +148,8 @@
     text-align: left;
     padding: 1rem 0;
   }
-
-  .activity {
-    .top-cover-bar {
-      border-top: 1px solid $clr-primary;
-      height: 1px;
-    }
-
-    h4 {
-      color: $clr-primary-light;
-      font-size: 2.5rem;
-      padding: 1.5rem 0;
-    }
-
-    .activity-tagline {
-      font-size: 1.1rem;
-      padding: 1.5rem 0;
-      font-family: "Brandon-light-italic";
-    }
-
-    .activity-detail {
-      font-size: 1rem;
-      line-height: 2;
-    }
-  }
 }
+
 
 .contact-block {
   text-align: center;

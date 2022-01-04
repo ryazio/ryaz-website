@@ -4,9 +4,9 @@ import { Swiper, SwiperSlide } from 'swiper/react/swiper-react';
 import SwiperCore, { FreeMode, Navigation } from 'swiper';
 
 import { RyazLogo } from '../icons';
-import { ContactForm, Layout } from '../components';
-import { RyazPillar } from '../components/RyazPillar';
-import { RyazActivity } from '../components/RyazActivity';
+import {
+  ContactForm, Layout, RyazPillar, RyazActivity,
+} from '../components';
 
 SwiperCore.use([FreeMode, Navigation]);
 

@@ -9,9 +9,7 @@ export const RyazPillar = ({
       <h2>
         { title }
       </h2>
-      <p className="ff-brandon-bold">
-        {number}
-      </p>
+      <p>{number}</p>
     </div>
     <div className="pillar-description">
       <p>{tagline}</p>
