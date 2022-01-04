@@ -17,11 +17,11 @@ export const Testinomial = ({ star, review, to }) => (
 
 Testinomial.propTypes = {
   review: PropTypes.string,
-  star: PropTypes.string,
+  star: PropTypes.number,
   to: PropTypes.string,
 };
 Testinomial.defaultProps = {
   review: '',
-  star: '',
+  star: 1,
   to: '',
 };
