@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 import { Link } from 'react-router-dom';
 import { Header } from './Header';
 import { SocialLinks } from './common';
+import { FloatingRyazLogo } from '../icons';
 
 export const Menu = ({ isOpen, setIsOpen }) => (
   isOpen && ReactDOM.createPortal(
@@ -11,12 +12,12 @@ export const Menu = ({ isOpen, setIsOpen }) => (
       <Header isOpen={isOpen} setIsOpen={() => setIsOpen(false)} />
       <section className="menu-body">
         <div>
-          <Link to="/">Home</Link>
           <Link to="/work">Our Work</Link>
           <Link to="/ryaz-method">About Us</Link>
           <Link to="/contact">Contact</Link>
         </div>
       </section>
+      <FloatingRyazLogo />
       <section className="menu-footer">
         <SocialLinks />
       </section>

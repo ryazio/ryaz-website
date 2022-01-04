@@ -26,13 +26,12 @@
 
       a {
         font-size: 24px;
-        line-height: 36px;
+        line-height: 2;
         color: #FFFFFF;
         text-decoration: none;
 
         @include over-mobile {
           font-size: 36px;
-          line-height: 48px;
         }
       }
     }
