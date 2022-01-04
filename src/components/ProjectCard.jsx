@@ -17,6 +17,7 @@ export const ProjectCard = ({
 
 ProjectCard.propTypes = {
   description: PropTypes.string.isRequired,
+  projectImage: PropTypes.string.isRequired,
   projectName: PropTypes.string.isRequired,
   slug: PropTypes.string.isRequired,
   sno: PropTypes.string.isRequired,

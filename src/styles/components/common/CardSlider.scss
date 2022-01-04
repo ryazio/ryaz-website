@@ -1,0 +1,45 @@
+.card-slider {
+  width: 100%;
+  height: 500px;
+
+  .swiper-button {
+
+    &-prev:after,
+    &-next:after {
+      background: rgba($color: $clr-accent, $alpha: 0.4);
+      padding: 17px 20px;
+      border-radius: 50%;
+    }
+
+    &-next,
+    &-prev {
+      right: 2rem !important;
+      width: var(--swiper-navigation-size) !important;
+    }
+  }
+
+  .swiper-slide {
+    @include flex-center;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    width: 250px !important;
+
+    .slide-overlay {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.6);
+      transition: 0.3s background ease;
+      z-index: 100;
+    }
+
+    &-active {
+      .slide-overlay {
+        background: transparent;
+      }
+    }
+  }
+}

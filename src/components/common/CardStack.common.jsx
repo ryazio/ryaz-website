@@ -7,7 +7,7 @@ const SCALE_FACTOR = 0.1;
 const SCALE_FACTOR_X = 0.03;
 
 export const CardStack = ({
-  className, data, children, key,
+  className, data, children, dataKey,
 }) => {
   const [cards, setCards] = useState(data);
   const [y, setY] = useCycle(0, -70);
@@ -53,7 +53,7 @@ export const CardStack = ({
           };
           return (
             <motion.li
-              key={key ? card[key] : card}
+              key={dataKey ? card[dataKey] : card}
               className="card-stack-wrapper-card"
               style={{
                 backgroundColor: card,
@@ -79,12 +79,14 @@ export const CardStack = ({
 
 CardStack.propTypes = {
   children: PropTypes.func,
+  className: PropTypes.string,
   data: PropTypes.instanceOf(Array),
-  key: PropTypes.string,
+  dataKey: PropTypes.string,
 };
 
 CardStack.defaultProps = {
   children: () => null,
+  className: '',
   data: ['#266678', '#cb7c7a', ' #36a18b', '#cda35f', '#747474'],
-  key: '',
+  dataKey: '',
 };
