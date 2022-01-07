@@ -8,7 +8,7 @@ import {
 } from '../components/common';
 import { Layout } from '../components';
 import projectImage from '../images/projectImage.png';
-import { useSize } from '../hooks';
+import { useRouter, useSize } from '../hooks';
 import { ArrowIcon, CrossIcon } from '../icons';
 
 const DATA = [
@@ -31,6 +31,7 @@ const DATA = [
 ];
 
 function SingleProject() {
+  const router = useRouter();
   const params = useParams();
   const [projectData, setProjectData] = useState('');
   const [isOpen, setIsOpen] = useState('');
@@ -88,7 +89,7 @@ function SingleProject() {
         <div className="project-info">
           <section>
             <div className="project-info-name">
-              <ArrowIcon className="project-info-back" />
+              <ArrowIcon className="project-info-back" onClick={() => router.navigate('/work')} />
               <ForbyIcon className="project-info-icon" />
               <span>{projectData.name}</span>
             </div>
