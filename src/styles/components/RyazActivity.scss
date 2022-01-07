@@ -1,8 +1,6 @@
-
 .activity {
-  .top-cover-bar {
+  &-bar {
     border-top: 1px solid $clr-primary;
-    height: 1px;
   }
 
   h4 {
@@ -11,13 +9,13 @@
     padding: 1.5rem 0;
   }
 
-  .activity-tagline {
+  &-tagline {
     font-size: 1.1rem;
     padding: 1.5rem 0;
     font-style: italic;
   }
 
-  .activity-detail {
+  &-detail {
     font-size: 1rem;
     line-height: 2;
   }

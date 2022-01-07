@@ -8,7 +8,7 @@
 @import "./Home.scss";
 @import "./Work.scss";
 @import "./Contact.scss";
-@import "ryazMethod.scss";
+@import "./RyazMethod.scss";
 @import "./SingleProject.scss";
 
 :root {
@@ -21,64 +21,18 @@
   min-height: 100vh;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  background: linear-gradient(111.17deg, $clr-bg-lighter 0.23%, $clr-bg-darker 100%);
-  font-family: "Brandon";
-  color: $clr-accent;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-}
-
-.ff-brandon {
-  font-family: "Brandon";
-}
-
-.ff-brandon-light {
-  font-family: "Brandon";
-  font-weight: 300;
-}
-
-.ff-brandon-bold {
-  font-family: "Brandon";
-  font-weight: bold;
-}
-
-.ff-brandon-italic {
-  font-family: "Brandon";
-  font-weight: 300;
-  font-style: italic;
-}
-
-.ff-brandon-medium {
-  font-family: "Brandon";
-  font-weight: 500;
-}
-
 html {
   -webkit-text-size-adjust: none;
-}
 
-img {
-  max-width: 100%;
-  width: auto;
-}
-
-.clear:before,
-.clear:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-.highlighted-txt {
-  color: $clr-primary-light;
-}
-
-.highlight-grn {
-  color: #4DE5AF;
+  body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(111.17deg, $clr-bg-lighter 0.23%, $clr-bg-darker 100%);
+    font-family: "Brandon";
+    color: $clr-accent;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 }
 
 .primary-input {

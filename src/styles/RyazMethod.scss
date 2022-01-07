@@ -1,0 +1,235 @@
+.ryaz-method {
+  display: flex;
+  color: $clr-accent;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  &-home {
+    display: grid;
+    grid-template-columns: auto;
+    width: 100%;
+    margin-bottom: 84px;
+
+    @include over-tablet-medium {
+      margin-bottom: 192px;
+    }
+
+    @include over-desktop {
+      grid-template-columns: 1fr 1fr;
+      padding: 0 48px
+    }
+  }
+
+  &-info {
+    @include flex-center;
+    position: relative;
+    flex-direction: column;
+    min-height: calc(100vh - $nav-height-mobile);
+    text-align: center;
+    padding: 36px;
+    margin-bottom: 84px;
+
+    @include over-mobile {
+      min-height: calc(100vh - $nav-height-desktop);
+    }
+
+    @include over-desktop {
+      text-align: left;
+      align-items: flex-start;
+      margin-bottom: 0;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 18px;
+
+      @include over-tablet-medium {
+        font-size: 36px;
+        line-height: 52px;
+      }
+
+      span {
+        color: $clr-primary-light;
+      }
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 2;
+      margin-bottom: 60px;
+    }
+
+    &-logo {
+      position: absolute;
+
+      @include over-desktop {
+        right: 0;
+        left: unset;
+        transform: translate(50%, 0);
+      }
+    }
+  }
+
+  &-pillars {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 36px;
+    row-gap: 36px;
+
+    @include over-desktop {
+      align-items: center;
+    }
+
+    @include over-tablet {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: 50% 50%;
+    }
+
+    &-line {
+      display: flex;
+      flex-direction: column;
+      row-gap: 36px;
+    }
+
+  }
+
+  &-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $clr-accent;
+    width: 100%;
+    margin-bottom: 96px;
+
+    @include over-tablet-medium {
+      margin-bottom: 192px;
+    }
+
+    h3 {
+      font-family: $primary-font;
+      font-weight: 900;
+      font-size: 12px;
+      line-height: 18px;
+      text-align: center;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rgba(#FFFFFF, 0.5);
+      margin: 0;
+      margin-bottom: 6px;
+    }
+
+    >p {
+      font-size: 24px;
+      line-height: 36px;
+      font-weight: 500;
+      max-width: 320px;
+      margin-bottom: 36px;
+      text-align: center;
+
+      @include over-tablet-medium {
+        font-size: 36px;
+        line-height: 60px;
+        max-width: unset;
+      }
+    }
+  }
+
+  .team-swiper {
+    width: 100%;
+    height: 300px;
+
+    @include over-tablet {
+      height: 428px;
+    }
+
+    .swiper-slide {
+      @include flex-center;
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      width: 120px !important;
+
+      @include over-tablet {
+        width: 175px !important;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &-info {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: fit-content;
+      padding: 14px 8px;
+      text-align: left;
+      z-index: 6;
+
+      h2 {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #FFFFFF;
+
+        @include over-tablet {
+          font-size: 18px;
+        }
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color: #C2C2C2;
+        min-height: 36px;
+      }
+    }
+  }
+
+
+  .activities {
+    display: none;
+
+    @include over-tablet {
+      display: flex;
+    }
+
+    .activities-block {
+      padding: 36px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 72px;
+      width: 100%;
+
+      @include over-tablet-medium {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        column-gap: 36px;
+      }
+
+      .activity {
+        @include over-tablet-medium {
+          max-width: 320px;
+        }
+      }
+    }
+  }
+
+  &-contact {
+    margin: auto;
+    width: 100%;
+    max-width: 800px;
+    padding: 0 24px;
+  }
+
+}

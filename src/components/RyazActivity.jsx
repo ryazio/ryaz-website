@@ -5,7 +5,7 @@ export const RyazActivity = ({
   title, tagline, content,
 }) => (
   <div className="activity">
-    <div className="top-cover-bar" />
+    <div className="activity-bar" />
     <h4>{ title }</h4>
     <p className="activity-tagline">
       {tagline}
