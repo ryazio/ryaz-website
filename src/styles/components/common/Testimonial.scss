@@ -19,6 +19,11 @@
     line-height: 24px;
     margin-bottom: 36px;
 
+    @include over-tablet-medium {
+      font-size: 24px;
+      line-height: 36px;
+    }
+
     &::before,
     &::after {
       position: absolute;
@@ -41,5 +46,6 @@
 
   .more-reviews {
     color: #C1C1C1;
+    font-size: 14px;
   }
 }

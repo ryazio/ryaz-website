@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Swiper, SwiperSlide } from 'swiper/react/swiper-react';
-import { ArrowButton } from '.';
+import { ArrowButton } from './ArrowButton.common';
 
 export const CardSlider = ({
   className, data, children, dataKey,

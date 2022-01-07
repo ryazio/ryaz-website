@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import { motion, useCycle } from 'framer-motion';
 import PropTypes from 'prop-types';
 import { MediaQueryContext } from '../../hooks';
-import { ArrowButton } from '.';
+import { ArrowButton } from './ArrowButton.common';
 
 const CARD_OFFSET = 24;
 const SCALE_FACTOR = 0.1;
