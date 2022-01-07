@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { RyazLogo, NavIcon, CrossIcon } from '../icons';
+import { ArrowButton } from './common';
 
 export const Header = ({ className, isOpen, setIsOpen }) => (
   <header className={className}>
@@ -11,13 +12,11 @@ export const Header = ({ className, isOpen, setIsOpen }) => (
     {!isOpen
       ? (<NavIcon className="header-burger" onClick={setIsOpen} />)
       : (
-        <button
-          type="button"
+        <ArrowButton
           className="header-close"
           onClick={setIsOpen}
-        >
-          <CrossIcon />
-        </button>
+          Icon={CrossIcon}
+        />
       )}
   </header>
 );

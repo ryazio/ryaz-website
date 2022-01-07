@@ -12,19 +12,22 @@ import 'swiper/swiper.min.css';
 import './styles/index.scss';
 import Contact from './pages/Contact';
 import RyazMethod from './pages/RyazMethod';
+import { MediaQueryProvider } from './hooks';
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/work" element={<Work />} />
-        <Route path="/work/:name" element={<SingleProject />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/ryaz-method" element={<RyazMethod />} />
-        <Route path="*" element={<Navigate replace to="/" />} />
-      </Routes>
-    </Router>
+    <MediaQueryProvider>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/work" element={<Work />} />
+          <Route path="/work/:name" element={<SingleProject />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/ryaz-method" element={<RyazMethod />} />
+          <Route path="*" element={<Navigate replace to="/" />} />
+        </Routes>
+      </Router>
+    </MediaQueryProvider>
   );
 }
 

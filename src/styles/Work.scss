@@ -34,7 +34,7 @@
     @include over-tablet {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      padding-top: 120px;
+      margin-top: 120px;
       row-gap: 96px;
     }
 
