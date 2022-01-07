@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import { motion, useCycle } from 'framer-motion';
 import PropTypes from 'prop-types';
 import { MediaQueryContext } from '../../hooks';
-import { ArrowIcon } from '../../icons';
+import { ArrowButton } from '.';
 
 const CARD_OFFSET = 24;
 const SCALE_FACTOR = 0.1;
@@ -38,13 +38,11 @@ export const CardStack = ({
   return (
     <div className={`card-stack ${className}`} style={style}>
       <ul className="card-stack-wrapper">
-        <button
-          type="button"
+        <ArrowButton
           className="card-stack-wrapper-arrow"
           onClick={next}
-        >
-          <ArrowIcon />
-        </button>
+          y="-50%"
+        />
         {cards.map((card, index) => {
           const canDrag = index === 0;
           const animateValues = () => {

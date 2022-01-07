@@ -1,18 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Swiper, SwiperSlide } from 'swiper/react/swiper-react';
-import { motion } from 'framer-motion';
-import { ArrowIcon } from '../../icons';
-
-const CardSliderButton = ({ className }) => (
-  <motion.div
-    className={`card-slider-nav ${className}`}
-    initial={{ y: '-50%' }}
-    whileTap={{ scale: 0.8 }}
-  >
-    <ArrowIcon />
-  </motion.div>
-);
+import { ArrowButton } from '.';
 
 export const CardSlider = ({
   className, data, children, dataKey,
@@ -28,14 +17,14 @@ export const CardSlider = ({
       nextEl: '.card-slider-nav.next',
     }}
   >
-    <CardSliderButton className="prev" />
+    <ArrowButton className="card-slider-nav prev" y="-50%" />
     {data.map((card) => (
       <SwiperSlide key={dataKey ? card[dataKey] : card}>
         {children(card)}
         <div className="slide-overlay" />
       </SwiperSlide>
     ))}
-    <CardSliderButton className="next" />
+    <ArrowButton className="card-slider-nav next" y="-50%" />
   </Swiper>
 );
 
@@ -51,8 +40,4 @@ CardSlider.defaultProps = {
   className: '',
   data: [],
   dataKey: '',
-};
-
-CardSliderButton.propTypes = {
-  className: PropTypes.string.isRequired,
 };
