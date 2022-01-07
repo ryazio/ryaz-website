@@ -10,9 +10,9 @@ function Work() {
   const [imageIndex, setImageIndex] = useState(0);
   const containerRef = useRef();
   const imageRef = useRef();
-  const { height: imageHeight } = useSize(imageRef);
 
   const containerHeight = containerRef?.current?.clientHeight;
+  const imageHeight = imageRef?.current?.clientHeight;
 
   const y = (((containerHeight - (imageHeight)) / (projects.length - 1)) * imageIndex) || 0;
   return (
