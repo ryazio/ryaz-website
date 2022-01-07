@@ -4,17 +4,17 @@ import projects from '../json/projects.json';
 
 import projectImage from '../images/projectImage.png';
 import { Layout, ProjectCard } from '../components';
+import { useSize } from '../hooks';
 
 function Work() {
   const [imageIndex, setImageIndex] = useState(0);
   const containerRef = useRef();
   const imageRef = useRef();
+  const { height: imageHeight } = useSize(imageRef);
 
   const containerHeight = containerRef?.current?.clientHeight;
-  const imageHeight = imageRef?.current?.clientHeight;
 
-  const movementHeight = (containerHeight - imageHeight) / projects.length;
-
+  const y = (((containerHeight - (imageHeight)) / (projects.length - 1)) * imageIndex) || 0;
   return (
     <Layout className="work">
       <div className="work-tagline">
@@ -22,7 +22,7 @@ function Work() {
         guarantees on quality & performance.
       </div>
       <div ref={containerRef} className="work-list">
-        <motion.div ref={imageRef} className="work-list-image" animate={{ y: movementHeight * (imageIndex + 1) || 0, originY: '50%' }}>
+        <motion.div ref={imageRef} className="work-list-image" animate={{ y, originY: '50%' }}>
           <img src={projectImage} alt="" />
         </motion.div>
         {projects.map((project, index) => (
