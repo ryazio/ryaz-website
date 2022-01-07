@@ -104,11 +104,21 @@
         row-gap: 24px;
       }
 
+      &-back {
+        height: 28px;
+        width: 28px;
+        transform: rotate(180deg);
+        margin-right: 6px;
+      }
+
+      &-icon {
+        margin-right: 12px;
+      }
+
       &-name {
         display: flex;
         align-items: center;
         font-size: 24px;
-        column-gap: 18px;
       }
 
       &-description {

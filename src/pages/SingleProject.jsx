@@ -9,7 +9,7 @@ import {
 import { Layout } from '../components';
 import projectImage from '../images/projectImage.png';
 import { useSize } from '../hooks';
-import { CrossIcon } from '../icons';
+import { ArrowIcon, CrossIcon } from '../icons';
 
 const DATA = [
   {
@@ -88,7 +88,8 @@ function SingleProject() {
         <div className="project-info">
           <section>
             <div className="project-info-name">
-              <ForbyIcon />
+              <ArrowIcon className="project-info-back" />
+              <ForbyIcon className="project-info-icon" />
               <span>{projectData.name}</span>
             </div>
             <p className="project-info-description">

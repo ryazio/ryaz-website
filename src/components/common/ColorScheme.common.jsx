@@ -33,6 +33,7 @@ export const ColorScheme = ({ className, colors }) => {
             className="color-scheme-label"
             variants={variants}
             onClick={() => navigator.clipboard.writeText(color)}
+            whileTap={{ scale: 0.9 }}
           >
             <CopyIcon />
             <p>{color}</p>
