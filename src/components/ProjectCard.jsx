@@ -20,5 +20,6 @@ ProjectCard.propTypes = {
   projectImage: PropTypes.string.isRequired,
   projectName: PropTypes.string.isRequired,
   slug: PropTypes.string.isRequired,
+  setImage: PropTypes.func.isRequired,
   sno: PropTypes.string.isRequired,
 };
