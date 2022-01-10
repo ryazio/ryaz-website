@@ -103,7 +103,9 @@
         flex-direction: column;
         row-gap: 24px;
       }
-
+      &-part {
+        padding-left: 4.5rem;
+      }
       &-back {
         height: 28px;
         width: 28px;
@@ -119,12 +121,13 @@
       &-name {
         display: flex;
         align-items: center;
-        font-size: 24px;
+        font-size: 3rem;
+        font-weight: 700;
       }
 
       &-description {
         font-size: 1.35rem;
-        line-height: 36px;
+        line-height: 1.5;
         color: #DEDEDE;
 
         @include over-tablet-medium {
@@ -142,7 +145,7 @@
         display: none;
         grid-template-columns: repeat(3, 1fr);
         justify-content: space-between;
-        padding: 30px 0;
+        padding: 30px 3rem 30px 0;
 
         @include over-tablet-medium {
           display: flex;
