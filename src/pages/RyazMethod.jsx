@@ -3,26 +3,8 @@ import {
   ContactForm, Layout, RyazPillar, RyazActivity,
 } from '../components';
 import { CardSlider, ShadowRyazLogo } from '../components/common';
-import projectImage from '../images/projectImage.png';
-
-const DATA = [
-  {
-    id: 1,
-    image: projectImage,
-  },
-  {
-    id: 2,
-    image: projectImage,
-  },
-  {
-    id: 3,
-    image: projectImage,
-  },
-  {
-    id: 4,
-    image: projectImage,
-  },
-];
+import { employeeImageMapper } from '../contants';
+import employees from '../json/employees.json';
 
 function RyazMethod() {
   return (
@@ -79,13 +61,13 @@ function RyazMethod() {
       <div className="ryaz-method-section">
         <h3>Our Team</h3>
         <p>Group of people that truly love each other</p>
-        <CardSlider className="team-swiper" dataKey="id" data={DATA}>
-          {({ image: img }) => (
+        <CardSlider className="team-swiper" dataKey="id" data={employees}>
+          {(employee) => (
             <>
-              <img src={img} alt="sahib-pic" />
+              <img src={employeeImageMapper(employee.id)} alt={employee.name} />
               <div className="team-swiper-info">
-                <h2>Divyanshu Garg</h2>
-                <p>Frontend Developer</p>
+                <h2>{employee.name}</h2>
+                <p>{employee.designation}</p>
               </div>
             </>
           )}

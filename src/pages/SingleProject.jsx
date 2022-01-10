@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useParams } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import projects from '../json/projects.json';
-import { ForbyIcon } from '../icons/project';
+import { projectLogoMapper } from '../contants';
 import {
   CardSlider, CardStack, ColorScheme, FancyLabel, ProjectButton, Testinomial, UserPill,
 } from '../components/common';
@@ -44,6 +44,8 @@ function SingleProject() {
     setProjectData(res);
   }, []);
 
+  const ProjectLogo = projectLogoMapper(projectData?.id);
+
   return (
     <Layout className="project-page">
       <motion.div
@@ -54,22 +56,21 @@ function SingleProject() {
         <div className="project-side-body">
           <section>
             <h4>TIME SPAN</h4>
-            <p>4 weeks</p>
+            <p>{projectData.timeSpan}</p>
           </section>
           <section>
-            <h4>PROJECT  BUDGET</h4>
-            <p>1 lakh INR</p>
+            <h4>PROJECT BUDGET</h4>
+            <p>{projectData.projectBudget}</p>
           </section>
           <section>
             <h4>DELIEVERABLES</h4>
-            <p>User Experience Design</p>
-            <p>User Interface Design</p>
-            <p>Login / Sign up Page</p>
-            <p>Voting Page</p>
+            {projectData?.delieverables?.map((delieverable) => (
+              <p>{delieverable}</p>
+            ))}
           </section>
           <section>
             <h4>CLIENT</h4>
-            <p>Sam Scheziku</p>
+            <p>{projectData.client}</p>
           </section>
           <section>
             <h4>PROJECT LEADER</h4>
@@ -90,12 +91,11 @@ function SingleProject() {
           <section>
             <div className="project-info-name">
               <ArrowIcon className="project-info-back" onClick={() => router.navigate('/work')} />
-              <ForbyIcon className="project-info-icon" />
+              <ProjectLogo className="project-info-icon" />
               <span>{projectData.name}</span>
             </div>
             <p className="project-info-description">
-              Building a community platform for the people and by the people. A
-              place where everyone’s opinion matter!
+              {projectData.description}
             </p>
             <div className="project-info-labels">
               <FancyLabel type="purple">Designing</FancyLabel>
@@ -105,7 +105,7 @@ function SingleProject() {
             <div className="project-info-people">
               <div className="project-info-section">
                 <h4>Client</h4>
-                <UserPill className="project-info-person" name="Sam Scheziku" />
+                <UserPill className="project-info-person" name={projectData.client} />
               </div>
               <div className="project-info-section">
                 <h4>Project Leader</h4>
@@ -151,12 +151,12 @@ function SingleProject() {
       <div className="project-sections">
         <h5>Our Color Palette</h5>
         <p>Color Scheme plays a great role.</p>
-        <ColorScheme className="project-sections-colors" colors={['#0B6FE4', '#C4C4C4', '#0B4FE4', '#C5C4C4', '#D66400']} />
+        <ColorScheme className="project-sections-colors" colors={projectData?.colorScheme} />
       </div>
       <Testinomial
         className="project-testinomial"
-        star={4}
-        review="I’ve had nothing but the best interactions and experiences working with this quick and excellent team!"
+        star={projectData?.clientReview?.stars}
+        review={projectData?.clientReview?.message}
         to="/"
       />
     </Layout>

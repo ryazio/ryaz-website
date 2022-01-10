@@ -1,0 +1,17 @@
+[
+    {
+        "id": 3,
+        "name": "Inderpreet Singh",
+        "designation": "CEO"
+    },
+    {
+        "id": 2,
+        "name": "Nandini Prashar",
+        "designation": "UI/UX Designer"
+    },
+    {
+        "id": 1,
+        "name": "Firefly",
+        "designation": "UI/UX Designer"
+    }
+]
