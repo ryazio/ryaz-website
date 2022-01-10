@@ -1,27 +1,25 @@
-[
-  {
-    "id": "01",
-    "slug": "forby",
-    "name": "Forby",
-    "description": "Designing a minimal and user-friendly for a community where every opionion matters.",
-    "labels": ["Designing", "Frontend Development"],
-    "projectLeader": [1, 2],
-    "stakeholders": [3, 2],
-    "client": "Sam Schdijio",
-    "timeSpan": "4 weeks",
-    "projectBudget": "1 Lakh INR",
-    "delieverables": [
-      "UI/UX Design",
-      "COde"
-    ],
-    "titleImage": "FORBY_TITLE",
-    "stackImages": ["FORBY_TITLE", "FORBY_TITLE", "FORBY_TITLE", "FORBY_TITLE"],
-    "sliderImages": ["FORBY_TITLE", "FORBY_TITLE", "FORBY_TITLE", "FORBY_TITLE"],
-    "colorScheme": ["#567643", "#567543", "#567645", "#567743", "#563643"],
-    "clientReview": {
-      "stars": 5,
-      "message": "Veryy nice",
-      "link": "www.google.com"
-    }
+[{
+  "id": "01",
+  "slug": "forby",
+  "name": "Forby",
+  "description": "Designing a minimal and user-friendly for a community where every opionion matters.",
+  "labels": ["Designing", "Frontend Development"],
+  "leaders": [1, 2],
+  "stakeholders": [3, 2],
+  "client": "Sam Schdijio",
+  "timeSpan": "4 weeks",
+  "projectBudget": "1 Lakh INR",
+  "delieverables": [
+    "UI/UX Design",
+    "COde"
+  ],
+  "titleImage": "FORBY_TITLE",
+  "stackImages": ["FORBY_TITLE", "FORBY_TITLE_1", "FORBY_TITLE_2", "FORBY_TITLE_3"],
+  "sliderImages": ["FORBY_TITLE", "FORBY_TITLE_1", "FORBY_TITLE_2", "FORBY_TITLE_3"],
+  "colorScheme": ["#567643", "#567543", "#567645", "#567743", "#563643"],
+  "clientReview": {
+    "stars": 5,
+    "message": "Veryy nice",
+    "link": "www.google.com"
   }
-]
+}]

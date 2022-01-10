@@ -2,33 +2,26 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useParams } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import projects from '../json/projects.json';
-import { projectLogoMapper } from '../contants';
+import employees from '../json/employees.json';
+import { employeeImageMapper, projectImageMapper, projectLogoMapper } from '../contants';
 import {
   CardSlider, CardStack, ColorScheme, FancyLabel, ProjectButton, Testinomial, UserPill,
 } from '../components/common';
 import { Layout } from '../components';
-import projectImage from '../images/projectImage.png';
 import { useRouter, useSize } from '../hooks';
 import { ArrowIcon, CrossIcon } from '../icons';
 
-const DATA = [
-  {
-    id: 1,
-    image: projectImage,
-  },
-  {
-    id: 2,
-    image: projectImage,
-  },
-  {
-    id: 3,
-    image: projectImage,
-  },
-  {
-    id: 4,
-    image: projectImage,
-  },
-];
+const labelColors = {
+  0: 'purple',
+  1: 'orange',
+  2: 'teal',
+  3: 'purple',
+  4: 'orange',
+  5: 'teal',
+  6: 'purple',
+  7: 'orange',
+  8: 'teal',
+};
 
 function SingleProject() {
   const router = useRouter();
@@ -45,6 +38,10 @@ function SingleProject() {
   }, []);
 
   const ProjectLogo = projectLogoMapper(projectData?.id);
+  const projectLeaders = projectData?.leaders
+    ?.map((leader) => employees.find((employee) => employee.id === leader));
+  const projectTeam = projectData?.stakeholders
+    ?.map((leader) => employees.find((employee) => employee.id === leader));
 
   return (
     <Layout className="project-page">
@@ -56,30 +53,43 @@ function SingleProject() {
         <div className="project-side-body">
           <section>
             <h4>TIME SPAN</h4>
-            <p>{projectData.timeSpan}</p>
+            <p>{projectData?.timeSpan}</p>
           </section>
           <section>
             <h4>PROJECT BUDGET</h4>
-            <p>{projectData.projectBudget}</p>
+            <p>{projectData?.projectBudget}</p>
           </section>
           <section>
             <h4>DELIEVERABLES</h4>
             {projectData?.delieverables?.map((delieverable) => (
-              <p>{delieverable}</p>
+              <p key={delieverable}>{delieverable}</p>
             ))}
           </section>
           <section>
             <h4>CLIENT</h4>
-            <p>{projectData.client}</p>
+            <p>{projectData?.client}</p>
           </section>
           <section>
             <h4>PROJECT LEADER</h4>
-            <UserPill className="project-side-person" image={projectImage} name="Nandini Prashar" />
+            {projectLeaders?.map((user) => (
+              <UserPill
+                key={user.id}
+                className="project-side-person"
+                image={employeeImageMapper(user.id)}
+                name={user.name}
+              />
+            ))}
           </section>
           <section>
             <h4>KEY STAKEHOLDERS</h4>
-            <UserPill className="project-side-person" image={projectImage} name="Nandini Prashar" />
-            <UserPill className="project-side-person" image={projectImage} name="Khushboo Dhiman" />
+            {projectTeam?.map((user) => (
+              <UserPill
+                key={user.id}
+                className="project-side-person"
+                image={employeeImageMapper(user.id)}
+                name={user.name}
+              />
+            ))}
           </section>
         </div>
         <button type="button" onClick={() => setIsOpen(false)}>
@@ -92,15 +102,20 @@ function SingleProject() {
             <div className="project-info-name">
               <ArrowIcon className="project-info-back" onClick={() => router.navigate('/work')} />
               <ProjectLogo className="project-info-icon" />
-              <span>{projectData.name}</span>
+              <span>{projectData?.name}</span>
             </div>
             <p className="project-info-description">
-              {projectData.description}
+              {projectData?.description}
             </p>
             <div className="project-info-labels">
-              <FancyLabel type="purple">Designing</FancyLabel>
-              <FancyLabel type="orange">Frontend Development</FancyLabel>
-              <FancyLabel type="teal">Backend Development</FancyLabel>
+              {projectData?.labels?.map((label, index) => (
+                <FancyLabel
+                  type={labelColors[index]}
+                  key={label}
+                >
+                  {label}
+                </FancyLabel>
+              ))}
             </div>
             <div className="project-info-people">
               <div className="project-info-section">
@@ -109,20 +124,32 @@ function SingleProject() {
               </div>
               <div className="project-info-section">
                 <h4>Project Leader</h4>
-                <UserPill className="project-info-person" image={projectImage} name="Sam Scheziku" />
-                <UserPill className="project-info-person" image={projectImage} name="Sam Scheziku" />
+                {projectLeaders?.map((user) => (
+                  <UserPill
+                    key={user.id}
+                    className="project-info-person"
+                    image={employeeImageMapper(user.id)}
+                    name={user.name}
+                  />
+                ))}
               </div>
               <div className="project-info-section">
                 <h4>Key Stakeholders</h4>
-                <UserPill className="project-info-person" image={projectImage} name="Sam Scheziku" />
-                <UserPill className="project-info-person" image={projectImage} name="Sam Scheziku" />
+                {projectTeam?.map((user) => (
+                  <UserPill
+                    key={user.id}
+                    className="project-info-person"
+                    image={employeeImageMapper(user.id)}
+                    name={user.name}
+                  />
+                ))}
               </div>
             </div>
           </section>
           <ProjectButton className="project-info-button" onClick={() => setIsOpen(true)}>More Details</ProjectButton>
         </div>
         <div className="project-details-pic">
-          <img src={projectImage} alt={projectData.name} />
+          <img src={projectImageMapper(projectData?.titleImage)} alt={projectData?.name} />
         </div>
       </div>
       <ProjectButton className="project-more" onClick={() => setIsOpen(true)}>More Details</ProjectButton>
@@ -133,18 +160,18 @@ function SingleProject() {
       >
         <h5>Designs</h5>
         <p>We reflect craftsmanship through our work.</p>
-        <CardStack style={{ height: (width * (725 / 1135)) || undefined }} className="project-sections-stack" dataKey="id" data={DATA}>
-          {({ image }) => (
-            <img src={image} alt="" />
+        <CardStack style={{ height: (width * (725 / 1135)) || undefined }} className="project-sections-stack" data={projectData?.stackImages || []}>
+          {(imageName) => (
+            <img src={projectImageMapper(imageName)} alt={projectData.name} />
           )}
         </CardStack>
       </div>
       <div className="project-sections">
         <h5>Mobile Designs</h5>
         <p>Our projects are always fully responsive.</p>
-        <CardSlider className="project-sections-slider" dataKey="id" data={DATA}>
-          {({ image }) => (
-            <img src={image} alt="" />
+        <CardSlider className="project-sections-slider" data={projectData?.sliderImages || ['PLACEHOLDER']}>
+          {(imageName) => (
+            <img src={projectImageMapper(imageName)} alt={projectData.name} />
           )}
         </CardSlider>
       </div>
