@@ -11,7 +11,7 @@
   "projectBudget": "1 Lakh INR",
   "delieverables": [
     "UI/UX Design",
-    "COde"
+    "Front-end Development"
   ],
   "titleImage": "FORBY_TITLE",
   "stackImages": ["FORBY_TITLE", "FORBY_TITLE_1", "FORBY_TITLE_2", "FORBY_TITLE_3"],
@@ -22,4 +22,80 @@
     "message": "Veryy nice",
     "link": "www.google.com"
   }
-}]
+},
+{
+  "id": "02",
+  "slug": "flamencos-online",
+  "name": "Flamencos Online",
+  "description": "A community designed to connect Flamenco professionals with fans anywhere in the world.",
+  "labels": ["Designing", "Frontend Development", "Backend Development"],
+  "leaders": [2],
+  "stakeholders": [3, 1],
+  "client": "Ana Maria",
+  "timeSpan": "1.5 years",
+  "projectBudget": "1 Crore INR",
+  "delieverables": [
+    "UI/UX Design",
+    "Front-end Development",
+    "Backend Development"
+  ],
+  "titleImage": "FLAMENCOS_TITLE",
+  "stackImages": ["FLAMENCOS_TITLE_1", "FLAMENCOS_TITLE_2", "FLAMENCOS_TITLE_3", "FLAMENCOS_TITLE_4"],
+  "sliderImages": ["FLAMENCOS_TITLE_1", "FLAMENCOS_TITLE_2", "FLAMENCOS_TITLE_3", "FLAMENCOS_TITLE_4"],
+  "colorScheme": ["#D0374A", "#E44848", "#F0F0F0", "#E6E6E6", "#333333"],
+  "clientReview": {
+    "stars": 5,
+    "message": "Veryy nice",
+    "link": "www.google.com"
+  }
+},
+{
+  "id": "03",
+  "slug": "puerto-rico",
+  "name": "Puerto Rico",
+  "description": "Puerto Rico's unique structure makes it a part of the US system but gives it autonomy over its own financial affairs.",
+  "labels": ["Designing"],
+  "leaders": [2],
+  "stakeholders": [3, 2],
+  "client": "Puerto Rico Government",
+  "timeSpan": "4 weeks",
+  "projectBudget": "14 Lakh INR",
+  "delieverables": [
+    "UI/UX Design"
+  ],
+  "titleImage": "PUERTO_RICO_TITLE",
+  "stackImages": ["PUERTO_RICO_TITLE_1", "PUERTO_RICO_TITLE_2", "PUERTO_RICO_TITLE_3", "PUERTO_RICO_TITLE_4"],
+  "sliderImages": ["PUERTO_RICO_TITLE_1", "PUERTO_RICO_TITLE_2", "PUERTO_RICO_TITLE_3", "PUERTO_RICO_TITLE_4"],
+  "colorScheme": ["#4441D5", "#F6F5FD", "#DDDDDD", "#333333", "#F4F4F9"],
+  "clientReview": {
+    "stars": 5,
+    "message": "Veryy nice",
+    "link": "www.google.com"
+  }
+},
+{
+  "id": "04",
+  "slug": "we-path",
+  "name": "We Path",
+  "description": "A platform to support the second opinion of doctors.",
+  "labels": ["Designing", "Frontend Development"],
+  "leaders": [2],
+  "stakeholders": [3, 2],
+  "client": "Sam Schdijio",
+  "timeSpan": "4 weeks",
+  "projectBudget": "12 Lakh INR",
+  "delieverables": [
+    "UI/UX Design",
+    "Front-end Development"
+  ],
+  "titleImage": "WEPATH_TITLE",
+  "stackImages": ["WEPATH_TITLE_1", "WEPATH_TITLE_2", "WEPATH_TITLE_3", "WEPATH_TITLE_4"],
+  "sliderImages": ["WEPATH_TITLE_1", "WEPATH_TITLE_2", "WEPATH_TITLE_3", "WEPATH_TITLE_4"],
+  "colorScheme": ["#4BA5A7", "#E4F3F4", "#333333", "#999999", "#F6F6F6"],
+  "clientReview": {
+    "stars": 5,
+    "message": "Veryy nice",
+    "link": "www.google.com"
+  }
+}
+]
