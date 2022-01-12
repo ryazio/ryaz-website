@@ -93,29 +93,31 @@ function SingleProject() {
               <ForbyIcon className="project-info-icon" />
               <span>{projectData.name}</span>
             </div>
-            <p className="project-info-description">
-              Building a community platform for the people and by the people. A
-              place where everyone’s opinion matter!
-            </p>
-            <div className="project-info-labels">
-              <FancyLabel type="purple">Designing</FancyLabel>
-              <FancyLabel type="orange">Frontend Development</FancyLabel>
-              <FancyLabel type="teal">Backend Development</FancyLabel>
-            </div>
-            <div className="project-info-people">
-              <div className="project-info-section">
-                <h4>Client</h4>
-                <UserPill className="project-info-person" name="Sam Scheziku" />
+            <div className="project-info-part">
+              <p className="project-info-description">
+                Building a community platform for the people and by the people. A
+                place where everyone’s opinion matter!
+              </p>
+              <div className="project-info-labels">
+                <FancyLabel type="purple">Designing</FancyLabel>
+                <FancyLabel type="orange">Frontend Development</FancyLabel>
+                <FancyLabel type="teal">Backend Development</FancyLabel>
               </div>
-              <div className="project-info-section">
-                <h4>Project Leader</h4>
-                <UserPill className="project-info-person" image={projectImage} name="Sam Scheziku" />
-                <UserPill className="project-info-person" image={projectImage} name="Sam Scheziku" />
-              </div>
-              <div className="project-info-section">
-                <h4>Key Stakeholders</h4>
-                <UserPill className="project-info-person" image={projectImage} name="Sam Scheziku" />
-                <UserPill className="project-info-person" image={projectImage} name="Sam Scheziku" />
+              <div className="project-info-people">
+                <div className="project-info-section">
+                  <h4>Client</h4>
+                  <UserPill className="project-info-person" name="Sam Scheziku" />
+                </div>
+                <div className="project-info-section">
+                  <h4>Project Leader</h4>
+                  <UserPill className="project-info-person" image={projectImage} name="Sam Scheziku" />
+                  <UserPill className="project-info-person" image={projectImage} name="Sam Scheziku" />
+                </div>
+                <div className="project-info-section">
+                  <h4>Key Stakeholders</h4>
+                  <UserPill className="project-info-person" image={projectImage} name="Sam Scheziku" />
+                  <UserPill className="project-info-person" image={projectImage} name="Sam Scheziku" />
+                </div>
               </div>
             </div>
           </section>

@@ -22,7 +22,6 @@
     @include over-mobile {
       display: flex;
     }
-
     &::after {
       content: "";
       position: absolute;
@@ -40,6 +39,11 @@
       letter-spacing: 0.2em;
       font-size: 0.67em;
       font-weight: 900;
+      transition: all ease 0.3s;
+
+      &:hover {
+        color: rgba($clr-accent, 0.8);
+      }
     }
   }
 

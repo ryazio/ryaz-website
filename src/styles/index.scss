@@ -1,3 +1,5 @@
+@use "sass:color";
+
 @import "variables";
 @import "constants";
 @import "media";
@@ -77,8 +79,18 @@ html {
   color: $clr-accent;
   font-size: 18px;
   width: fit-content;
-
+  transition: all ease 0.4s;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  outline: none;
+  
   @include over-tablet {
     padding: 18px 36px;
+  }
+
+  &:hover {
+    background: color.scale($clr-primary, $lightness: -10%);
+    box-shadow: 0px 15px 20px rgba($clr-primary, 0.4);
+    transform: translateY(-4px);
+
   }
 }
