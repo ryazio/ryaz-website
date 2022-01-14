@@ -1,6 +1,26 @@
-import id1 from './images/employees/1.JPG';
-import id2 from './images/employees/2.jpg';
-import id3 from './images/employees/3.jpg';
+import id1 from './images/employees/Khushboo.jpeg';
+import id2 from './images/employees/Nandu.jpg';
+import id3 from './images/employees/Inder.jfif';
+import id4 from './images/employees/lakshay.jpg';
+import id5 from './images/employees/maano.jpeg';
+import id6 from './images/employees/Mandeep.jfif';
+import id7 from './images/employees/Vigas.jpeg';
+import id8 from './images/employees/gaurav.jfif';
+import id9 from './images/employees/sahib.jpeg';
+import id10 from './images/employees/varmillion.jpg';
+import id11 from './images/employees/arsh.jpg';
+import id12 from './images/employees/Harminder.jpg';
+import id13 from './images/employees/pl-1.jpg';
+import id14 from './images/employees/Rajvir.jpeg';
+import id15 from './images/employees/Shiv Charan.jpeg';
+import id16 from './images/employees/amanjot.jpg';
+import id17 from './images/employees/pl-2.jpg';
+import id18 from './images/employees/Shaina.jpeg';
+import id19 from './images/employees/pl-3.jpg';
+import id20 from './images/employees/palak.jpg';
+import id21 from './images/employees/kamal.jpg';
+import id22 from './images/employees/Harry.jpeg';
+import id23 from './images/employees/anmol.jpeg';
 import { ForbyIcon } from './icons/project';
 
 import FORBY_TITLE from './images/projects/forby/title.png';
@@ -78,6 +98,46 @@ export const employeeImageMapper = (employeeId) => {
       return id2;
     case 3:
       return id3;
+    case 4:
+      return id4;
+    case 5:
+      return id5;
+    case 6:
+      return id6;
+    case 7:
+      return id7;
+    case 8:
+      return id8;
+    case 9:
+      return id9;
+    case 10:
+      return id10;
+    case 11:
+      return id11;
+    case 12:
+      return id12;
+    case 13:
+      return id13;
+    case 14:
+      return id14;
+    case 15:
+      return id15;
+    case 16:
+      return id16;
+    case 17:
+      return id17;
+    case 18:
+      return id18;
+    case 19:
+      return id19;
+    case 20:
+      return id20;
+    case 21:
+      return id21;
+    case 22:
+      return id22;
+    case 23:
+      return id23;
     default:
       return id1;
   }

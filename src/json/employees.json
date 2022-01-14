@@ -17,7 +17,7 @@
     {
         "id": 4,
         "name": "Lakshay Chopra",
-        "designation": ""
+        "designation": "Backend Developer"
     },
     {
         "id": 5,
@@ -47,7 +47,7 @@
     {
         "id": 10,
         "name": "Varmeet Singh",
-        "designation": ""
+        "designation": "Developer"
     },
     {
         "id": 11,
@@ -82,7 +82,7 @@
     {
         "id": 17,
         "name": "Gurjit Singh",
-        "designation": ""
+        "designation": "Developer"
     },
     {
         "id": 18,
@@ -91,7 +91,27 @@
     },
     {
         "id": 19,
-        "name": "",
+        "name": "Ghost",
         "designation": "Ghost"
+    },
+    {
+        "id": 20,
+        "name": "Palak Thapar",
+        "designation": "Backend Developer"
+    },
+    {
+        "id": 21,
+        "name": "Kamal",
+        "designation": "Developer"
+    },
+    {
+        "id": 22,
+        "name": "Harry Moose",
+        "designation": "Developer"
+    },
+    {
+        "id": 23,
+        "name": "Anmol Kaur",
+        "designation": "Developer"
     }
 ]
