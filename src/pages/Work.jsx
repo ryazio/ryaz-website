@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import projects from '../json/projects.json';
+import transparentImage from '../images/transparent.png';
 
 import { Layout, ProjectCard } from '../components';
 import { projectImageMapper } from '../contants';
@@ -23,7 +24,7 @@ function Work() {
       </div>
       <div ref={containerRef} className="work-list">
         <motion.div ref={imageRef} className="work-list-image" animate={{ y, originY: '50%' }}>
-          <img src={currentImage} alt="" />
+          <img src={transparentImage} alt="" style={{ backgroundImage: `url(${currentImage})` }} />
         </motion.div>
         {projects.map((project, index) => (
           <React.Fragment key={project.id}>
