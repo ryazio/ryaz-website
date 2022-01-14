@@ -25,6 +25,9 @@ const DATA = [
 ];
 
 function RyazMethod() {
+  const scrollToContact = () => {
+    document.getElementById('contact-element').scrollIntoView();
+  };
   return (
     <Layout className="ryaz-method">
 
@@ -42,7 +45,7 @@ function RyazMethod() {
             pillars that we stand on for our growth. These four pillars are clearly
             represented through our work.
           </p>
-          <button className="primary-btn" type="button">Join us now</button>
+          <button onClick={scrollToContact} className="primary-btn" type="button">Join us now</button>
           <ShadowRyazLogo className="ryaz-method-info-logo" />
         </div>
         <div className="ryaz-method-pillars">
@@ -50,28 +53,24 @@ function RyazMethod() {
             <RyazPillar
               title="High Value"
               number="01"
-              tagline="the quality of design and work shown in something made by hand."
-              content=" We believe in not being the cheapest but the premium one comparing to all other dev agencies and providing an easy and fulfilling experience plus value to our client."
+              content=" We believe in not being the cheapest but the premium one and providing an easy and fulfilling experience plus value to our client."
             />
             <RyazPillar
               title="Empathy"
               number="03"
-              tagline="the quality of design and work shown in something made by hand."
-              content=" We believe in not being the cheapest but the premium one comparing to all other dev agencies and providing an easy and fulfilling experience plus value to our client."
+              content="We are able to establish an environment where we understand and share the feeling of not just our colleagues but our customers and clients too."
             />
           </div>
           <div className="ryaz-method-pillars-line">
             <RyazPillar
               title="Craftmanship"
               number="02"
-              tagline="the quality of design and work shown in something made by hand."
-              content="We believe in not being the cheapest but the premium one comparing to all other dev agencies and providing an easy and fulfilling experience plus value to our client. being the cheapest but the premium one comparing to all other dev agencies and providing an easy and fulfilling experience plus value to our client."
+              content="We encourage the practice of excellence in building and delivering superior products crafted by our team of experts."
             />
             <RyazPillar
               title="Fun"
               number="04"
-              tagline="the quality of design and work shown in something made by hand."
-              content=" We believe in not being the cheapest but the premium one comparing to all other dev agencies and providing an easy and fulfilling experience plus value to our client."
+              content="And our favourite part - Fun. We play a lot of games, chit chat, laugh and sometimes flirt too. We believe it enhances our creativity and communication."
             />
           </div>
         </div>
@@ -92,8 +91,8 @@ function RyazMethod() {
         </CardSlider>
       </div>
       <div className="ryaz-method-section activities">
-        <h3>Our activities</h3>
-        <p>What makes us different?</p>
+        <h3>Join us</h3>
+        <p>Join our learn via play space</p>
         <div className="activities-block">
           <RyazActivity
             title="#gracias"

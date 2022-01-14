@@ -24,7 +24,7 @@ function Home() {
       </div>
       <div className="home-right">
         <Link to="/ryaz-method">
-          THE RYAZ METHOD
+          About Us
         </Link>
       </div>
     </Layout>

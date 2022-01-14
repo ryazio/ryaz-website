@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 export const ContactForm = ({ className }) => (
   <div className={`contact ${className}`.trim()}>
-    <div className="contact-tagline">Let’s make it happen.</div>
+    <div id="contact-element" className="contact-tagline">Let’s make it happen.</div>
     <div className="contact-info">
       It doesn’t matter where you coming from, or any other aspect.
       If you are passionate about your work, we can’t wait to meet you.
@@ -28,11 +28,10 @@ export const ContactForm = ({ className }) => (
         className="primary-input primary-input--textarea"
         placeholder="Send us a message we’ll get back to you."
       />
-      <button type="button" className="primary-btn">Send Message</button>
+      <button type="button" className="primary-btn">Join Us Now</button>
     </form>
   </div>
 );
-
 ContactForm.propTypes = {
   className: PropTypes.string,
 };
