@@ -64,7 +64,13 @@ export const ContactForm = ({ className }) => {
           value={subject}
           required
         />
-        <button type="submit" className="primary-btn">{!loading ? 'Join Us Now' : 'Loading...'}</button>
+        <button
+          type="submit"
+          className="primary-btn"
+          disabled={loading}
+        >
+          {!loading ? 'Join Us Now' : 'Loading...'}
+        </button>
       </form>
     </div>
   );
