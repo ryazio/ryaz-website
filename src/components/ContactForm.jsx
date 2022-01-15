@@ -13,7 +13,7 @@ export const ContactForm = ({ className }) => {
     e.preventDefault();
     setLoading(true);
     const data = { email, subject, name };
-    axios.post('http://localhost:1414/mail', data, {
+    axios.post('https://ryaz-website-backend.herokuapp.com/mail', data, {
       headers: { 'Content-Type': 'application/json' },
     })
       .then((response) => {
