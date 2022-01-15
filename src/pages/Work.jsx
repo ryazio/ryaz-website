@@ -1,13 +1,14 @@
 import React, { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import projects from '../json/projects.json';
+import transparentImage from '../images/transparent.png';
 
-import projectImage from '../images/projectImage.png';
 import { Layout, ProjectCard } from '../components';
-import { useSize } from '../hooks';
+import { projectImageMapper } from '../contants';
 
 function Work() {
   const [imageIndex, setImageIndex] = useState(0);
+  const [currentImage, setCurrentImage] = useState(projectImageMapper(projects[0]?.titleImage));
   const containerRef = useRef();
   const imageRef = useRef();
 
@@ -23,21 +24,23 @@ function Work() {
       </div>
       <div ref={containerRef} className="work-list">
         <motion.div ref={imageRef} className="work-list-image" animate={{ y, originY: '50%' }}>
-          <img src={projectImage} alt="" />
+          <img src={transparentImage} alt="" style={{ backgroundImage: `url(${currentImage})` }} />
         </motion.div>
         {projects.map((project, index) => (
-          <>
+          <React.Fragment key={project.id}>
             <ProjectCard
-              key={project.id}
               sno={project.id}
               slug={project.slug}
               projectName={project.name}
               description={project.description}
-              projectImage={projectImage}
-              setImage={() => setImageIndex(index)}
+              projectImage={projectImageMapper(project?.titleImage)}
+              setImage={() => {
+                setImageIndex(index);
+                setCurrentImage(projectImageMapper(project?.titleImage));
+              }}
             />
             <div className="work-list-empty" />
-          </>
+          </React.Fragment>
         ))}
       </div>
     </Layout>
