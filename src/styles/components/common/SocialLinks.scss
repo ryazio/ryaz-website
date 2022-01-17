@@ -1,6 +1,10 @@
 .social-links {
   width: fit-content;
   display: grid;
-  grid-template-columns: repeat(5, auto);
+  grid-template-columns: repeat(4, auto);
   column-gap: 36px;
+
+  svg {
+    cursor: pointer;
+  }
 }

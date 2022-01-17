@@ -11,10 +11,10 @@ function RyazMethod() {
     document.getElementById('contact-element').scrollIntoView();
   };
   return (
-    <Layout className="ryaz-method">
+    <Layout className="about">
 
-      <div className="ryaz-method-home">
-        <div className="ryaz-method-info">
+      <div className="about-home">
+        <div className="about-info">
           <h2>
             A
             <span> design-led </span>
@@ -28,10 +28,10 @@ function RyazMethod() {
             represented through our work.
           </p>
           <button onClick={scrollToContact} className="primary-btn" type="button">Join us now</button>
-          <ShadowRyazLogo className="ryaz-method-info-logo" />
+          <ShadowRyazLogo className="about-info-logo" />
         </div>
-        <div className="ryaz-method-pillars">
-          <div className="ryaz-method-pillars-line">
+        <div className="about-pillars">
+          <div className="about-pillars-line">
             <RyazPillar
               title="High Value"
               number="01"
@@ -43,7 +43,7 @@ function RyazMethod() {
               content="We are able to establish an environment where we understand and share the feeling of not just our colleagues but our customers and clients too."
             />
           </div>
-          <div className="ryaz-method-pillars-line">
+          <div className="about-pillars-line">
             <RyazPillar
               title="Craftmanship"
               number="02"
@@ -57,7 +57,7 @@ function RyazMethod() {
           </div>
         </div>
       </div>
-      <div className="ryaz-method-section">
+      <div className="about-section">
         <h3>Our Team</h3>
         <p>Group of people that truly love each other</p>
         <CardSlider className="team-swiper" dataKey="id" data={employees}>
@@ -72,7 +72,7 @@ function RyazMethod() {
           )}
         </CardSlider>
       </div>
-      <div className="ryaz-method-section activities">
+      <div className="about-section activities">
         <h3>Join us</h3>
         <p>Join our learn via play space</p>
         <div className="activities-block">
@@ -93,7 +93,7 @@ function RyazMethod() {
           />
         </div>
       </div>
-      <ContactForm className="ryaz-method-contact" />
+      <ContactForm className="about-contact" />
     </Layout>
   );
 }

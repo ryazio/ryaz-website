@@ -14,13 +14,13 @@ export const Footer = () => (
       </section>
       <section>
         <p><Link to="/">Home</Link></p>
-        <p><Link to="/">About Us</Link></p>
-        <p><Link to="/">Our Work</Link></p>
-        <p><Link to="/">Contact</Link></p>
+        <p><Link to="/about">About Us</Link></p>
+        <p><Link to="/work">Our Work</Link></p>
+        <p><Link to="/contact">Contact</Link></p>
       </section>
       <section>
-        <p><Link to="/">Hire Us</Link></p>
-        <p><Link to="/">Join Us</Link></p>
+        <p><Link to="/contact">Hire Us</Link></p>
+        <p><Link to="/contact">Join Us</Link></p>
         <SocialLinks className="footer-links-desktop" />
       </section>
       <SocialLinks className="footer-links-mobile" />

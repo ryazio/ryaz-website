@@ -23,7 +23,7 @@ function Home() {
         </div>
       </div>
       <div className="home-right">
-        <Link to="/ryaz-method">
+        <Link to="/about">
           About Us
         </Link>
       </div>
