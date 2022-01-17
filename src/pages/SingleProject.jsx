@@ -166,15 +166,17 @@ function SingleProject() {
           )}
         </CardStack>
       </div>
-      <div className="project-sections">
-        <h5>Mobile Designs</h5>
-        <p>Our projects are always fully responsive.</p>
-        <CardSlider className="project-sections-slider" data={projectData?.sliderImages || ['PLACEHOLDER']}>
-          {(imageName) => (
-            <img src={projectImageMapper(imageName)} alt={projectData.name} />
-          )}
-        </CardSlider>
-      </div>
+      {projectData?.sliderImages?.length && (
+        <div className="project-sections">
+          <h5>Mobile Designs</h5>
+          <p>Our projects are always fully responsive.</p>
+          <CardSlider className="project-sections-slider" data={projectData?.sliderImages || ['PLACEHOLDER']}>
+            {(imageName) => (
+              <img src={projectImageMapper(imageName)} alt={projectData.name} />
+            )}
+          </CardSlider>
+        </div>
+      )}
       <div className="project-sections">
         <h5>Our Color Palette</h5>
         <p>Color Scheme plays a great role.</p>

@@ -1,101 +1,100 @@
 [{
-  "id": "01",
-  "slug": "forby",
-  "name": "Forby",
-  "description": "Designing a minimal and user-friendly for a community where every opionion matters.",
-  "labels": ["Designing", "Frontend Development"],
-  "leaders": [2],
-  "stakeholders": [2, 1],
-  "client": "Sam Schdijio",
-  "timeSpan": "4 weeks",
-  "projectBudget": "1 Lakh INR",
-  "delieverables": [
-    "UI/UX Design",
-    "Front-end Development"
-  ],
-  "titleImage": "FORBY_TITLE",
-  "stackImages": ["FORBY_STACK_1", "FORBY_STACK_2", "FORBY_STACK_3", "FORBY_STACK_4", "FORBY_STACK_5"],
-  "sliderImages": ["FORBY_SLIDER_1", "FORBY_SLIDER_2", "FORBY_SLIDER_3", "FORBY_SLIDER_4", "FORBY_SLIDER_5", "FORBY_SLIDER_6", "FORBY_SLIDER_7", "FORBY_SLIDER_8", "FORBY_SLIDER_9", "FORBY_SLIDER_10", "FORBY_SLIDER_11", "FORBY_SLIDER_12", "FORBY_SLIDER_13", "FORBY_SLIDER_14"],
-  "colorScheme": ["#D66400", "#F2994A", "#F7F5F3", "#333333", "#eeeeee"],
-  "clientReview": {
-    "stars": 5,
-    "message": "Amazing designs to make this complicated thing simple and easy to interact with for the user.",
-    "link": "www.google.com"
+    "id": "01",
+    "slug": "forby",
+    "name": "Forby",
+    "description": "Designing a minimal and user-friendly for a community where every opionion matters.",
+    "labels": ["Designing", "Frontend Development"],
+    "leaders": [2],
+    "stakeholders": [2, 1],
+    "client": "Sam Schdijio",
+    "timeSpan": "4 weeks",
+    "projectBudget": "1 Lakh INR",
+    "delieverables": [
+      "UI/UX Design",
+      "Front-end Development"
+    ],
+    "titleImage": "FORBY_TITLE",
+    "stackImages": ["FORBY_STACK_1", "FORBY_STACK_2", "FORBY_STACK_3", "FORBY_STACK_4", "FORBY_STACK_5"],
+    "sliderImages": ["FORBY_SLIDER_1", "FORBY_SLIDER_2", "FORBY_SLIDER_3", "FORBY_SLIDER_4", "FORBY_SLIDER_5", "FORBY_SLIDER_6", "FORBY_SLIDER_7", "FORBY_SLIDER_8", "FORBY_SLIDER_9", "FORBY_SLIDER_10", "FORBY_SLIDER_11", "FORBY_SLIDER_12", "FORBY_SLIDER_13", "FORBY_SLIDER_14"],
+    "colorScheme": ["#D66400", "#F2994A", "#F7F5F3", "#333333", "#eeeeee"],
+    "clientReview": {
+      "stars": 5,
+      "message": "Amazing designs to make this complicated thing simple and easy to interact with for the user.",
+      "link": "www.google.com"
+    }
+  },
+  {
+    "id": "02",
+    "slug": "flamencos-online",
+    "name": "Flamencos Online",
+    "description": "A community designed to connect Flamenco professionals with fans anywhere in the world.",
+    "labels": ["Designing", "Frontend Development", "Backend Development"],
+    "leaders": [13],
+    "stakeholders": [2, 3, 4, 5, 13],
+    "client": "Ana Maria",
+    "timeSpan": "1.5 years",
+    "projectBudget": "1 Crore INR",
+    "delieverables": [
+      "UI/UX Design",
+      "Front-end Development",
+      "Backend Development"
+    ],
+    "titleImage": "FLAMENCOS_TITLE",
+    "stackImages": ["FLAMENCOS_STACK_1", "FLAMENCOS_STACK_2", "FLAMENCOS_STACK_3", "FLAMENCOS_STACK_4", "FLAMENCOS_STACK_5"],
+    "sliderImages": ["FLAMENCOS_SLIDER_1", "FLAMENCOS_SLIDER_2", "FLAMENCOS_SLIDER_3", "FLAMENCOS_SLIDER_4", "FLAMENCOS_SLIDER_5", "FLAMENCOS_SLIDER_6", "FLAMENCOS_SLIDER_7", "FLAMENCOS_SLIDER_8", "FLAMENCOS_SLIDER_9", "FLAMENCOS_SLIDER_10", "FLAMENCOS_SLIDER_11", "FLAMENCOS_SLIDER_12"],
+    "colorScheme": ["#E44848", "#F0F0F0", "#E6E6E6", "#E4486D", "#333333"],
+    "clientReview": {
+      "stars": 5,
+      "message": "Amazing designs to make this complicated thing simple and easy to interact with for the user.",
+      "link": "www.google.com"
+    }
+  },
+  {
+    "id": "03",
+    "slug": "puerto-rico",
+    "name": "Puerto Rico",
+    "description": "Puerto Rico's unique structure makes it a part of the US system but gives it autonomy over its own financial affairs.",
+    "labels": ["Designing"],
+    "leaders": [2],
+    "stakeholders": [3, 2],
+    "client": "Puerto Rico Government",
+    "timeSpan": "4 weeks",
+    "projectBudget": "14 Lakh INR",
+    "delieverables": [
+      "UI/UX Design"
+    ],
+    "titleImage": "PUERTO_RICO_TITLE",
+    "stackImages": ["PUERTO_RICO_STACK_1", "PUERTO_RICO_STACK_2", "PUERTO_RICO_STACK_3", "PUERTO_RICO_STACK_4", "PUERTO_RICO_STACK_5"],
+    "sliderImages": ["PUERTO_RICO_SLIDER_1", "PUERTO_RICO_SLIDER_2", "PUERTO_RICO_SLIDER_3", "PUERTO_RICO_SLIDER_4", "PUERTO_RICO_SLIDER_5", "PUERTO_RICO_SLIDER_6", "PUERTO_RICO_SLIDER_7", "PUERTO_RICO_SLIDER_8", "PUERTO_RICO_SLIDER_9", "PUERTO_RICO_SLIDER_10", "PUERTO_RICO_SLIDER_11", "PUERTO_RICO_SLIDER_12"],
+    "colorScheme": ["#4441D5", "#F6F5FD", "#DDDDDD", "#333333", "#F4F4F9"],
+    "clientReview": {
+      "stars": 5,
+      "message": "Amazing designs to make this complicated thing simple and easy to interact with for the user.",
+      "link": "www.google.com"
+    }
+  },
+  {
+    "id": "04",
+    "slug": "we-path",
+    "name": "We Path",
+    "description": "A platform to support the second opinion of doctors.",
+    "labels": ["Designing", "Frontend Development"],
+    "leaders": [2],
+    "stakeholders": [3, 2],
+    "client": "Sam Schdijio",
+    "timeSpan": "4 weeks",
+    "projectBudget": "12 Lakh INR",
+    "delieverables": [
+      "UI/UX Design",
+      "Front-end Development"
+    ],
+    "titleImage": "WE_PATH_TITLE",
+    "stackImages": ["WE_PATH_STACK_1", "WE_PATH_STACK_2", "WE_PATH_STACK_3", "WE_PATH_STACK_4", "WE_PATH_STACK_5"],
+    "colorScheme": ["#4BA5A7", "#E4F3F4", "#333333", "#999999", "#F6F6F6"],
+    "clientReview": {
+      "stars": 5,
+      "message": "Amazing designs to make this complicated thing simple and easy to interact with for the user.",
+      "link": "www.google.com"
+    }
   }
-},
-{
-  "id": "02",
-  "slug": "flamencos-online",
-  "name": "Flamencos Online",
-  "description": "A community designed to connect Flamenco professionals with fans anywhere in the world.",
-  "labels": ["Designing", "Frontend Development", "Backend Development"],
-  "leaders": [13],
-  "stakeholders": [2, 3, 4, 5, 13],
-  "client": "Ana Maria",
-  "timeSpan": "1.5 years",
-  "projectBudget": "1 Crore INR",
-  "delieverables": [
-    "UI/UX Design",
-    "Front-end Development",
-    "Backend Development"
-  ],
-  "titleImage": "FLAMENCOS_TITLE",
-  "stackImages": ["FLAMENCOS_STACK_1", "FLAMENCOS_STACK_2", "FLAMENCOS_STACK_3", "FLAMENCOS_STACK_4", "FLAMENCOS_STACK_5"],
-  "sliderImages": ["FLAMENCOS_SLIDER_1", "FLAMENCOS_SLIDER_2", "FLAMENCOS_SLIDER_3", "FLAMENCOS_SLIDER_4", "FLAMENCOS_SLIDER_5", "FLAMENCOS_SLIDER_6", "FLAMENCOS_SLIDER_7", "FLAMENCOS_SLIDER_8", "FLAMENCOS_SLIDER_9", "FLAMENCOS_SLIDER_10", "FLAMENCOS_SLIDER_11", "FLAMENCOS_SLIDER_12"],
-  "colorScheme": ["#E44848", "#F0F0F0", "#E6E6E6", "#E4486D", "#333333"],
-  "clientReview": {
-    "stars": 5,
-    "message": "Amazing designs to make this complicated thing simple and easy to interact with for the user.",
-    "link": "www.google.com"
-  }
-},
-{
-  "id": "03",
-  "slug": "puerto-rico",
-  "name": "Puerto Rico",
-  "description": "Puerto Rico's unique structure makes it a part of the US system but gives it autonomy over its own financial affairs.",
-  "labels": ["Designing"],
-  "leaders": [2],
-  "stakeholders": [3, 2],
-  "client": "Puerto Rico Government",
-  "timeSpan": "4 weeks",
-  "projectBudget": "14 Lakh INR",
-  "delieverables": [
-    "UI/UX Design"
-  ],
-  "titleImage": "PUERTO_RICO_TITLE",
-  "stackImages": ["PUERTO_RICO_STACK_1", "PUERTO_RICO_STACK_2", "PUERTO_RICO_STACK_3", "PUERTO_RICO_STACK_4", "PUERTO_RICO_STACK_5"],
-  "sliderImages": ["PUERTO_RICO_SLIDER_1", "PUERTO_RICO_SLIDER_2", "PUERTO_RICO_SLIDER_3", "PUERTO_RICO_SLIDER_4", "PUERTO_RICO_SLIDER_5", "PUERTO_RICO_SLIDER_6", "PUERTO_RICO_SLIDER_7", "PUERTO_RICO_SLIDER_8", "PUERTO_RICO_SLIDER_9", "PUERTO_RICO_SLIDER_10", "PUERTO_RICO_SLIDER_11", "PUERTO_RICO_SLIDER_12"],
-  "colorScheme": ["#4441D5", "#F6F5FD", "#DDDDDD", "#333333", "#F4F4F9"],
-  "clientReview": {
-    "stars": 5,
-    "message": "Amazing designs to make this complicated thing simple and easy to interact with for the user.",
-    "link": "www.google.com"
-  }
-},
-{
-  "id": "04",
-  "slug": "we-path",
-  "name": "We Path",
-  "description": "A platform to support the second opinion of doctors.",
-  "labels": ["Designing", "Frontend Development"],
-  "leaders": [2],
-  "stakeholders": [3, 2],
-  "client": "Sam Schdijio",
-  "timeSpan": "4 weeks",
-  "projectBudget": "12 Lakh INR",
-  "delieverables": [
-    "UI/UX Design",
-    "Front-end Development"
-  ],
-  "titleImage": "WE_PATH_TITLE",
-  "stackImages": ["WE_PATH_STACK_1", "WE_PATH_STACK_2", "WE_PATH_STACK_3", "WE_PATH_STACK_4", "WE_PATH_STACK_5"],
-  "sliderImages": ["WE_PATH_TITLE_1", "WE_PATH_TITLE_2", "WE_PATH_TITLE_3", "WE_PATH_TITLE_4"],
-  "colorScheme": ["#4BA5A7", "#E4F3F4", "#333333", "#999999", "#F6F6F6"],
-  "clientReview": {
-    "stars": 5,
-    "message": "Amazing designs to make this complicated thing simple and easy to interact with for the user.",
-    "link": "www.google.com"
-  }
-}
 ]

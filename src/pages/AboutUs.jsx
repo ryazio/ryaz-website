@@ -8,7 +8,7 @@ import employees from '../json/employees.json';
 
 function RyazMethod() {
   const scrollToContact = () => {
-    document.getElementById('contact-element').scrollIntoView();
+    document?.getElementById('contact-element')?.scrollIntoView();
   };
   return (
     <Layout className="about">
@@ -28,7 +28,7 @@ function RyazMethod() {
             represented through our work.
           </p>
           <button onClick={scrollToContact} className="primary-btn" type="button">Join us now</button>
-          <ShadowRyazLogo className="about-info-logo" />
+          {/* <ShadowRyazLogo className="about-info-logo" /> */}
         </div>
         <div className="about-pillars">
           <div className="about-pillars-line">
