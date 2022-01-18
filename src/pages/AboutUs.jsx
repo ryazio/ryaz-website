@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {
   ContactForm, Layout, RyazPillar, RyazActivity,
 } from '../components';
@@ -7,6 +7,9 @@ import { employeeImageMapper } from '../contants';
 import employees from '../json/employees.json';
 
 function RyazMethod() {
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+  }, []);
   const scrollToContact = () => {
     document?.getElementById('contact-element')?.scrollIntoView();
   };

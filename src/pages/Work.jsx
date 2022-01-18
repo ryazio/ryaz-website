@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import projects from '../json/projects.json';
 import transparentImage from '../images/transparent.png';
@@ -16,6 +16,11 @@ function Work() {
   const imageHeight = imageRef?.current?.clientHeight;
 
   const y = (((containerHeight - (imageHeight)) / (projects.length - 1)) * imageIndex) || 0;
+
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+  }, []);
+
   return (
     <Layout className="work">
       <div className="work-tagline">

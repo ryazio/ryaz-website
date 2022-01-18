@@ -30,11 +30,11 @@ function SingleProject() {
   const [isOpen, setIsOpen] = useState('');
   const parentContainer = useRef();
   const { width } = useSize(parentContainer);
-
   useEffect(() => {
     // find project from slug in the url and set the data in the react state
     const res = projects.find((project) => project.slug === params.name);
     setProjectData(res);
+    window.scrollTo({ top: 0 });
   }, []);
 
   const ProjectLogo = projectLogoMapper(projectData?.id);
