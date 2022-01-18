@@ -1,7 +1,103 @@
 :root {
 
-  // Variables
-  --demo: red;
+  //body
+  --body-bg: linear-gradient(111.17deg, $clr-bg-lighter 0.23%, $clr-bg-darker 100%);
+  
+  //text
+  --text-color: #FFFFFF;
+  --text-description: #C2C2C2;
+  --highlight-green: #09B477;
+  
+  //ryaz-logo
+  --logo-gradient: linear-gradient(180deg, #4DE6AF 0%, #09B477 100%);
 
+  //social-media-logo
+  --sm-logo-bg: #9F9F9F;
+  
+  //inputs
+  --input-bg: #030F26;
+  --input-placeholder-clr: #C4C4C4;
+
+  //buttons
+  --btn-bg: #09B477;
+  --btn-clr: #FFFFFF;
+
+  //nav-link
+  --nav-link-bg-clr: #FFFFFF;
+  
+  //footer
+  --footer-bg-clr: #030F26;
+  --footer-txt-clr: #FFFFFF;
+
+  //menu
+  --menu-link-clr: #FFFFFF;
+  --close-btn-bg: rgba(0, 0, 0, 0.4);
+  --close-btn-clr: #FFFFFF;
+
+  //our-work
+  --ow-tagline-clr: #FFFFFF;
+  --ow-project-no: rgba(255, 255, 255, 0.05);
+  --ow-project-name: #FFFFFF;
+  --ow-project-desc: #CDCDCD;
+  --ow-project-image-bg: rgba(255, 255, 255, 0.05);
+
+  //homepage
+  --nav-link-color: rgba(256, 256, 256, 0.5);
+  --join-us-bg-color: rgba(9, 180, 119, 0.2);
+
+
+  //single-project-page
+  --sp-project-heading: #FFFFFF;
+  --sp-project-info: #DEDEDE;
+  --sp-more-details-bg: rgba(0, 0, 0, 0.4);
+  --sp-more-details-clr: #FFFFFF;
+  --sp-project-people-heading: #E7E7E7;
+  --sp-project-prople-name: #C4C4C4;
+
+  //fancy-label
+  --fancy-label-text-clr: #0D0D0D;
+  
+  //desktop-designs
+  --dd-heading-clr: rgba(256, 256, 256, 0.5);
+  --dd-tagline-clr: #FFFFFF; 
+  --dd-btn-bg-clr: rgba(0, 0, 0, 0.4); 
+  
+  //mobile-design
+  --md-darkened-clr: rgba(0, 0, 0, 0.4);
+  
+  //testimnonials
+  --testimonial-star-bg: #FF800B;
+  --testimonial-quote-clr: rgba(255, 255, 255, 0.1);
+  --testimonial-clr: #FFFFFF;
+  --client-reviews-clr: #C1C1C1;
+
+  //color-scheme
+  --clr-scheme-text-clr: #FFFFFF;
+  --clr-scheme-hover-bg: rgba(196, 196, 196, 0.3);
+
+  //about us page
+  --about-us-heading: #FFFFFF;
+  --about-us-tagline: #F5F5F5;
+
+  //ryaz-pillars
+  --rp-bg-clr: #0D1B35;
+  --rp-heading: #E7E7E7;
+  --rp-tagline: #FFFFFF;
+  --rp-desc: #EFEFEF;
+  --rp-number-color: #FFFFFF1A;
+  
+  //our-activities
+  --oa-border-top: #4DE6AF;
+  --oa-tagline: #CBCBCB;
+  --oa-desc: #E2E2E2;
+
+  //our-team
+  --ot-darked-bg-clr: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  --ot-next-btn-bg:  rgba(255, 255, 255, 0.4);
+
+  //contact-form
+  --cf-heading: #FFFFFF;
+  --cf-tagline-bg: #E4E4E4;
+  
   // @media (prefers-color-scheme: dark) {}
 }
