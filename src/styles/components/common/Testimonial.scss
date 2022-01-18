@@ -2,6 +2,7 @@
   padding: 120px 24px;
   color: $clr-accent;
   text-align: center;
+  overflow: clip;
 
   &-stars {
     display: flex;
@@ -17,6 +18,11 @@
     margin: 0 auto;
     line-height: 24px;
     margin-bottom: 36px;
+
+    @include over-tablet-medium {
+      font-size: 24px;
+      line-height: 36px;
+    }
 
     &::before,
     &::after {
@@ -40,5 +46,6 @@
 
   .more-reviews {
     color: #C1C1C1;
+    font-size: 14px;
   }
 }

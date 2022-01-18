@@ -1,14 +1,17 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { motion, useCycle } from 'framer-motion';
 import PropTypes from 'prop-types';
+import { MediaQueryContext } from '../../hooks';
+import { ArrowButton } from './ArrowButton.common';
 
-const CARD_OFFSET = 10;
+const CARD_OFFSET = 24;
 const SCALE_FACTOR = 0.1;
 const SCALE_FACTOR_X = 0.03;
 
 export const CardStack = ({
-  className, data, children, dataKey,
+  className, data, children, dataKey, style,
 }) => {
+  const mediaQuery = useContext(MediaQueryContext);
   const [cards, setCards] = useState(data);
   const [y, setY] = useCycle(0, -70);
 
@@ -30,22 +33,22 @@ export const CardStack = ({
     }, 100);
   };
 
+  const cardOffset = ({ left: CARD_OFFSET, ...mediaQuery({ tablet: { left: 12 } }) }).left;
+
   return (
-    <div className={`card-stack ${className}`}>
+    <div className={`card-stack ${className}`} style={style}>
       <ul className="card-stack-wrapper">
-        <button
-          type="button"
+        <ArrowButton
           className="card-stack-wrapper-arrow"
           onClick={next}
-        >
-          {'>'}
-        </button>
+          y="-50%"
+        />
         {cards.map((card, index) => {
           const canDrag = index === 0;
           const animateValues = () => {
             const indexValue = index < 3 ? index : 3;
             return ({
-              right: indexValue * -CARD_OFFSET * 2,
+              right: indexValue * -cardOffset * 2,
               scaleX: 1 - indexValue * SCALE_FACTOR_X,
               scaleY: 1 - indexValue * SCALE_FACTOR,
               zIndex: data.length - index,
@@ -82,6 +85,7 @@ CardStack.propTypes = {
   className: PropTypes.string,
   data: PropTypes.instanceOf(Array),
   dataKey: PropTypes.string,
+  style: PropTypes.instanceOf(Object),
 };
 
 CardStack.defaultProps = {
@@ -89,4 +93,5 @@ CardStack.defaultProps = {
   className: '',
   data: ['#266678', '#cb7c7a', ' #36a18b', '#cda35f', '#747474'],
   dataKey: '',
+  style: {},
 };

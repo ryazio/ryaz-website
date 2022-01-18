@@ -18,7 +18,7 @@ export const Layout = ({
       </main>
       {!noFooter && <Footer />}
       <FloatingRyazLogo />
-      {isShadowLogo && <ShadowRyazLogo />}
+      {/* {isShadowLogo && <ShadowRyazLogo />} */}
       <Menu isOpen={isOpen} setIsOpen={() => setIsOpen(false)} />
     </>
   );

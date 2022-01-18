@@ -3,9 +3,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 export const ProjectCard = ({
-  sno, projectName, description, slug, projectImage, ...props
+  sno, projectName, description, slug, projectImage, setImage, ...props
 }) => (
-  <div className="project" {...props}>
+  <div className="project" {...props} onMouseOver={setImage}>
     <span className="project-sno">{sno}</span>
     <Link to={`/work/${slug}`} className="project-title">{projectName}</Link>
     <div className="project-description">
@@ -20,5 +20,6 @@ ProjectCard.propTypes = {
   projectImage: PropTypes.string.isRequired,
   projectName: PropTypes.string.isRequired,
   slug: PropTypes.string.isRequired,
+  setImage: PropTypes.func.isRequired,
   sno: PropTypes.string.isRequired,
 };

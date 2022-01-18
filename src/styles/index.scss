@@ -1,3 +1,5 @@
+@use "sass:color";
+
 @import "variables";
 @import "constants";
 @import "media";
@@ -5,11 +7,11 @@
 @import "./icons";
 @import "./components";
 
-@import "Home.scss";
+@import "./Home.scss";
 @import "./Work.scss";
-@import "Contact.scss";
-@import "ryazMethod.scss";
-@import "singleProject.scss";
+@import "./Contact.scss";
+@import "./AboutUs.scss";
+@import "./SingleProject.scss";
 
 :root {
   font-size: 18px;
@@ -21,64 +23,18 @@
   min-height: 100vh;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  background: linear-gradient(111.17deg, $clr-bg-lighter 0.23%, $clr-bg-darker 100%);
-  font-family: "Brandon";
-  color: $clr-accent;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-}
-
-.ff-brandon {
-  font-family: "Brandon";
-}
-
-.ff-brandon-light {
-  font-family: "Brandon";
-  font-weight: 300;
-}
-
-.ff-brandon-bold {
-  font-family: "Brandon";
-  font-weight: bold;
-}
-
-.ff-brandon-italic {
-  font-family: "Brandon";
-  font-weight: 300;
-  font-style: italic;
-}
-
-.ff-brandon-medium {
-  font-family: "Brandon";
-  font-weight: 500;
-}
-
 html {
   -webkit-text-size-adjust: none;
-}
 
-img {
-  max-width: 100%;
-  width: auto;
-}
-
-.clear:before,
-.clear:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-.highlighted-txt {
-  color: $clr-primary-light;
-}
-
-.highlight-grn {
-  color: #4DE5AF;
+  body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(111.17deg, $clr-bg-lighter 0.23%, $clr-bg-darker 100%);
+    font-family: "Brandon";
+    color: $clr-accent;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 }
 
 .primary-input {
@@ -114,6 +70,8 @@ img {
   }
 }
 
+$primary-inverted-bg: rgba(9, 180, 119, 0.2);
+
 .primary-btn {
   cursor: pointer;
   padding: 12px 30px;
@@ -123,8 +81,29 @@ img {
   color: $clr-accent;
   font-size: 18px;
   width: fit-content;
+  transition: all ease 0.4s;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  outline: none;
+  text-decoration: unset;
 
   @include over-tablet {
     padding: 18px 36px;
+  }
+
+  &:hover {
+    background: color.scale($clr-primary, $lightness: -10%);
+    box-shadow: 0px 15px 20px rgba($clr-primary, 0.4);
+    transform: translateY(-4px);
+  }
+
+  &--inverted {
+    background: $primary-inverted-bg;
+    color: $clr-primary;
+
+    &:hover {
+      background: color.scale($primary-inverted-bg, $lightness: 10%);
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+      transform: translateY(-4px);
+    }
   }
 }

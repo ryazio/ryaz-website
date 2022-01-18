@@ -12,8 +12,9 @@ export const Menu = ({ isOpen, setIsOpen }) => (
       <Header isOpen={isOpen} setIsOpen={() => setIsOpen(false)} />
       <section className="menu-body">
         <div>
+          <Link onClick={() => { if (isOpen) setIsOpen(false); }} to="/">Home</Link>
           <Link to="/work">Our Work</Link>
-          <Link to="/ryaz-method">About Us</Link>
+          <Link to="/about">About Us</Link>
           <Link to="/contact">Contact</Link>
         </div>
       </section>
