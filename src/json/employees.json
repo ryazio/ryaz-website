@@ -1,117 +1,116 @@
-[
-    {
-        "id": 3,
-        "name": "Inderpreet Singh",
-        "designation": "CEO"
-    },
-    {
-        "id": 2,
-        "name": "Nandini Prashar",
-        "designation": "UI/UX Designer / Project Manager"
-    },
-    {
-        "id": 1,
-        "name": "Khushboo Dhiman",
-        "designation": "UI/UX Designer"
-    },
-    {
-        "id": 4,
-        "name": "Lakshay Chopra",
-        "designation": "Backend Developer"
-    },
-    {
-        "id": 5,
-        "name": "Manpreet Kaur",
-        "designation": "Backend Developer"
-    },
-    {
-        "id": 6,
-        "name": "Mandeep Singh",
-        "designation": "Backend Developer / Project Manager"
-    },
-    {
-        "id": 7,
-        "name": "Vigasdeep Singh",
-        "designation": "Backend Developer / Project Manager"
-    },
-    {
-        "id": 8,
-        "name": "Gauravjeet Singh",
-        "designation": "CEO"
-    },
-    {
-        "id": 9,
-        "name": "Sahibpreet Kaur",
-        "designation": "Frontend Developer"
-    },
-    {
-        "id": 10,
-        "name": "Varmeet Singh",
-        "designation": "Developer"
-    },
-    {
-        "id": 11,
-        "name": "Arshpreet Singh",
-        "designation": "Wordpress Developer"
-    },
-    {
-        "id": 12,
-        "name": "Harminder Singh",
-        "designation": "Wordpress Developer"
-    },
-    {
-        "id": 13,
-        "name": "Divyanshu Garg",
-        "designation": "Frontend Developer"
-    },
-    {
-        "id": 14,
-        "name": "Rajvir Singh",
-        "designation": "Frontend Developer"
-    },
-    {
-        "id": 15,
-        "name": "Shiv Charan Sharma",
-        "designation": "Frontend Developer"
-    },
-    {
-        "id": 16,
-        "name": "Amanjot Singh",
-        "designation": "Frontend Developer"
-    },
-    {
-        "id": 17,
-        "name": "Gurjit Singh",
-        "designation": "Developer"
-    },
-    {
-        "id": 18,
-        "name": "Shaina Sabbarwal",
-        "designation": "CEO"
-    },
-    {
-        "id": 19,
-        "name": "Ghost",
-        "designation": "Ghost"
-    },
-    {
-        "id": 20,
-        "name": "Palak Thapar",
-        "designation": "Backend Developer"
-    },
-    {
-        "id": 21,
-        "name": "Kamal",
-        "designation": "Developer"
-    },
-    {
-        "id": 22,
-        "name": "Harry Moose",
-        "designation": "Developer"
-    },
-    {
-        "id": 23,
-        "name": "Anmol Kaur",
-        "designation": "Developer"
-    }
+[{
+    "id": 3,
+    "name": "Inderpreet Singh",
+    "designation": "CEO"
+  },
+  {
+    "id": 2,
+    "name": "Nandini Prashar",
+    "designation": "UI/UX Designer / Project Manager"
+  },
+  {
+    "id": 1,
+    "name": "Khushboo Dhiman",
+    "designation": "UI/UX Designer"
+  },
+  {
+    "id": 4,
+    "name": "Lakshay Chopra",
+    "designation": "Backend Developer"
+  },
+  {
+    "id": 5,
+    "name": "Manpreet Kaur",
+    "designation": "Backend Developer"
+  },
+  {
+    "id": 6,
+    "name": "Mandeep Singh",
+    "designation": "Backend Developer / Project Manager"
+  },
+  {
+    "id": 7,
+    "name": "Vigas deep",
+    "designation": "Backend Developer / Project Manager"
+  },
+  {
+    "id": 8,
+    "name": "Gauravjeet Singh",
+    "designation": "Co-Founder"
+  },
+  {
+    "id": 9,
+    "name": "Sahibpreet Kaur",
+    "designation": "Frontend Developer"
+  },
+  {
+    "id": 10,
+    "name": "Varmeet Singh",
+    "designation": "Developer"
+  },
+  {
+    "id": 11,
+    "name": "Arshpreet Singh",
+    "designation": "Wordpress Developer"
+  },
+  {
+    "id": 12,
+    "name": "Harminder Singh",
+    "designation": "Wordpress Developer"
+  },
+  {
+    "id": 13,
+    "name": "Divyanshu Garg",
+    "designation": "Frontend Developer"
+  },
+  {
+    "id": 14,
+    "name": "Rajvir Singh",
+    "designation": "Frontend Developer"
+  },
+  {
+    "id": 15,
+    "name": "Shiv Charan Sharma",
+    "designation": "Frontend Developer"
+  },
+  {
+    "id": 16,
+    "name": "Amanjot Singh",
+    "designation": "Frontend Developer"
+  },
+  {
+    "id": 17,
+    "name": "Gurjit Singh",
+    "designation": "Developer"
+  },
+  {
+    "id": 18,
+    "name": "Shaina Sabarwal",
+    "designation": "Co-Founder"
+  },
+  {
+    "id": 19,
+    "name": "Ghost",
+    "designation": "Ghost"
+  },
+  {
+    "id": 20,
+    "name": "Palak Thapar",
+    "designation": "Backend Developer"
+  },
+  {
+    "id": 21,
+    "name": "Kamal",
+    "designation": "Developer"
+  },
+  {
+    "id": 22,
+    "name": "Harry Moose",
+    "designation": "Developer"
+  },
+  {
+    "id": 23,
+    "name": "Anmol Kaur",
+    "designation": "Developer"
+  }
 ]
