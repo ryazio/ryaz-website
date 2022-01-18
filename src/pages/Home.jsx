@@ -19,7 +19,7 @@ function Home() {
             Tech Leadership that your startup deserves.
           </div>
           <div className="home-info">
-            Ryaz builds, ships and launches your digital product with
+            Ryaz builds, ships, and launches your digital product with
             <span> gaurantees </span>
             on quality and performance.
           </div>
