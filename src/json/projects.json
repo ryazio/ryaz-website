@@ -65,7 +65,7 @@
     ],
     "titleImage": "PUERTO_RICO_TITLE",
     "stackImages": ["PUERTO_RICO_STACK_1", "PUERTO_RICO_STACK_2", "PUERTO_RICO_STACK_3", "PUERTO_RICO_STACK_4", "PUERTO_RICO_STACK_5"],
-    "sliderImages": ["PUERTO_RICO_SLIDER_1", "PUERTO_RICO_SLIDER_2", "PUERTO_RICO_SLIDER_3", "PUERTO_RICO_SLIDER_4", "PUERTO_RICO_SLIDER_5", "PUERTO_RICO_SLIDER_6", "PUERTO_RICO_SLIDER_7", "PUERTO_RICO_SLIDER_8", "PUERTO_RICO_SLIDER_9", "PUERTO_RICO_SLIDER_10", "PUERTO_RICO_SLIDER_11", "PUERTO_RICO_SLIDER_12"],
+    "sliderImages": ["PUERTO_RICO_SLIDER_1", "PUERTO_RICO_SLIDER_2", "PUERTO_RICO_SLIDER_3", "PUERTO_RICO_SLIDER_4", "PUERTO_RICO_SLIDER_5", "PUERTO_RICO_SLIDER_6", "PUERTO_RICO_SLIDER_7"],
     "colorScheme": ["#4441D5", "#F6F5FD", "#DDDDDD", "#333333", "#F4F4F9"],
     "clientReview": {
       "stars": 5,
@@ -75,6 +75,31 @@
   },
   {
     "id": "04",
+    "slug": "puerto-rico-guide",
+    "name": "Puerto Rico Guide",
+    "description": "A platform to support the second opinion of doctors.",
+    "labels": ["Designing", "Frontend Development"],
+    "leaders": [2],
+    "stakeholders": [3, 2],
+    "client": "Sam Schdijio",
+    "timeSpan": "4 weeks",
+    "projectBudget": "12 Lakh INR",
+    "delieverables": [
+      "UI/UX Design",
+      "Front-end Development"
+    ],
+    "titleImage": "PUERTO_RICO_GUIDE_TITLE",
+    "stackImages": ["PUERTO_RICO_GUIDE_STACK_1", "PUERTO_RICO_GUIDE_STACK_2", "PUERTO_RICO_GUIDE_STACK_3", "PUERTO_RICO_GUIDE_STACK_4", "PUERTO_RICO_GUIDE_STACK_5", "PUERTO_RICO_GUIDE_STACK_6", "PUERTO_RICO_GUIDE_STACK_7"],
+    "sliderImages": ["PUERTO_RICO_GUIDE_SLIDER_1", "PUERTO_RICO_GUIDE_SLIDER_2", "PUERTO_RICO_GUIDE_SLIDER_3", "PUERTO_RICO_GUIDE_SLIDER_4", "PUERTO_RICO_GUIDE_SLIDER_5", "PUERTO_RICO_GUIDE_SLIDER_6", "PUERTO_RICO_GUIDE_SLIDER_7"],
+    "colorScheme": ["#4BA5A7", "#E4F3F4", "#333333", "#999999", "#F6F6F6"],
+    "clientReview": {
+      "stars": 5,
+      "message": "Amazing designs to make this complicated thing simple and easy to interact with for the user.",
+      "link": "www.google.com"
+    }
+  },
+  {
+    "id": "05",
     "slug": "we-path",
     "name": "We Path",
     "description": "A platform to support the second opinion of doctors.",
@@ -90,6 +115,178 @@
     ],
     "titleImage": "WE_PATH_TITLE",
     "stackImages": ["WE_PATH_STACK_1", "WE_PATH_STACK_2", "WE_PATH_STACK_3", "WE_PATH_STACK_4", "WE_PATH_STACK_5"],
+    "colorScheme": ["#4BA5A7", "#E4F3F4", "#333333", "#999999", "#F6F6F6"],
+    "clientReview": {
+      "stars": 5,
+      "message": "Amazing designs to make this complicated thing simple and easy to interact with for the user.",
+      "link": "www.google.com"
+    }
+  },
+  {
+    "id": "06",
+    "slug": "ac-nautica",
+    "name": "AC Nautica",
+    "description": "A platform to support the second opinion of doctors.",
+    "labels": ["Designing", "Frontend Development"],
+    "leaders": [2],
+    "stakeholders": [3, 2],
+    "client": "Sam Schdijio",
+    "timeSpan": "4 weeks",
+    "projectBudget": "12 Lakh INR",
+    "delieverables": [
+      "UI/UX Design",
+      "Front-end Development"
+    ],
+    "titleImage": "AC_NAUTICA_TITLE",
+    "stackImages": ["AC_NAUTICA_STACK_1", "AC_NAUTICA_STACK_2", "AC_NAUTICA_STACK_3", "AC_NAUTICA_STACK_4", "AC_NAUTICA_STACK_5"],
+    "sliderImages": ["AC_NAUTICA_SLIDER_1", "AC_NAUTICA_SLIDER_2", "AC_NAUTICA_SLIDER_3", "AC_NAUTICA_SLIDER_4", "AC_NAUTICA_SLIDER_5", "AC_NAUTICA_SLIDER_6"],
+    "colorScheme": ["#4BA5A7", "#E4F3F4", "#333333", "#999999", "#F6F6F6"],
+    "clientReview": {
+      "stars": 5,
+      "message": "Amazing designs to make this complicated thing simple and easy to interact with for the user.",
+      "link": "www.google.com"
+    }
+  },
+  {
+    "id": "07",
+    "slug": "alibalance",
+    "name": "Alibalance",
+    "description": "A platform to support the second opinion of doctors.",
+    "labels": ["Designing", "Frontend Development"],
+    "leaders": [2],
+    "stakeholders": [3, 2],
+    "client": "Sam Schdijio",
+    "timeSpan": "4 weeks",
+    "projectBudget": "12 Lakh INR",
+    "delieverables": [
+      "UI/UX Design",
+      "Front-end Development"
+    ],
+    "titleImage": "ALIBALANCE_TITLE",
+    "stackImages": ["ALIBALANCE_STACK_1", "ALIBALANCE_STACK_2", "ALIBALANCE_STACK_3", "ALIBALANCE_STACK_4", "ALIBALANCE_STACK_5"],
+    "colorScheme": ["#4BA5A7", "#E4F3F4", "#333333", "#999999", "#F6F6F6"],
+    "clientReview": {
+      "stars": 5,
+      "message": "Amazing designs to make this complicated thing simple and easy to interact with for the user.",
+      "link": "www.google.com"
+    }
+  },
+  {
+    "id": "08",
+    "slug": "green-clinic",
+    "name": "Green Clinic",
+    "description": "A platform to support the second opinion of doctors.",
+    "labels": ["Designing", "Frontend Development"],
+    "leaders": [2],
+    "stakeholders": [3, 2],
+    "client": "Sam Schdijio",
+    "timeSpan": "4 weeks",
+    "projectBudget": "12 Lakh INR",
+    "delieverables": [
+      "UI/UX Design",
+      "Front-end Development"
+    ],
+    "titleImage": "GREEN_CLINIC_TITLE",
+    "stackImages": ["GREEN_CLINIC_STACK_1", "GREEN_CLINIC_STACK_2", "GREEN_CLINIC_STACK_3", "GREEN_CLINIC_STACK_4", "GREEN_CLINIC_STACK_5"],
+    "sliderImages": ["GREEN_CLINIC_SLIDER_1", "GREEN_CLINIC_SLIDER_2", "GREEN_CLINIC_SLIDER_3", "GREEN_CLINIC_SLIDER_4", "GREEN_CLINIC_SLIDER_5", "GREEN_CLINIC_SLIDER_6", "GREEN_CLINIC_SLIDER_7", "GREEN_CLINIC_SLIDER_8", "GREEN_CLINIC_SLIDER_9"],
+    "colorScheme": ["#4BA5A7", "#E4F3F4", "#333333", "#999999", "#F6F6F6"],
+    "clientReview": {
+      "stars": 5,
+      "message": "Amazing designs to make this complicated thing simple and easy to interact with for the user.",
+      "link": "www.google.com"
+    }
+  },
+  {
+    "id": "09",
+    "slug": "itbi",
+    "name": "ITBI",
+    "description": "A platform to support the second opinion of doctors.",
+    "labels": ["Designing", "Frontend Development"],
+    "leaders": [2],
+    "stakeholders": [3, 2],
+    "client": "Sam Schdijio",
+    "timeSpan": "4 weeks",
+    "projectBudget": "12 Lakh INR",
+    "delieverables": [
+      "UI/UX Design",
+      "Front-end Development"
+    ],
+    "titleImage": "ITBI_TITLE",
+    "stackImages": ["ITBI_STACK_1", "ITBI_STACK_2", "ITBI_STACK_3", "ITBI_STACK_4", "ITBI_STACK_5"],
+    "sliderImages": ["ITBI_SLIDER_1", "ITBI_SLIDER_2", "ITBI_SLIDER_3", "ITBI_SLIDER_4", "ITBI_SLIDER_5"],
+    "colorScheme": ["#4BA5A7", "#E4F3F4", "#333333", "#999999", "#F6F6F6"],
+    "clientReview": {
+      "stars": 5,
+      "message": "Amazing designs to make this complicated thing simple and easy to interact with for the user.",
+      "link": "www.google.com"
+    }
+  },
+  {
+    "id": "10",
+    "slug": "skillshape",
+    "name": "Skillshape",
+    "description": "A platform to support the second opinion of doctors.",
+    "labels": ["Designing", "Frontend Development"],
+    "leaders": [2],
+    "stakeholders": [3, 2],
+    "client": "Sam Schdijio",
+    "timeSpan": "4 weeks",
+    "projectBudget": "12 Lakh INR",
+    "delieverables": [
+      "UI/UX Design",
+      "Front-end Development"
+    ],
+    "titleImage": "SKILLSHAPE_TITLE",
+    "stackImages": ["SKILLSHAPE_STACK_1", "SKILLSHAPE_STACK_2", "SKILLSHAPE_STACK_3", "SKILLSHAPE_STACK_4", "SKILLSHAPE_STACK_5"],
+    "sliderImages": ["SKILLSHAPE_SLIDER_1", "SKILLSHAPE_SLIDER_2", "SKILLSHAPE_SLIDER_3", "SKILLSHAPE_SLIDER_4", "SKILLSHAPE_SLIDER_5"],
+    "colorScheme": ["#4BA5A7", "#E4F3F4", "#333333", "#999999", "#F6F6F6"],
+    "clientReview": {
+      "stars": 5,
+      "message": "Amazing designs to make this complicated thing simple and easy to interact with for the user.",
+      "link": "www.google.com"
+    }
+  },
+  {
+    "id": "11",
+    "slug": "sttm-desktop",
+    "name": "Sttm-desktop",
+    "description": "A platform to support the second opinion of doctors.",
+    "labels": ["Designing", "Frontend Development"],
+    "leaders": [2],
+    "stakeholders": [3, 2],
+    "client": "Sam Schdijio",
+    "timeSpan": "4 weeks",
+    "projectBudget": "12 Lakh INR",
+    "delieverables": [
+      "UI/UX Design",
+      "Front-end Development"
+    ],
+    "titleImage": "STTM_DESKTOP_TITLE",
+    "stackImages": ["STTM_DESKTOP_STACK_1", "STTM_DESKTOP_STACK_2", "STTM_DESKTOP_STACK_3", "STTM_DESKTOP_STACK_4", "STTM_DESKTOP_STACK_5"],
+    "colorScheme": ["#4BA5A7", "#E4F3F4", "#333333", "#999999", "#F6F6F6"],
+    "clientReview": {
+      "stars": 5,
+      "message": "Amazing designs to make this complicated thing simple and easy to interact with for the user.",
+      "link": "www.google.com"
+    }
+  },
+  {
+    "id": "11",
+    "slug": "demobutler",
+    "name": "Demobutler",
+    "description": "A platform to support the second opinion of doctors.",
+    "labels": ["Designing", "Frontend Development"],
+    "leaders": [2],
+    "stakeholders": [3, 2],
+    "client": "Sam Schdijio",
+    "timeSpan": "4 weeks",
+    "projectBudget": "12 Lakh INR",
+    "delieverables": [
+      "UI/UX Design",
+      "Front-end Development"
+    ],
+    "titleImage": "DEMOBUTLER_TITLE",
+    "stackImages": ["DEMOBUTLER_STACK_1", "DEMOBUTLER_STACK_2", "DEMOBUTLER_STACK_3", "DEMOBUTLER_STACK_4", "DEMOBUTLER_STACK_5", "DEMOBUTLER_STACK_6", "DEMOBUTLER_STACK_7", "DEMOBUTLER_STACK_8", "DEMOBUTLER_STACK_9", "DEMOBUTLER_STACK_10", "DEMOBUTLER_STACK_11", "DEMOBUTLER_STACK_12", "DEMOBUTLER_STACK_13", "DEMOBUTLER_STACK_14", "DEMOBUTLER_STACK_15", "DEMOBUTLER_STACK_16"],
     "colorScheme": ["#4BA5A7", "#E4F3F4", "#333333", "#999999", "#F6F6F6"],
     "clientReview": {
       "stars": 5,
