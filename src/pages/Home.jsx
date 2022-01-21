@@ -25,8 +25,8 @@ function Home() {
           </div>
         </div>
         <div className="home-middle-buttons">
-          <Link to="/contact" className="home-button primary-btn primary-btn--inverted">Join Us</Link>
-          <Link to="/work" className="home-button primary-btn">Our Work</Link>
+          <Link to="/work" className="home-button primary-btn primary-btn--inverted">Our Work</Link>
+          <Link to="/contact" className="home-button primary-btn">Hire Us</Link>
         </div>
       </div>
       <div className="home-right">
