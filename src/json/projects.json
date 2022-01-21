@@ -249,7 +249,7 @@
   {
     "id": "11",
     "slug": "sttm-desktop",
-    "name": "Sttm-desktop",
+    "name": "Sttm desktop",
     "description": "A platform to support the second opinion of doctors.",
     "labels": ["Designing", "Frontend Development"],
     "leaders": [2],
