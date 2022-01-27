@@ -56,10 +56,6 @@ function SingleProject() {
             <p>{projectData?.timeSpan}</p>
           </section>
           <section>
-            <h4>PROJECT BUDGET</h4>
-            <p>{projectData?.projectBudget}</p>
-          </section>
-          <section>
             <h4>DELIEVERABLES</h4>
             {projectData?.delieverables?.map((delieverable) => (
               <p key={delieverable}>{delieverable}</p>
