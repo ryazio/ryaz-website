@@ -20,7 +20,7 @@ function Home() {
           </div>
           <div className="home-info">
             Ryaz builds, ships, and launches your digital product with
-            <span> gaurantees </span>
+            <span> guarantees </span>
             on quality and performance.
           </div>
         </div>
