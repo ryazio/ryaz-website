@@ -22,7 +22,7 @@ function RyazMethod() {
             A
             <span> design-led </span>
             and
-            <span> growth focussed </span>
+            <span> growth focused </span>
             agency for companies that care.
           </h2>
           <p>
@@ -55,7 +55,7 @@ function RyazMethod() {
             <RyazPillar
               title="Fun"
               number="04"
-              content="And our favourite part - Fun. We play a lot of games, chit chat, laugh and sometimes flirt too. We believe it enhances our creativity and communication."
+              content="And our favourite part - Fun. We play a lot of games, chit chat, laugh. We believe it enhances our creativity and communication."
             />
           </div>
         </div>
