@@ -6,8 +6,8 @@
     "labels": ["UI/UX Design"],
     "leaders": [3],
     "stakeholders": [3, 2, 1],
-    "client": "Sam Schdijio",
-    "timeSpan": "4 weeks",
+    "client": "Sam Schikowitz",
+    "timeSpan": "2 Months",
     "delieverables": [
       "UI/UX Design",
       "Front-end Development"
@@ -49,37 +49,14 @@
   },
   {
     "id": "03",
-    "slug": "puerto-rico",
-    "name": "Puerto Rico",
-    "description": "Puerto Rico's unique structure makes it a part of the US system but gives it autonomy over its own financial affairs.",
-    "labels": ["Designing"],
-    "leaders": [2],
-    "stakeholders": [3, 2],
-    "client": "Puerto Rico Government",
-    "timeSpan": "4 weeks",
-    "delieverables": [
-      "UI/UX Design"
-    ],
-    "titleImage": "PUERTO_RICO_TITLE",
-    "stackImages": ["PUERTO_RICO_STACK_1", "PUERTO_RICO_STACK_2", "PUERTO_RICO_STACK_3", "PUERTO_RICO_STACK_4", "PUERTO_RICO_STACK_5"],
-    "sliderImages": ["PUERTO_RICO_SLIDER_1", "PUERTO_RICO_SLIDER_2", "PUERTO_RICO_SLIDER_3", "PUERTO_RICO_SLIDER_4", "PUERTO_RICO_SLIDER_5", "PUERTO_RICO_SLIDER_6", "PUERTO_RICO_SLIDER_7"],
-    "colorScheme": ["#4441D5", "#F6F5FD", "#DDDDDD", "#333333", "#F4F4F9"],
-    "clientReview": {
-      "stars": 5,
-      "message": "Amazing designs to make this complicated thing simple and easy to interact with for the user.",
-      "link": "www.google.com"
-    }
-  },
-  {
-    "id": "04",
     "slug": "puerto-rico-guide",
     "name": "Puerto Rico Guide",
     "description": "A platform to support the second opinion of doctors.",
     "labels": ["Designing", "Frontend Development"],
     "leaders": [2],
     "stakeholders": [3, 2],
-    "client": "Sam Schdijio",
-    "timeSpan": "4 weeks",
+    "client": "James Greaves",
+    "timeSpan": "1 Month",
     "delieverables": [
       "UI/UX Design",
       "Front-end Development"
@@ -95,7 +72,7 @@
     }
   },
   {
-    "id": "05",
+    "id": "04",
     "slug": "we-path",
     "name": "We Path",
     "description": "A platform to support the second opinion of doctors.",
@@ -103,7 +80,7 @@
     "leaders": [3],
     "stakeholders": [3, 6, 13, 15, 2],
     "client": "Wepath",
-    "timeSpan": "4 weeks",
+    "timeSpan": "3-4 Months",
     "delieverables": [
       "UI/UX Design",
       "Front-end Development"
@@ -118,15 +95,15 @@
     }
   },
   {
-    "id": "06",
+    "id": "05",
     "slug": "ac-nautica",
     "name": "AC Nautica",
     "description": "A platform to support the second opinion of doctors.",
     "labels": ["Frontend Development", "UI/UX Design"],
     "leaders": [3],
     "stakeholders": [3, 14, 2],
-    "client": "Sam Schdijio",
-    "timeSpan": "4 weeks",
+    "client": "Ana Maria",
+    "timeSpan": "2 Months",
     "delieverables": [
       "UI/UX Design",
       "Front-end Development"
@@ -142,7 +119,7 @@
     }
   },
   {
-    "id": "07",
+    "id": "06",
     "slug": "alibalance",
     "name": "Alibalance",
     "description": "A platform to support the second opinion of doctors.",
@@ -150,7 +127,7 @@
     "leaders": [18],
     "stakeholders": [18, 4, 14, 2],
     "client": "Scalarly",
-    "timeSpan": "4 weeks",
+    "timeSpan": "2 Months",
     "delieverables": [
       "UI/UX Design",
       "Front-end Development"
@@ -165,7 +142,7 @@
     }
   },
   {
-    "id": "08",
+    "id": "07",
     "slug": "green-clinic",
     "name": "Green Clinic",
     "description": "A platform to support the second opinion of doctors.",
@@ -173,7 +150,7 @@
     "leaders": [2],
     "stakeholders": [3, 2],
     "client": "Sam Schikowitz",
-    "timeSpan": "4 weeks",
+    "timeSpan": "1 Month",
     "delieverables": [
       "UI/UX Design",
       "Front-end Development"
@@ -189,7 +166,7 @@
     }
   },
   {
-    "id": "09",
+    "id": "08",
     "slug": "itbi",
     "name": "ITBI",
     "description": "A platform to support the second opinion of doctors.",
@@ -197,7 +174,7 @@
     "leaders": [13],
     "stakeholders": [13, 3],
     "client": "Ranadev",
-    "timeSpan": "4 weeks",
+    "timeSpan": "ongoing",
     "delieverables": [
       "UI/UX Design",
       "Front-end Development"
@@ -213,7 +190,7 @@
     }
   },
   {
-    "id": "10",
+    "id": "09",
     "slug": "skillshape",
     "name": "Skillshape",
     "description": "A platform to support the second opinion of doctors.",
@@ -221,7 +198,7 @@
     "leaders": [3],
     "stakeholders": [3, 2, 13, 9],
     "client": "Sam Schikowitz",
-    "timeSpan": "4 weeks",
+    "timeSpan": "6 months",
     "delieverables": [
       "UI/UX Design",
       "Front-end Development"
@@ -237,7 +214,7 @@
     }
   },
   {
-    "id": "11",
+    "id": "10",
     "slug": "sttm-desktop",
     "name": "Sttm desktop",
     "description": "A platform to support the second opinion of doctors.",
@@ -245,7 +222,7 @@
     "leaders": [8],
     "stakeholders": [8, 16],
     "client": "Khalis Foundation",
-    "timeSpan": "4 weeks",
+    "timeSpan": "ongoing",
     "delieverables": [
       "UI/UX Design",
       "Front-end Development"
@@ -260,7 +237,7 @@
     }
   },
   {
-    "id": "12",
+    "id": "11",
     "slug": "demobutler",
     "name": "Demobutler",
     "description": "A platform to support the second opinion of doctors.",
@@ -268,12 +245,34 @@
     "leaders": [15],
     "stakeholders": [15],
     "client": "Ranadev",
-    "timeSpan": "4 weeks",
+    "timeSpan": "6 months",
     "delieverables": [
       "Back-end Development"
     ],
     "titleImage": "DEMOBUTLER_TITLE",
     "stackImages": ["DEMOBUTLER_STACK_1", "DEMOBUTLER_STACK_2", "DEMOBUTLER_STACK_3", "DEMOBUTLER_STACK_4", "DEMOBUTLER_STACK_5", "DEMOBUTLER_STACK_6", "DEMOBUTLER_STACK_7", "DEMOBUTLER_STACK_8", "DEMOBUTLER_STACK_9", "DEMOBUTLER_STACK_10", "DEMOBUTLER_STACK_11", "DEMOBUTLER_STACK_12", "DEMOBUTLER_STACK_13", "DEMOBUTLER_STACK_14", "DEMOBUTLER_STACK_15", "DEMOBUTLER_STACK_16"],
+    "colorScheme": ["#4BA5A7", "#E4F3F4", "#333333", "#999999", "#F6F6F6"],
+    "clientReview": {
+      "stars": 5,
+      "message": "Amazing designs to make this complicated thing simple and easy to interact with for the user.",
+      "link": "www.google.com"
+    }
+  },
+  {
+    "id": "12",
+    "slug": "merit",
+    "name": "Merit",
+    "description": "A platform to support the second opinion of doctors.",
+    "labels": ["Frontend Development", "Backend Development", "UI/UX Design", "Testing", "QA"],
+    "leaders": [13],
+    "stakeholders": [13, 3 ,6],
+    "client": "Ranadev",
+    "timeSpan": "1-2 Months",
+    "delieverables": [
+      "Back-end Development"
+    ],
+    "titleImage": "MERIT_TITLE",
+    "stackImages": ["MERIT_STACK_1", "MERIT_STACK_2", "MERIT_STACK_3", "MERIT_STACK_4", "MERIT_STACK_5", "MERIT_STACK_6"],
     "colorScheme": ["#4BA5A7", "#E4F3F4", "#333333", "#999999", "#F6F6F6"],
     "clientReview": {
       "stars": 5,

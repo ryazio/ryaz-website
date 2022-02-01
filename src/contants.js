@@ -193,6 +193,14 @@ import DEMOBUTLER_STACK_14 from './images/projects/demobutler/stack_14.png';
 import DEMOBUTLER_STACK_15 from './images/projects/demobutler/stack_15.png';
 import DEMOBUTLER_STACK_16 from './images/projects/demobutler/stack_16.jpg';
 
+import MERIT_TITLE from './images/projects/merit/title.png';
+import MERIT_STACK_1 from './images/projects/merit/stack_1.png';
+import MERIT_STACK_2 from './images/projects/merit/stack_2.png';
+import MERIT_STACK_3 from './images/projects/merit/stack_3.png';
+import MERIT_STACK_4 from './images/projects/merit/stack_4.png';
+import MERIT_STACK_5 from './images/projects/merit/stack_5.png';
+import MERIT_STACK_6 from './images/projects/merit/stack_6.png';
+
 export const employeeImageMapper = (employeeId) => {
   switch (employeeId) {
     case 1:
@@ -584,6 +592,21 @@ export const projectImageMapper = (imageName) => {
       return DEMOBUTLER_STACK_15;
     case 'DEMOBUTLER_STACK_16':
       return DEMOBUTLER_STACK_16;
+
+    case 'MERIT_TITLE':
+      return MERIT_TITLE;
+    case 'MERIT_STACK_1':
+      return MERIT_STACK_1;
+    case 'MERIT_STACK_2':
+      return MERIT_STACK_2;
+    case 'MERIT_STACK_3':
+      return MERIT_STACK_3;
+    case 'MERIT_STACK_4':
+      return MERIT_STACK_4;
+    case 'MERIT_STACK_5':
+      return MERIT_STACK_5;
+    case 'MERIT_STACK_6':
+      return MERIT_STACK_6;
     default:
       return FORBY_STACK_4;
   }
