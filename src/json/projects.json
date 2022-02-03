@@ -9,8 +9,7 @@
     "client": "Sam Schikowitz",
     "timeSpan": "2 Months",
     "delieverables": [
-      "UI/UX Design",
-      "Front-end Development"
+      "UI/UX Design"
     ],
     "titleImage": "FORBY_TITLE",
     "stackImages": ["FORBY_STACK_1", "FORBY_STACK_2", "FORBY_STACK_3", "FORBY_STACK_4", "FORBY_STACK_5"],
@@ -58,8 +57,7 @@
     "client": "James Greaves",
     "timeSpan": "1 Month",
     "delieverables": [
-      "UI/UX Design",
-      "Front-end Development"
+      "UI/UX Design"
     ],
     "titleImage": "PUERTO_RICO_GUIDE_TITLE",
     "stackImages": ["PUERTO_RICO_GUIDE_STACK_1", "PUERTO_RICO_GUIDE_STACK_2", "PUERTO_RICO_GUIDE_STACK_3", "PUERTO_RICO_GUIDE_STACK_4", "PUERTO_RICO_GUIDE_STACK_5", "PUERTO_RICO_GUIDE_STACK_6", "PUERTO_RICO_GUIDE_STACK_7"],
@@ -83,7 +81,8 @@
     "timeSpan": "3-4 Months",
     "delieverables": [
       "UI/UX Design",
-      "Front-end Development"
+      "Front-end Development",
+      "Back-end Development"
     ],
     "titleImage": "WE_PATH_TITLE",
     "stackImages": ["WE_PATH_STACK_1", "WE_PATH_STACK_2", "WE_PATH_STACK_3", "WE_PATH_STACK_4", "WE_PATH_STACK_5"],
@@ -129,7 +128,6 @@
     "client": "Scalarly",
     "timeSpan": "2 Months",
     "delieverables": [
-      "UI/UX Design",
       "Front-end Development"
     ],
     "titleImage": "ALIBALANCE_TITLE",
@@ -152,8 +150,7 @@
     "client": "Sam Schikowitz",
     "timeSpan": "1 Month",
     "delieverables": [
-      "UI/UX Design",
-      "Front-end Development"
+      "UI/UX Design"
     ],
     "titleImage": "GREEN_CLINIC_TITLE",
     "stackImages": ["GREEN_CLINIC_STACK_1", "GREEN_CLINIC_STACK_2", "GREEN_CLINIC_STACK_3", "GREEN_CLINIC_STACK_4", "GREEN_CLINIC_STACK_5"],
@@ -177,7 +174,8 @@
     "timeSpan": "ongoing",
     "delieverables": [
       "UI/UX Design",
-      "Front-end Development"
+      "Front-end Development",
+      "Back-end Development"
     ],
     "titleImage": "ITBI_TITLE",
     "stackImages": ["ITBI_STACK_1", "ITBI_STACK_2", "ITBI_STACK_3", "ITBI_STACK_4", "ITBI_STACK_5"],
@@ -201,7 +199,8 @@
     "timeSpan": "6 months",
     "delieverables": [
       "UI/UX Design",
-      "Front-end Development"
+      "Front-end Development",
+      "Back-end Development"
     ],
     "titleImage": "SKILLSHAPE_TITLE",
     "stackImages": ["SKILLSHAPE_STACK_1", "SKILLSHAPE_STACK_2", "SKILLSHAPE_STACK_3", "SKILLSHAPE_STACK_4", "SKILLSHAPE_STACK_5"],
@@ -247,7 +246,7 @@
     "client": "Ranadev",
     "timeSpan": "6 months",
     "delieverables": [
-      "Back-end Development"
+      "Front-end Development"
     ],
     "titleImage": "DEMOBUTLER_TITLE",
     "stackImages": ["DEMOBUTLER_STACK_1", "DEMOBUTLER_STACK_2", "DEMOBUTLER_STACK_3", "DEMOBUTLER_STACK_4", "DEMOBUTLER_STACK_5", "DEMOBUTLER_STACK_6", "DEMOBUTLER_STACK_7", "DEMOBUTLER_STACK_8", "DEMOBUTLER_STACK_9", "DEMOBUTLER_STACK_10", "DEMOBUTLER_STACK_11", "DEMOBUTLER_STACK_12", "DEMOBUTLER_STACK_13", "DEMOBUTLER_STACK_14", "DEMOBUTLER_STACK_15", "DEMOBUTLER_STACK_16"],
@@ -269,10 +268,57 @@
     "client": "Ranadev",
     "timeSpan": "1-2 Months",
     "delieverables": [
+      "Front-end Development",
       "Back-end Development"
     ],
     "titleImage": "MERIT_TITLE",
     "stackImages": ["MERIT_STACK_1", "MERIT_STACK_2", "MERIT_STACK_3", "MERIT_STACK_4", "MERIT_STACK_5", "MERIT_STACK_6"],
+    "colorScheme": ["#4BA5A7", "#E4F3F4", "#333333", "#999999", "#F6F6F6"],
+    "clientReview": {
+      "stars": 5,
+      "message": "Amazing designs to make this complicated thing simple and easy to interact with for the user.",
+      "link": "www.google.com"
+    }
+  },
+  {
+    "id": "13",
+    "slug": "self-id",
+    "name": "Self ID",
+    "description": "A platform to support the second opinion of doctors.",
+    "labels": ["Frontend Development", "Backend Development", "UI/UX Design", "Testing", "QA"],
+    "leaders": [7],
+    "stakeholders":  [7, 6 , 14, 20],
+    "client": "Ranadev",
+    "timeSpan": "ongoing",
+    "delieverables": [
+      "Front-end Development",
+      "Back-end Development"
+    ],
+    "titleImage": "SELF_ID_TITLE",
+    "stackImages": ["SELF_ID_STACK_1", "SELF_ID_STACK_2", "SELF_ID_STACK_3", "SELF_ID_STACK_4", "SELF_ID_STACK_5", "SELF_ID_STACK_6", "SELF_ID_STAKC_7"],
+    "colorScheme": ["#4BA5A7", "#E4F3F4", "#333333", "#999999", "#F6F6F6"],
+    "clientReview": {
+      "stars": 5,
+      "message": "Amazing designs to make this complicated thing simple and easy to interact with for the user.",
+      "link": "www.google.com"
+    }
+  },
+  {
+    "id": "14",
+    "slug": "molly",
+    "name": "Molly",
+    "description": "A platform to support the second opinion of doctors.",
+    "labels": ["Frontend Development", "Backend Development", "UI/UX Design", "Testing", "QA"],
+    "leaders": [7],
+    "stakeholders": [7, 6 , 13, 14],
+    "client": "Ranadev",
+    "timeSpan": "6 Months",
+    "delieverables": [
+      "Front-end Development",
+      "Back-end Development"
+    ],
+    "titleImage": "MOLLY_TITLE",
+    "stackImages": ["MOLLY_STACK_1", "MOLLY_STACK_2", "MOLLY_STACK_3", "MOLLY_STACK_4", "MOLLY_STACK_5", "MOLLY_STACK_6"],
     "colorScheme": ["#4BA5A7", "#E4F3F4", "#333333", "#999999", "#F6F6F6"],
     "clientReview": {
       "stars": 5,

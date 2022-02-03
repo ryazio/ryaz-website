@@ -201,6 +201,23 @@ import MERIT_STACK_4 from './images/projects/merit/stack_4.png';
 import MERIT_STACK_5 from './images/projects/merit/stack_5.png';
 import MERIT_STACK_6 from './images/projects/merit/stack_6.png';
 
+import SELF_ID_TITLE from './images/projects/self-id/title.jpg';
+import SELF_ID_STACK_1 from './images/projects/self-id/stack_1.jpg';
+import SELF_ID_STACK_2 from './images/projects/self-id/stack_2.jpg';
+import SELF_ID_STACK_3 from './images/projects/self-id/stack_3.jpg';
+import SELF_ID_STACK_4 from './images/projects/self-id/stack_4.jpg';
+import SELF_ID_STACK_5 from './images/projects/self-id/stack_5.jpg';
+import SELF_ID_STACK_6 from './images/projects/self-id/stack_6.jpg';
+import SELF_ID_STACK_7 from './images/projects/self-id/stack_7.jpg';
+
+import MOLLY_TITLE from './images/projects/molly/title.png';
+import MOLLY_STACK_1 from './images/projects/molly/stack_1.png';
+import MOLLY_STACK_2 from './images/projects/molly/stack_2.png';
+import MOLLY_STACK_3 from './images/projects/molly/stack_3.png';
+import MOLLY_STACK_4 from './images/projects/molly/stack_4.png';
+import MOLLY_STACK_5 from './images/projects/molly/stack_5.png';
+import MOLLY_STACK_6 from './images/projects/molly/stack_6.jpg';
+
 export const employeeImageMapper = (employeeId) => {
   switch (employeeId) {
     case 1:
@@ -607,6 +624,38 @@ export const projectImageMapper = (imageName) => {
       return MERIT_STACK_5;
     case 'MERIT_STACK_6':
       return MERIT_STACK_6;
+
+    case 'SELF_ID_TITLE':
+      return SELF_ID_TITLE;
+    case 'SELF_ID_STACK_1':
+      return SELF_ID_STACK_1;
+    case 'SELF_ID_STACK_2':
+      return SELF_ID_STACK_2;
+    case 'SELF_ID_STACK_3':
+      return SELF_ID_STACK_3;
+    case 'SELF_ID_STACK_4':
+      return SELF_ID_STACK_4;
+    case 'SELF_ID_STACK_5':
+      return SELF_ID_STACK_5;
+    case 'SELF_ID_STACK_6':
+      return SELF_ID_STACK_6;
+    case 'SELF_ID_STACK_7':
+      return SELF_ID_STACK_7;
+
+    case 'MOLLY_TITLE':
+      return MOLLY_TITLE;
+    case 'MOLLY_STACK_1':
+      return MOLLY_STACK_1;
+    case 'MOLLY_STACK_2':
+      return MOLLY_STACK_2;
+    case 'MOLLY_STACK_3':
+      return MOLLY_STACK_3;
+    case 'MOLLY_STACK_4':
+      return MOLLY_STACK_4;
+    case 'MOLLY_STACK_5':
+      return MOLLY_STACK_5;
+    case 'MOLLY_STACK_6':
+      return MOLLY_STACK_6;
     default:
       return FORBY_STACK_4;
   }
