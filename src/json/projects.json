@@ -14,7 +14,7 @@
     "titleImage": "FORBY_TITLE",
     "stackImages": ["FORBY_STACK_1", "FORBY_STACK_2", "FORBY_STACK_3", "FORBY_STACK_4", "FORBY_STACK_5"],
     "sliderImages": ["FORBY_SLIDER_1", "FORBY_SLIDER_2", "FORBY_SLIDER_3", "FORBY_SLIDER_4", "FORBY_SLIDER_5", "FORBY_SLIDER_6", "FORBY_SLIDER_7", "FORBY_SLIDER_8", "FORBY_SLIDER_9", "FORBY_SLIDER_10", "FORBY_SLIDER_11", "FORBY_SLIDER_12", "FORBY_SLIDER_13", "FORBY_SLIDER_14"],
-    "colorScheme": ["#D66400", "#F2994A", "#F7F5F3", "#333333", "#eeeeee"],
+    "colorScheme": ["#DADBDB", "#BDCCD0", "#070707", "#525257", "#3E5BBC"],
     "clientReview": {
       "stars": 5,
       "message": "Amazing designs to make this complicated thing simple and easy to interact with for the user.",
@@ -39,7 +39,7 @@
     "titleImage": "FLAMENCOS_TITLE",
     "stackImages": ["FLAMENCOS_STACK_1", "FLAMENCOS_STACK_2", "FLAMENCOS_STACK_3", "FLAMENCOS_STACK_4", "FLAMENCOS_STACK_5"],
     "sliderImages": ["FLAMENCOS_SLIDER_1", "FLAMENCOS_SLIDER_2", "FLAMENCOS_SLIDER_3", "FLAMENCOS_SLIDER_4", "FLAMENCOS_SLIDER_5", "FLAMENCOS_SLIDER_6", "FLAMENCOS_SLIDER_7", "FLAMENCOS_SLIDER_8", "FLAMENCOS_SLIDER_9", "FLAMENCOS_SLIDER_10", "FLAMENCOS_SLIDER_11", "FLAMENCOS_SLIDER_12"],
-    "colorScheme": ["#E44848", "#F0F0F0", "#E6E6E6", "#E4486D", "#333333"],
+    "colorScheme": ["#DEDBDB", "#B6B4B4", "#0C0606", "#5E3B36", "#AD322C", "#D1916F", "#E2D0B1"],
     "clientReview": {
       "stars": 5,
       "message": "Amazing designs to make this complicated thing simple and easy to interact with for the user.",
@@ -62,7 +62,7 @@
     "titleImage": "PUERTO_RICO_GUIDE_TITLE",
     "stackImages": ["PUERTO_RICO_GUIDE_STACK_1", "PUERTO_RICO_GUIDE_STACK_2", "PUERTO_RICO_GUIDE_STACK_3", "PUERTO_RICO_GUIDE_STACK_4", "PUERTO_RICO_GUIDE_STACK_5", "PUERTO_RICO_GUIDE_STACK_6", "PUERTO_RICO_GUIDE_STACK_7"],
     "sliderImages": ["PUERTO_RICO_GUIDE_SLIDER_1", "PUERTO_RICO_GUIDE_SLIDER_2", "PUERTO_RICO_GUIDE_SLIDER_3", "PUERTO_RICO_GUIDE_SLIDER_4", "PUERTO_RICO_GUIDE_SLIDER_5", "PUERTO_RICO_GUIDE_SLIDER_6", "PUERTO_RICO_GUIDE_SLIDER_7"],
-    "colorScheme": ["#4BA5A7", "#E4F3F4", "#333333", "#999999", "#F6F6F6"],
+    "colorScheme": ["#AEAEAE", "#0C0806", "#686562", "#D0D0D0", "#563723", "#916C4C", "#A38C70", "#CABDA9"],
     "clientReview": {
       "stars": 5,
       "message": "Amazing designs to make this complicated thing simple and easy to interact with for the user.",
@@ -86,7 +86,7 @@
     ],
     "titleImage": "WE_PATH_TITLE",
     "stackImages": ["WE_PATH_STACK_1", "WE_PATH_STACK_2", "WE_PATH_STACK_3", "WE_PATH_STACK_4", "WE_PATH_STACK_5"],
-    "colorScheme": ["#4BA5A7", "#E4F3F4", "#333333", "#999999", "#F6F6F6"],
+    "colorScheme": ["#F1F1F1", "#B2C7CA", "#136164", "#666768", "#5B9A9E", "#352F2C", "#857E8A"],
     "clientReview": {
       "stars": 5,
       "message": "Amazing designs to make this complicated thing simple and easy to interact with for the user.",
@@ -110,7 +110,7 @@
     "titleImage": "AC_NAUTICA_TITLE",
     "stackImages": ["AC_NAUTICA_STACK_1", "AC_NAUTICA_STACK_2", "AC_NAUTICA_STACK_3", "AC_NAUTICA_STACK_4", "AC_NAUTICA_STACK_5"],
     "sliderImages": ["AC_NAUTICA_SLIDER_1", "AC_NAUTICA_SLIDER_2", "AC_NAUTICA_SLIDER_3", "AC_NAUTICA_SLIDER_4", "AC_NAUTICA_SLIDER_5", "AC_NAUTICA_SLIDER_6"],
-    "colorScheme": ["#4BA5A7", "#E4F3F4", "#333333", "#999999", "#F6F6F6"],
+    "colorScheme": ["#09151B", "#374346", "#877A72", "#AA9E91", "#ECECE0"],
     "clientReview": {
       "stars": 5,
       "message": "Amazing designs to make this complicated thing simple and easy to interact with for the user.",
@@ -155,7 +155,7 @@
     "titleImage": "GREEN_CLINIC_TITLE",
     "stackImages": ["GREEN_CLINIC_STACK_1", "GREEN_CLINIC_STACK_2", "GREEN_CLINIC_STACK_3", "GREEN_CLINIC_STACK_4", "GREEN_CLINIC_STACK_5"],
     "sliderImages": ["GREEN_CLINIC_SLIDER_1", "GREEN_CLINIC_SLIDER_2", "GREEN_CLINIC_SLIDER_3", "GREEN_CLINIC_SLIDER_4", "GREEN_CLINIC_SLIDER_5", "GREEN_CLINIC_SLIDER_6", "GREEN_CLINIC_SLIDER_7", "GREEN_CLINIC_SLIDER_8", "GREEN_CLINIC_SLIDER_9"],
-    "colorScheme": ["#4BA5A7", "#E4F3F4", "#333333", "#999999", "#F6F6F6"],
+    "colorScheme": ["#F5FBEE", "#9CB4B0", "#A5CBC3", "#6C9689", "#013324"],
     "clientReview": {
       "stars": 5,
       "message": "Amazing designs to make this complicated thing simple and easy to interact with for the user.",
@@ -205,7 +205,7 @@
     "titleImage": "SKILLSHAPE_TITLE",
     "stackImages": ["SKILLSHAPE_STACK_1", "SKILLSHAPE_STACK_2", "SKILLSHAPE_STACK_3", "SKILLSHAPE_STACK_4", "SKILLSHAPE_STACK_5"],
     "sliderImages": ["SKILLSHAPE_SLIDER_1", "SKILLSHAPE_SLIDER_2", "SKILLSHAPE_SLIDER_3", "SKILLSHAPE_SLIDER_4", "SKILLSHAPE_SLIDER_5"],
-    "colorScheme": ["#4BA5A7", "#E4F3F4", "#333333", "#999999", "#F6F6F6"],
+    "colorScheme": ["#020202", "#5A5A5A", "#B01210", "#9B9B9B", "#552316", "#E8DFDF", "#CF4F4C", "#B98081"],
     "clientReview": {
       "stars": 5,
       "message": "Amazing designs to make this complicated thing simple and easy to interact with for the user.",
