@@ -284,7 +284,7 @@ export const projectLogoMapper = (projectId) => {
     case '04':
       return ITBIIcon;
     default:
-      return ForbyIcon;
+      return '';
   }
 };
 

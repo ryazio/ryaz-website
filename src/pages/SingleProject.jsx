@@ -97,7 +97,7 @@ function SingleProject() {
           <section>
             <div className="project-info-name">
               <ArrowIcon className="project-info-back" onClick={() => router.navigate('/work')} />
-              <ProjectLogo className="project-info-icon" />
+              {ProjectLogo && <ProjectLogo className="project-info-icon" />}
               <span>{projectData?.name}</span>
             </div>
             <p className="project-info-description">
