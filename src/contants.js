@@ -135,13 +135,13 @@ import FORBY_STACK_4 from './images/projects/forby/stack_4.png';
 // import PUERTO_RICO_GUIDE_SLIDER_6 from './images/projects/puerto-rico-guide/slider_6.png';
 // import PUERTO_RICO_GUIDE_SLIDER_7 from './images/projects/puerto-rico-guide/slider_7.png';
 
-// import WE_PATH_TITLE from './images/projects/we-path/title.png';
-// import WE_PATH_STACK_1 from './images/projects/we-path/stack_1.png';
-// import WE_PATH_STACK_2 from './images/projects/we-path/stack_2.png';
-// import WE_PATH_STACK_3 from './images/projects/we-path/stack_3.png';
-// import WE_PATH_STACK_4 from './images/projects/we-path/stack_4.png';
-// import WE_PATH_STACK_5 from './images/projects/we-path/stack_5.png';
-// import WE_PATH_STACK_6 from './images/projects/we-path/stack_6.png';
+import WE_PATH_TITLE from './images/projects/we-path/title.png';
+import WE_PATH_STACK_1 from './images/projects/we-path/stack_1.png';
+import WE_PATH_STACK_2 from './images/projects/we-path/stack_2.png';
+import WE_PATH_STACK_3 from './images/projects/we-path/stack_3.png';
+import WE_PATH_STACK_4 from './images/projects/we-path/stack_4.png';
+import WE_PATH_STACK_5 from './images/projects/we-path/stack_5.png';
+import WE_PATH_STACK_6 from './images/projects/we-path/stack_6.png';
 
 // import AC_NAUTICA_TITLE from './images/projects/ac-nautica/title.png';
 // import AC_NAUTICA_STACK_1 from './images/projects/ac-nautica/stack_1.png';
@@ -503,20 +503,20 @@ export const projectImageMapper = (imageName) => {
       // case 'PUERTO_RICO_GUIDE_SLIDER_7':
       //   return PUERTO_RICO_GUIDE_SLIDER_7;
 
-      // case 'WE_PATH_TITLE':
-      //   return WE_PATH_TITLE;
-      // case 'WE_PATH_STACK_1':
-      //   return WE_PATH_STACK_1;
-      // case 'WE_PATH_STACK_2':
-      //   return WE_PATH_STACK_2;
-      // case 'WE_PATH_STACK_3':
-      //   return WE_PATH_STACK_3;
-      // case 'WE_PATH_STACK_4':
-      //   return WE_PATH_STACK_4;
-      // case 'WE_PATH_STACK_5':
-      //   return WE_PATH_STACK_5;
-      // case 'WE_PATH_STACK_6':
-      //   return WE_PATH_STACK_6;
+    case 'WE_PATH_TITLE':
+      return WE_PATH_TITLE;
+    case 'WE_PATH_STACK_1':
+      return WE_PATH_STACK_1;
+    case 'WE_PATH_STACK_2':
+      return WE_PATH_STACK_2;
+    case 'WE_PATH_STACK_3':
+      return WE_PATH_STACK_3;
+    case 'WE_PATH_STACK_4':
+      return WE_PATH_STACK_4;
+    case 'WE_PATH_STACK_5':
+      return WE_PATH_STACK_5;
+    case 'WE_PATH_STACK_6':
+      return WE_PATH_STACK_6;
 
       // case 'AC_NAUTICA_TITLE':
       //   return AC_NAUTICA_TITLE;

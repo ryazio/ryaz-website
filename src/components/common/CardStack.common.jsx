@@ -9,7 +9,7 @@ const SCALE_FACTOR = 0.1;
 const SCALE_FACTOR_X = 0.03;
 
 export const CardStack = ({
-  className, data, children, dataKey, style,
+  className, data, children, dataKey, style, forwardRef,
 }) => {
   const mediaQuery = useContext(MediaQueryContext);
   const [cards, setCards] = useState(data);
@@ -36,7 +36,7 @@ export const CardStack = ({
   const cardOffset = ({ left: CARD_OFFSET, ...mediaQuery({ tablet: { left: 12 } }) }).left;
 
   return (
-    <div className={`card-stack ${className}`} style={style}>
+    <div className={`card-stack ${className}`} style={style} ref={forwardRef}>
       <ul className="card-stack-wrapper">
         <ArrowButton
           className="card-stack-wrapper-arrow"
@@ -86,6 +86,7 @@ CardStack.propTypes = {
   data: PropTypes.instanceOf(Array),
   dataKey: PropTypes.string,
   style: PropTypes.instanceOf(Object),
+  forwardRef: PropTypes.node,
 };
 
 CardStack.defaultProps = {
@@ -94,4 +95,5 @@ CardStack.defaultProps = {
   data: ['#266678', '#cb7c7a', ' #36a18b', '#cda35f', '#747474'],
   dataKey: '',
   style: {},
+  forwardRef: null,
 };

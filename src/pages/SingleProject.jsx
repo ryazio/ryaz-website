@@ -42,7 +42,8 @@ function SingleProject() {
     ?.map((leader) => employees.find((employee) => employee.id === leader));
   const projectTeam = projectData?.stakeholders
     ?.map((leader) => employees.find((employee) => employee.id === leader));
-
+  const heightResolution = Number(projectData?.resolution?.height || 9)
+   / Number(projectData?.resolution?.width || 16);
   return (
     <Layout className="project-page">
       <motion.div
@@ -150,13 +151,15 @@ function SingleProject() {
       </div>
       <ProjectButton className="project-more" onClick={() => setIsOpen(true)}>More Details</ProjectButton>
 
-      <div
-        ref={parentContainer}
-        className="project-sections"
-      >
+      <div className="project-sections">
         <h5>Designs</h5>
         <p>We reflect craftsmanship through our work.</p>
-        <CardStack style={{ height: (width * (725 / 1135)) || undefined }} className="project-sections-stack" data={projectData?.stackImages || []}>
+        <CardStack
+          style={{ height: (width * heightResolution) || undefined }}
+          className="project-sections-stack"
+          data={projectData?.stackImages || []}
+          forwardRef={parentContainer}
+        >
           {(imageName) => (
             <img src={projectImageMapper(imageName)} alt={projectData.name} />
           )}
