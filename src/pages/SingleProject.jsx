@@ -53,7 +53,7 @@ function SingleProject() {
       >
         <div className="project-side-body">
           <section>
-            <h4>TIME SPAN</h4>
+            <h4 style={(window.innerHeight <= 620) ? { paddingTop: '60px' } : {}}>TIME SPAN</h4>
             <p>{projectData?.timeSpan}</p>
           </section>
           <section>
