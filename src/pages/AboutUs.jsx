@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   ContactForm, Layout, RyazPillar, RyazActivity,
 } from '../components';
@@ -7,8 +7,17 @@ import { employeeImageMapper } from '../contants';
 import employees from '../json/employees.json';
 
 function RyazMethod() {
+  const [isDesktopSizeWindow, setIsDesktopSizeWindow] = useState(window.innerWidth > 768);
+  const resizeHandler = () => {
+    if (window.innerWidth > 768 && !isDesktopSizeWindow) {
+      setIsDesktopSizeWindow(true);
+    } else if (window.innerWidth < 768 && isDesktopSizeWindow) {
+      setIsDesktopSizeWindow(false);
+    }
+  };
   useEffect(() => {
     window.scrollTo({ top: 0 });
+    window.onresize = resizeHandler;
   }, []);
   const scrollToContact = () => {
     document?.getElementById('contact-element')?.scrollIntoView();
@@ -40,18 +49,40 @@ function RyazMethod() {
               number="01"
               content=" We believe in not being the cheapest but the premium one and providing an easy and fulfilling experience plus value to our client."
             />
-            <RyazPillar
-              title="Empathy"
-              number="03"
-              content="We are able to establish an environment where we understand and share the feeling of not just our colleagues but our customers and clients too."
-            />
+            {
+              (isDesktopSizeWindow)
+                ? (
+                  <RyazPillar
+                    title="Empathy"
+                    number="03"
+                    content="We are able to establish an environment where we understand and share the feeling of not just our colleagues but our customers and clients too."
+                  />
+                ) : (
+                  <RyazPillar
+                    title="Craftmanship"
+                    number="02"
+                    content="We encourage the practice of excellence in building and delivering superior products crafted by our team of experts."
+                  />
+                )
+            }
           </div>
           <div className="about-pillars-line">
-            <RyazPillar
-              title="Craftmanship"
-              number="02"
-              content="We encourage the practice of excellence in building and delivering superior products crafted by our team of experts."
-            />
+            {
+              (isDesktopSizeWindow)
+                ? (
+                  <RyazPillar
+                    title="Craftmanship"
+                    number="02"
+                    content="We encourage the practice of excellence in building and delivering superior products crafted by our team of experts."
+                  />
+                ) : (
+                  <RyazPillar
+                    title="Empathy"
+                    number="03"
+                    content="We are able to establish an environment where we understand and share the feeling of not just our colleagues but our customers and clients too."
+                  />
+                )
+            }
             <RyazPillar
               title="Fun"
               number="04"
