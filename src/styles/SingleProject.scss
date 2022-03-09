@@ -22,7 +22,7 @@
       max-width: 400px;
       width: 100%;
       background: #041533;
-      overflow-y: scroll;
+      overflow-y: auto;
 
       &::before {
         content: "";
