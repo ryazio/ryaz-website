@@ -19,10 +19,25 @@ export const CardStack = ({
     setCards(data);
   }, [data]);
 
+  const moveToStart = (from) => {
+    const numberOfCards = cards.length;
+    const cardsClone = cards.slice();
+    const addedItem = cardsClone.splice((numberOfCards - 1), 1);
+    setCards([...addedItem, ...cardsClone]);
+  };
+
   const moveToEnd = (from) => {
     const cardsClone = cards.slice();
     const removedItem = cardsClone.splice(from, 1);
     setCards([...cardsClone, ...removedItem]);
+  };
+
+  const previous = async () => {
+    setY();
+    setTimeout(() => {
+      moveToStart();
+      setY();
+    }, 100);
   };
 
   const next = async () => {
@@ -38,6 +53,13 @@ export const CardStack = ({
   return (
     <div className={`card-stack ${className}`} style={style} ref={forwardRef}>
       <ul className="card-stack-wrapper">
+        <div className="card-stack-wrapper-arrow-left-holder">
+          <ArrowButton
+            className="card-stack-wrapper-arrow-left"
+            onClick={previous}
+            y="-50%"
+          />
+        </div>
         <ArrowButton
           className="card-stack-wrapper-arrow"
           onClick={next}
