@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import axios from 'axios';
+import toast from 'react-hot-toast';
 
 export const ContactForm = ({ className }) => {
   const [name, setName] = useState('');
@@ -13,16 +14,19 @@ export const ContactForm = ({ className }) => {
     e.preventDefault();
     setLoading(true);
     const data = { email, subject, name };
-    axios.post('https://ryaz-website-backend.herokuapp.com/mail', data, {
+    axios.post('https://www.actionforms.io/e/r/ryaz-forms-endpoint', data, {
       headers: { 'Content-Type': 'application/json' },
     })
       .then((response) => {
-        console.log(response.data);
+        // console.log(response.data);
+        toast.success('Form Submitted Successfully');
         setEmail('');
         setSubject('');
         setName('');
       })
-      .catch(console.log)
+      .catch(() => {
+        toast.error('Something went wrong');
+      })
       .finally(() => {
         setLoading(false);
       });
