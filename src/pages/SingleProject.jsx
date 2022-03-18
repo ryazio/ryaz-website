@@ -176,6 +176,26 @@ function SingleProject() {
           </CardSlider>
         </div>
       )}
+      {(projectData?.id === '03')
+        ? (
+          <>
+            <h5 className="project-video-title">Quick Glance</h5>
+            <p className="project-video-text">A quick look of our project.</p>
+            <div className="project-video-holder">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/rrVka8To-0Q?controls=0"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; modestbranding; picture-in-picture"
+                allowFullScreen
+                className="project-video-embed"
+              />
+            </div>
+          </>
+        )
+        : <> </>}
       <div className="project-sections">
         <h5>Our Color Palette</h5>
         <p>Color Scheme plays a great role.</p>
