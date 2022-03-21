@@ -22,7 +22,8 @@
     "resolution": {
       "height": "9",
       "width": "16"
-    }
+    },
+    "videoKey": ""
   },
   {
     "id": "02",
@@ -50,7 +51,8 @@
     "resolution": {
       "height": "10",
       "width": "17"
-    }
+    },
+    "videoKey": ""
   },
   {
     "id": "03",
@@ -78,7 +80,8 @@
     "resolution": {
       "height": "10",
       "width": "16"
-    }
+    },
+    "videoKey": "https://www.youtube.com/embed/rrVka8To-0Q?controls=0"
   },
   {
     "id": "04",
@@ -106,7 +109,8 @@
     "resolution": {
       "height": "9",
       "width": "19"
-    }
+    },
+    "videoKey": ""
   },
   {
     "id": "05",
@@ -133,6 +137,7 @@
     "resolution": {
       "height": "11",
       "width": "16"
-    }
+    },
+    "videoKey": ""
   }
 ]

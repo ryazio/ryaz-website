@@ -315,6 +315,7 @@
       }
     }
     &-embed {
+      border-radius: 8px;
       @include tablet-medium {
         height: 76vw;
         width: 100%;
@@ -330,8 +331,6 @@
         height: 750px;
       }
     }
-    
-  
   }
   // .project-testinomial {}
 }
