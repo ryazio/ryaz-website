@@ -22,6 +22,7 @@
       max-width: 400px;
       width: 100%;
       background: #041533;
+      overflow-y: auto;
 
       &::before {
         content: "";
@@ -103,9 +104,11 @@
         flex-direction: column;
         row-gap: 24px;
       }
+
       &-part {
         padding-left: 4.5rem;
       }
+
       &-back {
         height: 28px;
         width: 28px;
@@ -146,6 +149,7 @@
         grid-template-columns: repeat(3, 1fr);
         justify-content: space-between;
         padding: 30px 3rem 30px 0;
+        max-width: 800px;
 
         @include over-tablet-medium {
           display: flex;
@@ -239,12 +243,7 @@
 
     &-stack {
       width: calc(100% - 64px);
-      max-height: calc(100vh - 120px);
-      max-width: 1100px;
-
-      @include over-tablet {
-        width: calc(100% - 180px);
-      }
+      max-width: 1600px;
 
       img {
         height: 100%;
@@ -278,6 +277,60 @@
       }
     }
   }
+  .project-video {
+    &-title {
+      font-family: $primary-font;
+      font-weight: 900;
+      font-size: 12px;
+      line-height: 18px;
+      text-align: center;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rgba(#FFFFFF, 0.5);
+      margin: 0;
+      margin-bottom: 10px;
+      margin-top: 50px;
+    }
+    
+    &-text {
+      font-size: 24px;
+      line-height: 36px;
+      font-weight: 500;
+      margin-bottom: 36px;
+      text-align: center;
+      width: 100%;
 
+      @include over-tablet-medium {
+        font-size: 28px;
+      }
+    }
+
+    &-holder {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      @include tablet-medium {
+        padding: 0px 10px;
+      }
+    }
+    &-embed {
+      border-radius: 8px;
+      @include tablet-medium {
+        height: 76vw;
+        width: 100%;
+      }
+      
+      @include over-tablet-medium {
+        width: 90%;
+        height: 700px;
+      }
+
+      @include over-tablet-large {
+        width: 1000px;
+        height: 750px;
+      }
+    }
+  }
   // .project-testinomial {}
 }

@@ -8,7 +8,10 @@ export const Footer = () => (
   <footer>
     <div className="footer">
       <section>
-        <RyazLogo className="footer-logo" />
+        <div className="footer-logo-holder">
+          <RyazLogo className="footer-logo" />
+          <p className="footer-logo-name">RYAZ.IO</p>
+        </div>
         <p>#250, Ward no. 2, Near water tank Samrala 141114 IN</p>
         <p>+91 6280256990</p>
       </section>

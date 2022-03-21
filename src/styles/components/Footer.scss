@@ -25,9 +25,20 @@ footer {
       height: fit-content;
       margin-bottom: 60px;
 
+      .footer-logo-holder {
+        display: flex;
+        flex-direction: row;
+      }
+
       .footer-logo {
         height: 25px;
         width: 25px;
+      }
+
+      .footer-logo-name {
+        font-size: 14px;
+        letter-spacing: 0.2em;
+        margin-left: 1.5em;
       }
 
       p {

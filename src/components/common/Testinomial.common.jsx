@@ -11,7 +11,7 @@ export const Testinomial = ({ star, review, to }) => (
       ))}
     </div>
     <p className="testimonial-message">{review}</p>
-    <Link className="more-reviews" to={to}>Read our client review.</Link>
+    {/* <Link className="more-reviews" to={to}>Read our client review.</Link> */}
   </div>
 );
 

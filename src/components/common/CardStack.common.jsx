@@ -9,7 +9,7 @@ const SCALE_FACTOR = 0.1;
 const SCALE_FACTOR_X = 0.03;
 
 export const CardStack = ({
-  className, data, children, dataKey, style,
+  className, data, children, dataKey, style, forwardRef,
 }) => {
   const mediaQuery = useContext(MediaQueryContext);
   const [cards, setCards] = useState(data);
@@ -19,10 +19,25 @@ export const CardStack = ({
     setCards(data);
   }, [data]);
 
+  const moveToStart = (from) => {
+    const numberOfCards = cards.length;
+    const cardsClone = cards.slice();
+    const addedItem = cardsClone.splice((numberOfCards - 1), 1);
+    setCards([...addedItem, ...cardsClone]);
+  };
+
   const moveToEnd = (from) => {
     const cardsClone = cards.slice();
     const removedItem = cardsClone.splice(from, 1);
     setCards([...cardsClone, ...removedItem]);
+  };
+
+  const previous = async () => {
+    setY();
+    setTimeout(() => {
+      moveToStart();
+      setY();
+    }, 100);
   };
 
   const next = async () => {
@@ -36,8 +51,15 @@ export const CardStack = ({
   const cardOffset = ({ left: CARD_OFFSET, ...mediaQuery({ tablet: { left: 12 } }) }).left;
 
   return (
-    <div className={`card-stack ${className}`} style={style}>
+    <div className={`card-stack ${className}`} style={style} ref={forwardRef}>
       <ul className="card-stack-wrapper">
+        <div className="card-stack-wrapper-arrow-left-holder">
+          <ArrowButton
+            className="card-stack-wrapper-arrow-left"
+            onClick={previous}
+            y="-50%"
+          />
+        </div>
         <ArrowButton
           className="card-stack-wrapper-arrow"
           onClick={next}
@@ -86,6 +108,7 @@ CardStack.propTypes = {
   data: PropTypes.instanceOf(Array),
   dataKey: PropTypes.string,
   style: PropTypes.instanceOf(Object),
+  forwardRef: PropTypes.node,
 };
 
 CardStack.defaultProps = {
@@ -94,4 +117,5 @@ CardStack.defaultProps = {
   data: ['#266678', '#cb7c7a', ' #36a18b', '#cda35f', '#747474'],
   dataKey: '',
   style: {},
+  forwardRef: null,
 };

@@ -42,7 +42,8 @@ function SingleProject() {
     ?.map((leader) => employees.find((employee) => employee.id === leader));
   const projectTeam = projectData?.stakeholders
     ?.map((leader) => employees.find((employee) => employee.id === leader));
-
+  const heightResolution = Number(projectData?.resolution?.height || 9)
+   / Number(projectData?.resolution?.width || 16);
   return (
     <Layout className="project-page">
       <motion.div
@@ -52,12 +53,8 @@ function SingleProject() {
       >
         <div className="project-side-body">
           <section>
-            <h4>TIME SPAN</h4>
+            <h4 style={(window.innerHeight <= 620) ? { paddingTop: '60px' } : {}}>TIME SPAN</h4>
             <p>{projectData?.timeSpan}</p>
-          </section>
-          <section>
-            <h4>PROJECT BUDGET</h4>
-            <p>{projectData?.projectBudget}</p>
           </section>
           <section>
             <h4>DELIEVERABLES</h4>
@@ -101,7 +98,7 @@ function SingleProject() {
           <section>
             <div className="project-info-name">
               <ArrowIcon className="project-info-back" onClick={() => router.navigate('/work')} />
-              <ProjectLogo className="project-info-icon" />
+              {ProjectLogo && <ProjectLogo className="project-info-icon" />}
               <span>{projectData?.name}</span>
             </div>
             <p className="project-info-description">
@@ -154,13 +151,15 @@ function SingleProject() {
       </div>
       <ProjectButton className="project-more" onClick={() => setIsOpen(true)}>More Details</ProjectButton>
 
-      <div
-        ref={parentContainer}
-        className="project-sections"
-      >
+      <div className="project-sections">
         <h5>Designs</h5>
         <p>We reflect craftsmanship through our work.</p>
-        <CardStack style={{ height: (width * (725 / 1135)) || undefined }} className="project-sections-stack" data={projectData?.stackImages || []}>
+        <CardStack
+          style={{ height: (width * heightResolution) || undefined }}
+          className="project-sections-stack"
+          data={projectData?.stackImages || []}
+          forwardRef={parentContainer}
+        >
           {(imageName) => (
             <img src={projectImageMapper(imageName)} alt={projectData.name} />
           )}
@@ -177,6 +176,26 @@ function SingleProject() {
           </CardSlider>
         </div>
       )}
+      {(projectData?.videoKey)
+        ? (
+          <>
+            <h5 className="project-video-title">Quick Glance</h5>
+            <p className="project-video-text">A quick look of our project.</p>
+            <div className="project-video-holder">
+              <iframe
+                width="560"
+                height="315"
+                src={projectData?.videoKey}
+                title="Video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; modestbranding; picture-in-picture"
+                allowFullScreen
+                className="project-video-embed"
+              />
+            </div>
+          </>
+        )
+        : <> </>}
       <div className="project-sections">
         <h5>Our Color Palette</h5>
         <p>Color Scheme plays a great role.</p>
