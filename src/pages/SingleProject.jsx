@@ -176,7 +176,7 @@ function SingleProject() {
           </CardSlider>
         </div>
       )}
-      {(projectData?.videoKey)
+      {(projectData?.videoLink)
         ? (
           <>
             <h5 className="project-video-title">Quick Glance</h5>
@@ -185,7 +185,7 @@ function SingleProject() {
               <iframe
                 width="560"
                 height="315"
-                src={projectData?.videoKey}
+                src={projectData?.videoLink}
                 title="Video player"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; modestbranding; picture-in-picture"

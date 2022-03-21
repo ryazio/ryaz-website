@@ -23,7 +23,7 @@
       "height": "9",
       "width": "16"
     },
-    "videoKey": ""
+    "videoLink": ""
   },
   {
     "id": "02",
@@ -52,7 +52,7 @@
       "height": "10",
       "width": "17"
     },
-    "videoKey": ""
+    "videoLink": ""
   },
   {
     "id": "03",
@@ -81,7 +81,7 @@
       "height": "10",
       "width": "16"
     },
-    "videoKey": "https://www.youtube.com/embed/rrVka8To-0Q?controls=0"
+    "videoLink": "https://www.youtube.com/embed/rrVka8To-0Q?controls=0"
   },
   {
     "id": "04",
@@ -110,7 +110,7 @@
       "height": "9",
       "width": "19"
     },
-    "videoKey": ""
+    "videoLink": ""
   },
   {
     "id": "05",
@@ -138,6 +138,6 @@
       "height": "11",
       "width": "16"
     },
-    "videoKey": ""
+    "videoLink": ""
   }
 ]
