@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Toaster } from 'react-hot-toast';
 import {
   ContactForm, Layout, RyazPillar, RyazActivity,
 } from '../components';
@@ -128,6 +129,9 @@ function RyazMethod() {
         </div>
       </div>
       <ContactForm className="about-contact" />
+      <div>
+        <Toaster />
+      </div>
     </Layout>
   );
 }
