@@ -1,7 +1,7 @@
 [{
     "id": 3,
     "name": "Inderpreet Singh",
-    "designation": "CEO"
+    "designation": "Director, Software Engineering"
   },
   {
     "id": 2,
@@ -105,8 +105,8 @@
   },
   {
     "id": 22,
-    "name": "Harry Moose",
-    "designation": "Developer"
+    "name": "Harinder Singh Balala",
+    "designation": "System Administrator"
   },
   {
     "id": 23,
