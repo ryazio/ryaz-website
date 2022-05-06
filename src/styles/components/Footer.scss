@@ -1,6 +1,6 @@
 footer {
   display: flex;
-  background: #030F26;
+  background: #030f26;
   margin-top: 84px;
 
   .footer {
@@ -98,6 +98,7 @@ footer {
 
       @include over-tablet-medium {
         display: grid;
+        margin-top: 43px;
       }
     }
   }

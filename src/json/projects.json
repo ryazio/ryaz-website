@@ -1,19 +1,30 @@
-[{
+[
+  {
     "id": "01",
     "slug": "molly",
     "name": "Molly",
     "description": "A time and task management application with beautiful and elegant UI, Powered with AI-based assistant which reminds you for different things to make you cope up with your planned schedule.",
-    "labels": ["Frontend Development", "Backend Development", "UI/UX Design", "Testing", "QA"],
+    "labels": [
+      "Frontend Development",
+      "Backend Development",
+      "UI/UX Design",
+      "Testing",
+      "QA"
+    ],
     "leaders": [7],
     "stakeholders": [7, 6, 13, 14],
     "client": "Ranadev",
     "timeSpan": "6 Months",
-    "delieverables": [
-      "Front-end Development",
-      "Back-end Development"
-    ],
+    "delieverables": ["Front-end Development", "Back-end Development"],
     "titleImage": "MOLLY_TITLE",
-    "stackImages": ["MOLLY_STACK_1", "MOLLY_STACK_2", "MOLLY_STACK_3", "MOLLY_STACK_4", "MOLLY_STACK_5", "MOLLY_STACK_6"],
+    "stackImages": [
+      "MOLLY_STACK_1",
+      "MOLLY_STACK_2",
+      "MOLLY_STACK_3",
+      "MOLLY_STACK_4",
+      "MOLLY_STACK_5",
+      "MOLLY_STACK_6"
+    ],
     "colorScheme": ["#FFFFFF", "#F1F3F6", "#3C46DA", "#161C6B", "#E94B4B"],
     "clientReview": {
       "stars": 5,
@@ -30,7 +41,13 @@
     "slug": "skillshape",
     "name": "Skillshape",
     "description": "A teaching platform used for creating and scheduling classes and events for both hosts and students.",
-    "labels": ["Frontend Development", "Backend Development", "UI/UX Design", "Testing", "QA"],
+    "labels": [
+      "Frontend Development",
+      "Backend Development",
+      "UI/UX Design",
+      "Testing",
+      "QA"
+    ],
     "leaders": [3],
     "stakeholders": [3, 2, 13, 9],
     "client": "Sam Schikowitz",
@@ -41,9 +58,30 @@
       "Back-end Development"
     ],
     "titleImage": "SKILLSHAPE_TITLE",
-    "stackImages": ["SKILLSHAPE_STACK_1", "SKILLSHAPE_STACK_2", "SKILLSHAPE_STACK_3", "SKILLSHAPE_STACK_4", "SKILLSHAPE_STACK_5"],
-    "sliderImages": ["SKILLSHAPE_SLIDER_1", "SKILLSHAPE_SLIDER_2", "SKILLSHAPE_SLIDER_3", "SKILLSHAPE_SLIDER_4", "SKILLSHAPE_SLIDER_5"],
-    "colorScheme": ["#020202", "#5A5A5A", "#B01210", "#9B9B9B", "#552316", "#E8DFDF", "#CF4F4C", "#B98081"],
+    "stackImages": [
+      "SKILLSHAPE_STACK_1",
+      "SKILLSHAPE_STACK_2",
+      "SKILLSHAPE_STACK_3",
+      "SKILLSHAPE_STACK_4",
+      "SKILLSHAPE_STACK_5"
+    ],
+    "sliderImages": [
+      "SKILLSHAPE_SLIDER_1",
+      "SKILLSHAPE_SLIDER_2",
+      "SKILLSHAPE_SLIDER_3",
+      "SKILLSHAPE_SLIDER_4",
+      "SKILLSHAPE_SLIDER_5"
+    ],
+    "colorScheme": [
+      "#020202",
+      "#5A5A5A",
+      "#B01210",
+      "#9B9B9B",
+      "#552316",
+      "#E8DFDF",
+      "#CF4F4C",
+      "#B98081"
+    ],
     "clientReview": {
       "stars": 5,
       "message": "I’m glad that we did a project together which proved out to be a great success. I’m  looking forward to more and more projects with you. Good luck team <3"
@@ -59,7 +97,13 @@
     "slug": "flamencos-online",
     "name": "Flamencos Online",
     "description": "Based on Spanish art Flamencos which is used to schedule the flamenco based classes for the users. Teachers can host their own classes which allows students to signup for them and learn the art.",
-    "labels": ["Frontend Development", "Backend Development", "UI/UX Design", "Testing", "QA"],
+    "labels": [
+      "Frontend Development",
+      "Backend Development",
+      "UI/UX Design",
+      "Testing",
+      "QA"
+    ],
     "leaders": [6, 2],
     "stakeholders": [6, 2, 13, 5, 1, 4],
     "client": "Ana Maria",
@@ -70,9 +114,35 @@
       "Backend Development"
     ],
     "titleImage": "FLAMENCOS_TITLE",
-    "stackImages": ["FLAMENCOS_STACK_2", "FLAMENCOS_STACK_3", "FLAMENCOS_STACK_4", "FLAMENCOS_STACK_5"],
-    "sliderImages": ["FLAMENCOS_SLIDER_1", "FLAMENCOS_SLIDER_2", "FLAMENCOS_SLIDER_3", "FLAMENCOS_SLIDER_4", "FLAMENCOS_SLIDER_5", "FLAMENCOS_SLIDER_6", "FLAMENCOS_SLIDER_7", "FLAMENCOS_SLIDER_8", "FLAMENCOS_SLIDER_9", "FLAMENCOS_SLIDER_10", "FLAMENCOS_SLIDER_11", "FLAMENCOS_SLIDER_12"],
-    "colorScheme": ["#DEDBDB", "#B6B4B4", "#0C0606", "#5E3B36", "#AD322C", "#D1916F", "#E2D0B1"],
+    "stackImages": [
+      "FLAMENCOS_STACK_2",
+      "FLAMENCOS_STACK_3",
+      "FLAMENCOS_STACK_4",
+      "FLAMENCOS_STACK_5"
+    ],
+    "sliderImages": [
+      "FLAMENCOS_SLIDER_1",
+      "FLAMENCOS_SLIDER_2",
+      "FLAMENCOS_SLIDER_3",
+      "FLAMENCOS_SLIDER_4",
+      "FLAMENCOS_SLIDER_5",
+      "FLAMENCOS_SLIDER_6",
+      "FLAMENCOS_SLIDER_7",
+      "FLAMENCOS_SLIDER_8",
+      "FLAMENCOS_SLIDER_9",
+      "FLAMENCOS_SLIDER_10",
+      "FLAMENCOS_SLIDER_11",
+      "FLAMENCOS_SLIDER_12"
+    ],
+    "colorScheme": [
+      "#DEDBDB",
+      "#B6B4B4",
+      "#0C0606",
+      "#5E3B36",
+      "#AD322C",
+      "#D1916F",
+      "#E2D0B1"
+    ],
     "clientReview": {
       "stars": 5,
       "message": "The project is a grand success. The user feedback is absolutely overwhelming. People in ryaz absolutely do their best and they are all super friendly, reliable, communicative people. We love you Ryaz :)"
@@ -99,9 +169,28 @@
       "Back-end Development"
     ],
     "titleImage": "ITBI_TITLE",
-    "stackImages": ["ITBI_STACK_1", "ITBI_STACK_2", "ITBI_STACK_3", "ITBI_STACK_4", "ITBI_STACK_5"],
-    "sliderImages": ["ITBI_SLIDER_1", "ITBI_SLIDER_2", "ITBI_SLIDER_3", "ITBI_SLIDER_4", "ITBI_SLIDER_5"],
-    "colorScheme": ["#ECECED", "#ADB2C4", "#6174FB", "#E55C4A", "#6E7B9C", "#D2D4DD"],
+    "stackImages": [
+      "ITBI_STACK_1",
+      "ITBI_STACK_2",
+      "ITBI_STACK_3",
+      "ITBI_STACK_4",
+      "ITBI_STACK_5"
+    ],
+    "sliderImages": [
+      "ITBI_SLIDER_1",
+      "ITBI_SLIDER_2",
+      "ITBI_SLIDER_3",
+      "ITBI_SLIDER_4",
+      "ITBI_SLIDER_5"
+    ],
+    "colorScheme": [
+      "#ECECED",
+      "#ADB2C4",
+      "#6174FB",
+      "#E55C4A",
+      "#6E7B9C",
+      "#D2D4DD"
+    ],
     "clientReview": {
       "stars": 5,
       "message": "An unbelievable team with incredible talent. I would recommend Ryaz to anyone looking for a highly creative tech agency."
@@ -115,9 +204,15 @@
   {
     "id": "05",
     "slug": "we-path",
-    "name": "We Path",
+    "name": "WePath",
     "description": "A case management app for German doctors in a university to manage all the cases, upload important WSI and non-WSI images helping them to discuss using the integrated chat facility with annotations.",
-    "labels": ["Frontend Development", "Backend Development", "UI/UX Design", "Testing", "QA"],
+    "labels": [
+      "Frontend Development",
+      "Backend Development",
+      "UI/UX Design",
+      "Testing",
+      "QA"
+    ],
     "leaders": [3],
     "stakeholders": [3, 6, 13, 15, 2],
     "client": "Wepath",
@@ -128,8 +223,22 @@
       "Back-end Development"
     ],
     "titleImage": "WE_PATH_TITLE",
-    "stackImages": ["WE_PATH_STACK_1", "WE_PATH_STACK_2", "WE_PATH_STACK_3", "WE_PATH_STACK_4", "WE_PATH_STACK_5"],
-    "colorScheme": ["#F1F1F1", "#B2C7CA", "#136164", "#666768", "#5B9A9E", "#352F2C", "#857E8A"],
+    "stackImages": [
+      "WE_PATH_STACK_1",
+      "WE_PATH_STACK_2",
+      "WE_PATH_STACK_3",
+      "WE_PATH_STACK_4",
+      "WE_PATH_STACK_5"
+    ],
+    "colorScheme": [
+      "#F1F1F1",
+      "#B2C7CA",
+      "#136164",
+      "#666768",
+      "#5B9A9E",
+      "#352F2C",
+      "#857E8A"
+    ],
     "clientReview": {
       "stars": 5,
       "message": "I’m quite impressed by the work Ryaz did for our project. The dev team is really hard working and they were readily available for us throughout the project. I like their drive for innovation and the company spirit."

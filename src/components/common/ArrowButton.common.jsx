@@ -8,6 +8,7 @@ export const ArrowButton = ({
 }) => (
   <motion.button
     type="button"
+    aria-label="Close"
     className={`arrow-button ${className}`}
     onClick={onClick}
     initial={{ y }}

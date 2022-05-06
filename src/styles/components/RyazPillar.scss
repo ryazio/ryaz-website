@@ -25,5 +25,11 @@
       font-style: italic;
       margin-bottom: 1rem;
     }
+    .pillar-content {
+      height: 4rem;
+    }
+    @include over-desktop {
+      height: 5.2rem;
+    }
   }
 }

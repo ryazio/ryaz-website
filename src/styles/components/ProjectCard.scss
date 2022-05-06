@@ -18,6 +18,7 @@
     line-height: 64px;
     color: rgba(white, 0.05);
     z-index: -1;
+    font-weight: 500;
 
     @include over-tablet {
       font-size: 144px;
@@ -30,7 +31,7 @@
     line-height: 42px;
     font-weight: 500;
     text-decoration: none;
-    color: #FFFFFF;
+    color: #ffffff;
     width: fit-content;
 
     @include over-tablet {
@@ -43,7 +44,8 @@
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 12px;
-    color: #D7D7D7;
+    color: #cdcdcd;
+    font-weight: 300;
   }
 
   &-image {

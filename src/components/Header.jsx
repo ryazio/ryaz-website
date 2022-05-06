@@ -6,7 +6,7 @@ import { ArrowButton } from './common';
 
 export const Header = ({ className, isOpen, setIsOpen }) => (
   <header className={className}>
-    <Link className="header-logo" to="/">
+    <Link aria-label="Ryaz logo" className="header-logo" to="/">
       <RyazLogo />
     </Link>
     {!isOpen
