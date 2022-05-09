@@ -22,14 +22,11 @@
 
   .pillar-description {
     p:first-child {
+      font-family: "Cormorant";
       font-style: italic;
+      line-height: 28px;
+      font-size: 20px;
       margin-bottom: 1rem;
-    }
-    .pillar-content {
-      height: 4rem;
-    }
-    @include over-desktop {
-      height: 5.2rem;
     }
   }
 }

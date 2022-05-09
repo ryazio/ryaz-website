@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import React, { useEffect, useState } from 'react';
 import { Toaster } from 'react-hot-toast';
 import {
@@ -6,6 +7,7 @@ import {
 import { CardSlider, ShadowRyazLogo } from '../components/common';
 import { employeeImageMapper } from '../contants';
 import employees from '../json/employees.json';
+import { RyazLogo } from '../icons';
 
 function RyazMethod() {
   const [isDesktopSizeWindow, setIsDesktopSizeWindow] = useState(window.innerWidth > 768);
@@ -47,22 +49,25 @@ function RyazMethod() {
           <div className="about-pillars-line">
             <RyazPillar
               title="High Value"
+              tagline="the quality of design and work shown in something made by hand."
               number="01"
-              content=" We believe in not being the cheapest but the premium one and providing an easy and fulfilling experience plus value to our client."
+              content="We believe in not being the cheapest but the premium one comparing to all other dev agencies and providing an easy and fulfilling experience plus value to our client."
             />
             {
               (isDesktopSizeWindow)
                 ? (
                   <RyazPillar
                     title="Empathy"
+                    tagline="the quality of design and work shown in something made by hand."
                     number="03"
-                    content="We are able to establish an environment where we understand and share the feeling of not just our colleagues but our customers and clients too."
+                    content="We believe in not being the cheapest but the premium one comparing to all other dev agencies and providing an easy and fulfilling experience plus value to our client. dev agencies and providing an easy and fulfilling experience plus value to our client."
                   />
                 ) : (
                   <RyazPillar
                     title="Craftmanship"
+                    tagline="the quality of design and work shown in something made by hand."
                     number="02"
-                    content="We encourage the practice of excellence in building and delivering superior products crafted by our team of experts."
+                    content="We believe in not being the cheapest but the premium one comparing to all other dev agencies and providing an easy and fulfilling experience plus value to our client. We believe in not being the cheapest but the premium one comparing to all other dev agencies and providing an easy and fulfilling experience plus value to our client."
                   />
                 )
             }
@@ -73,23 +78,31 @@ function RyazMethod() {
                 ? (
                   <RyazPillar
                     title="Craftmanship"
+                    tagline="the quality of design and work shown in something made by hand."
                     number="02"
-                    content="We encourage the practice of excellence in building and delivering superior products crafted by our team of experts."
+                    content="We believe in not being the cheapest but the premium one comparing to all other dev agencies and providing an easy and fulfilling experience plus value to our client. We believe in not being the cheapest but the premium one comparing to all other dev agencies and providing an easy and fulfilling experience plus value to our client."
                   />
                 ) : (
                   <RyazPillar
                     title="Empathy"
+                    tagline="the quality of design and work shown in something made by hand."
                     number="03"
-                    content="We are able to establish an environment where we understand and share the feeling of not just our colleagues but our customers and clients too."
+                    content="We believe in not being the cheapest but the premium one comparing to all other dev agencies and providing an easy and fulfilling experience plus value to our client. dev agencies and providing an easy and fulfilling experience plus value to our client."
                   />
                 )
             }
             <RyazPillar
               title="Fun"
+              tagline="the quality of design and work shown in something made by hand."
               number="04"
-              content="And our favourite part - Fun. We play a lot of games, chit chat, laugh. We believe it enhances our creativity and communication."
+              content="We believe in not being the cheapest but the premium one comparing to all other dev agencies and providing an easy.comparing to all other dev agency."
             />
           </div>
+        </div>
+      </div>
+      <div className="top">
+        <div className="Ryaz-arrow-logo">
+          <RyazLogo />
         </div>
       </div>
       <div className="about-section">

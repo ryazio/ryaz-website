@@ -46,56 +46,58 @@ function SingleProject() {
    / Number(projectData?.resolution?.width || 16);
   return (
     <Layout className="project-page">
-      <motion.div
-        className="project-side"
-        initial={{ x: '-100%' }}
-        animate={{ x: isOpen ? '0%' : '-100%' }}
-      >
-        <div className="project-side-body">
-          <section>
-            <h4 style={(window.innerHeight <= 620) ? { paddingTop: '60px' } : {}}>TIME SPAN</h4>
-            <p>{projectData?.timeSpan}</p>
-          </section>
-          <section>
-            <h4>DELIEVERABLES</h4>
-            {projectData?.delieverables?.map((delieverable) => (
-              <p key={delieverable}>{delieverable}</p>
-            ))}
-          </section>
-          <section>
-            <h4>CLIENT</h4>
-            <p>{projectData?.client}</p>
-          </section>
-          <section>
-            <h4>PROJECT LEADER</h4>
-            {projectLeaders?.map((user) => (
-              <UserPill
-                key={user.id}
-                className="project-side-person"
-                image={employeeImageMapper(user.id)}
-                name={user.name}
-              />
-            ))}
-          </section>
-          <section>
-            <h4>KEY STAKEHOLDERS</h4>
-            {projectTeam?.map((user) => (
-              <UserPill
-                key={user.id}
-                className="project-side-person"
-                image={employeeImageMapper(user.id)}
-                name={user.name}
-              />
-            ))}
-          </section>
-        </div>
-        <button type="button" onClick={() => setIsOpen(false)}>
-          <CrossIcon />
-        </button>
-      </motion.div>
+      <div className={isOpen ? 'layover' : ''}>
+        <motion.div
+          className="project-side"
+          initial={{ x: '-100%' }}
+          animate={{ x: isOpen ? '0%' : '-100%' }}
+        >
+          <div className="project-side-body">
+            <section>
+              <h4 style={(window.innerHeight <= 620) ? { paddingTop: '60px' } : {}}>TIME SPAN</h4>
+              <p>{projectData?.timeSpan}</p>
+            </section>
+            <section>
+              <h4>DELIEVERABLES</h4>
+              {projectData?.delieverables?.map((delieverable) => (
+                <p key={delieverable}>{delieverable}</p>
+              ))}
+            </section>
+            <section>
+              <h4>CLIENT</h4>
+              <p>{projectData?.client}</p>
+            </section>
+            <section>
+              <h4>PROJECT LEADER</h4>
+              {projectLeaders?.map((user) => (
+                <UserPill
+                  key={user.id}
+                  className="project-side-person"
+                  image={employeeImageMapper(user.id)}
+                  name={user.name}
+                />
+              ))}
+            </section>
+            <section>
+              <h4>KEY STAKEHOLDERS</h4>
+              {projectTeam?.map((user) => (
+                <UserPill
+                  key={user.id}
+                  className="project-side-person"
+                  image={employeeImageMapper(user.id)}
+                  name={user.name}
+                />
+              ))}
+            </section>
+          </div>
+          <button type="button" onClick={() => setIsOpen(false)}>
+            <CrossIcon />
+          </button>
+        </motion.div>
+      </div>
       <div className="project-details">
         <div className="project-info">
-          <section>
+          <section className="project-information">
             <div className="project-info-name">
               <ArrowIcon className="project-info-back" onClick={() => router.navigate('/work')} />
               {ProjectLogo && <ProjectLogo className="project-info-icon" />}
