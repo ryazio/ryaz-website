@@ -45,6 +45,9 @@ function RyazMethod() {
           <button onClick={scrollToContact} className="primary-btn" type="button">Join us now</button>
           {/* <ShadowRyazLogo className="about-info-logo" /> */}
         </div>
+        <div className="Ryaz-arrow-logo-mobile">
+          <RyazLogo />
+        </div>
         <div className="about-pillars">
           <div className="about-pillars-line">
             <RyazPillar
@@ -100,11 +103,19 @@ function RyazMethod() {
           </div>
         </div>
       </div>
-      <div className="top">
-        <div className="Ryaz-arrow-logo">
-          <RyazLogo />
-        </div>
-      </div>
+      {
+        (isDesktopSizeWindow)
+          ? (
+            <div className="top">
+              <div className="Ryaz-arrow-logo">
+                <RyazLogo />
+              </div>
+            </div>
+          )
+          : (
+            <div className="top" />
+          )
+      }
       <div className="about-section">
         <h3>Our Team</h3>
         <p>A group of people that truly care for each other</p>
