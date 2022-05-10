@@ -28,5 +28,19 @@
       font-size: 20px;
       margin-bottom: 1rem;
     }
+    .pillar-content {
+      @include over-tablet {
+        height: 105px;
+      }
+      @include over-tablet-medium {
+        height: 70px;
+      }
+      @include over-desktop {
+        height: 140px;
+      }
+      @include over-desktop-large {
+        height: 100px;
+      }
+    }
   }
 }

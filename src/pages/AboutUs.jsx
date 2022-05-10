@@ -52,25 +52,22 @@ function RyazMethod() {
           <div className="about-pillars-line">
             <RyazPillar
               title="High Value"
-              tagline="the quality of design and work shown in something made by hand."
               number="01"
-              content="We believe in not being the cheapest but the premium one comparing to all other dev agencies and providing an easy and fulfilling experience plus value to our client."
+              content="We believe in not being the cheapest but the premium one and providing an easy and fulfilling experience plus value to our client."
             />
             {
               (isDesktopSizeWindow)
                 ? (
                   <RyazPillar
                     title="Empathy"
-                    tagline="the quality of design and work shown in something made by hand."
                     number="03"
-                    content="We believe in not being the cheapest but the premium one comparing to all other dev agencies and providing an easy and fulfilling experience plus value to our client. dev agencies and providing an easy and fulfilling experience plus value to our client."
+                    content="We are able to establish an environment where we understand and share the feeling of not just our colleagues but our customers and clients too."
                   />
                 ) : (
                   <RyazPillar
                     title="Craftmanship"
-                    tagline="the quality of design and work shown in something made by hand."
                     number="02"
-                    content="We believe in not being the cheapest but the premium one comparing to all other dev agencies and providing an easy and fulfilling experience plus value to our client. We believe in not being the cheapest but the premium one comparing to all other dev agencies and providing an easy and fulfilling experience plus value to our client."
+                    content="We encourage the practice of excellence in building and delivering superior products crafted by our team of experts."
                   />
                 )
             }
@@ -81,24 +78,21 @@ function RyazMethod() {
                 ? (
                   <RyazPillar
                     title="Craftmanship"
-                    tagline="the quality of design and work shown in something made by hand."
                     number="02"
-                    content="We believe in not being the cheapest but the premium one comparing to all other dev agencies and providing an easy and fulfilling experience plus value to our client. We believe in not being the cheapest but the premium one comparing to all other dev agencies and providing an easy and fulfilling experience plus value to our client."
+                    content="We encourage the practice of excellence in building and delivering superior products crafted by our team of experts."
                   />
                 ) : (
                   <RyazPillar
                     title="Empathy"
-                    tagline="the quality of design and work shown in something made by hand."
                     number="03"
-                    content="We believe in not being the cheapest but the premium one comparing to all other dev agencies and providing an easy and fulfilling experience plus value to our client. dev agencies and providing an easy and fulfilling experience plus value to our client."
+                    content="We are able to establish an environment where we understand and share the feeling of not just our colleagues but our customers and clients too."
                   />
                 )
             }
             <RyazPillar
               title="Fun"
-              tagline="the quality of design and work shown in something made by hand."
               number="04"
-              content="We believe in not being the cheapest but the premium one comparing to all other dev agencies and providing an easy.comparing to all other dev agency."
+              content="And our favourite part - Fun. We play a lot of games, chit chat, laugh. We believe it enhances our creativity and communication."
             />
           </div>
         </div>
