@@ -41,9 +41,13 @@ footer {
         margin-left: 1.5em;
       }
 
-      p {
+      .footer-text-address {
+        line-height: 32px;
+      }
+
+      .footer-text {
         font-size: 18px;
-        line-height: 24px;
+        line-height: 25px;
       }
 
       a {
