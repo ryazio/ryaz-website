@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { useSize } from '../../hooks';
 import { CopyIcon } from '../../icons';
 
-const variantsParent = { hidden: { }, visible: { } };
+const variantsParent = { hidden: {}, visible: {} };
 const variants = { hidden: { opacity: 0 }, visible: { opacity: 1 } };
 
 function hexCol(color) {
@@ -12,7 +12,7 @@ function hexCol(color) {
   const cr = parseInt(hex.substr(0, 2), 16);
   const cg = parseInt(hex.substr(2, 2), 16);
   const cb = parseInt(hex.substr(4, 2), 16);
-  const brightness = ((cr * 299) + (cg * 587) + (cb * 114)) / 1000;
+  const brightness = (cr * 299 + cg * 587 + cb * 114) / 1000;
   return brightness > 155;
 }
 
@@ -30,11 +30,7 @@ export const ColorScheme = ({ className, colors }) => {
       animate={{ height: width / colors.length || undefined }}
     >
       {colors.map((color) => {
-        if (hexCol(color)) {
-          c1 = 'white-back';
-        } else {
-          c1 = '';
-        }
+        c1 = hexCol(color) ? 'white-back' : '';
         return (
           <motion.div
             key={color}
@@ -52,7 +48,11 @@ export const ColorScheme = ({ className, colors }) => {
               onClick={() => navigator.clipboard.writeText(color)}
               whileTap={{ scale: 0.9 }}
             >
-              {c1 === 'white-back' ? <CopyIcon fill="#333" /> : <CopyIcon fill="#fff" />}
+              {c1 === 'white-back' ? (
+                <CopyIcon fill="#333" />
+              ) : (
+                <CopyIcon fill="#fff" />
+              )}
               <p>{color}</p>
             </motion.div>
           </motion.div>
