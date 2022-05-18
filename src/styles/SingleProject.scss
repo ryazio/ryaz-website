@@ -2,6 +2,14 @@
   overflow-x: hidden;
   overflow-y: clip;
 
+  .line-height-correction {
+    line-height: 55px;
+  }
+
+  .correction {
+    width: 100%;
+  }
+
   .layover {
     position: absolute;
     top: -10px;

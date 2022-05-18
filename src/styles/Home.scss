@@ -105,6 +105,10 @@
         }
       }
 
+      .shadow {
+        box-shadow: 8px 4px 36px rgba(9, 180, 119, 0.25);
+      }
+
       @include over-tablet-large {
         display: grid;
         grid-template-columns: repeat(2, auto);
@@ -140,6 +144,7 @@
     font-size: 24px;
     line-height: 36px;
     color: $clr-accent;
+    font-weight: 420;
 
     span {
       color: #4DE5AF;

@@ -38,7 +38,7 @@ function RyazMethod() {
             <span> growth focused </span>
             agency for companies that care.
           </h2>
-          <p>
+          <p className="headline">
             We have certain core values defined and these are actually the four
             pillars that we stand on for our growth. These four pillars are
             clearly represented through our work.

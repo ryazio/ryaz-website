@@ -101,7 +101,8 @@ footer {
       display: none;
 
       @include over-tablet-medium {
-        display: grid;
+        display: flex;
+        width: 240px;
         margin-top: 43px;
       }
     }

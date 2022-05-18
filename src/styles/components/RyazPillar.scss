@@ -11,11 +11,12 @@
 
     h2 {
       font-size: 1.8rem;
+      color: #E7E7E7;
     }
 
     p {
       font-size: 3rem;
-      font-weight: 700;
+      font-weight: 420;
       color: rgba($color: $clr-accent, $alpha: 0.1);
     }
   }
@@ -29,6 +30,7 @@
       margin-bottom: 1rem;
     }
     .pillar-content {
+      color: #EFEFEF;
       @include over-tablet {
         height: 105px;
       }

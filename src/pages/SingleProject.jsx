@@ -43,7 +43,7 @@ function SingleProject() {
   const projectTeam = projectData?.stakeholders
     ?.map((leader) => employees.find((employee) => employee.id === leader));
   const heightResolution = Number(projectData?.resolution?.height || 9)
-   / Number(projectData?.resolution?.width || 16);
+    / Number(projectData?.resolution?.width || 16);
   return (
     <Layout className="project-page">
       <div className={isOpen ? 'layover' : ''}>
@@ -101,7 +101,7 @@ function SingleProject() {
             <div className="project-info-name">
               <ArrowIcon className="project-info-back" onClick={() => router.navigate('/work')} />
               {ProjectLogo && <ProjectLogo className="project-info-icon" />}
-              <span>{projectData?.name}</span>
+              <span className="line-height-correction">{projectData?.name}</span>
             </div>
             <p className="project-info-description">
               {projectData?.description}
@@ -148,7 +148,7 @@ function SingleProject() {
           <ProjectButton className="project-info-button" onClick={() => setIsOpen(true)}>More Details</ProjectButton>
         </div>
         <div className="project-details-pic">
-          <img src={projectImageMapper(projectData?.titleImage)} alt={projectData?.name} />
+          <img className="correction" src={projectImageMapper(projectData?.titleImage)} alt={projectData?.name} />
         </div>
       </div>
       <ProjectButton className="project-more" onClick={() => setIsOpen(true)}>More Details</ProjectButton>
