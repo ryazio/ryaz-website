@@ -1,6 +1,6 @@
 footer {
   display: flex;
-  background: #030F26;
+  background: #030f26;
   margin-top: 84px;
 
   .footer {
@@ -41,9 +41,13 @@ footer {
         margin-left: 1.5em;
       }
 
-      p {
+      .footer-text-address {
+        line-height: 32px;
+      }
+
+      .footer-text {
         font-size: 18px;
-        line-height: 24px;
+        line-height: 25px;
       }
 
       a {
@@ -97,7 +101,9 @@ footer {
       display: none;
 
       @include over-tablet-medium {
-        display: grid;
+        display: flex;
+        width: 240px;
+        margin-top: 43px;
       }
     }
   }

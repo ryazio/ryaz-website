@@ -2,6 +2,24 @@
   overflow-x: hidden;
   overflow-y: clip;
 
+  .line-height-correction {
+    line-height: 55px;
+  }
+
+  .correction {
+    width: 100%;
+  }
+
+  .layover {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    background-color: rgb(0, 0, 0, 0.4);
+    height: 200vh;
+    width: 100%;
+    z-index: 9;
+  }
+
   .project-side {
     position: fixed;
     top: 0;
@@ -9,7 +27,6 @@
     display: flex;
     height: 100%;
     width: 100%;
-    background: rgba(0, 0, 0, 0.3);
     z-index: 10;
 
     &-body {
@@ -38,19 +55,19 @@
         flex-direction: column;
         row-gap: 8px;
 
-        >h4 {
+        > h4 {
           font-weight: bold;
           font-size: 12px;
           line-height: 18px;
           letter-spacing: 0.12em;
-          color: #E7E7E7;
+          color: #e7e7e7;
           text-transform: uppercase;
         }
 
-        >p {
+        > p {
           font-size: 16px;
           line-height: 24px;
-          color: #C4C4C4;
+          color: #c4c4c4;
         }
 
         .project-side-person {
@@ -91,6 +108,9 @@
 
     @include over-tablet-medium {
       grid-template-columns: repeat(2, 1fr);
+      .project-information {
+        margin-left: 30px;
+      }
     }
 
     .project-info {
@@ -131,7 +151,7 @@
       &-description {
         font-size: 1.35rem;
         line-height: 1.5;
-        color: #DEDEDE;
+        color: #dedede;
 
         @include over-tablet-medium {
           font-size: 28px;
@@ -163,7 +183,7 @@
           font-size: 12px;
           line-height: 18px;
           letter-spacing: 0.25em;
-          color: #E7E7E7;
+          color: #e7e7e7;
           text-transform: uppercase;
           margin-bottom: 8px;
         }
@@ -194,6 +214,10 @@
       border-radius: 5px;
       border: 36px solid rgba(255, 255, 255, 0.05);
       height: fit-content;
+
+      @include over-desktop {
+        width: 95%;
+      }
     }
   }
 
@@ -222,12 +246,12 @@
       text-align: center;
       letter-spacing: 0.2em;
       text-transform: uppercase;
-      color: rgba(#FFFFFF, 0.5);
+      color: rgba(#ffffff, 0.5);
       margin: 0;
       margin-bottom: 6px;
     }
 
-    >p {
+    > p {
       font-size: 24px;
       line-height: 36px;
       font-weight: 500;
@@ -286,12 +310,12 @@
       text-align: center;
       letter-spacing: 0.2em;
       text-transform: uppercase;
-      color: rgba(#FFFFFF, 0.5);
+      color: rgba(#ffffff, 0.5);
       margin: 0;
       margin-bottom: 10px;
       margin-top: 50px;
     }
-    
+
     &-text {
       font-size: 24px;
       line-height: 36px;
@@ -320,7 +344,7 @@
         height: 76vw;
         width: 100%;
       }
-      
+
       @include over-tablet-medium {
         width: 90%;
         height: 700px;

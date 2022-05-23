@@ -13,7 +13,7 @@ export const RyazPillar = ({
     </div>
     <div className="pillar-description">
       <p>{tagline}</p>
-      <p>
+      <p className="pillar-content">
         {content}
       </p>
     </div>

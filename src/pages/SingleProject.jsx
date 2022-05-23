@@ -43,63 +43,65 @@ function SingleProject() {
   const projectTeam = projectData?.stakeholders
     ?.map((leader) => employees.find((employee) => employee.id === leader));
   const heightResolution = Number(projectData?.resolution?.height || 9)
-   / Number(projectData?.resolution?.width || 16);
+    / Number(projectData?.resolution?.width || 16);
   return (
     <Layout className="project-page">
-      <motion.div
-        className="project-side"
-        initial={{ x: '-100%' }}
-        animate={{ x: isOpen ? '0%' : '-100%' }}
-      >
-        <div className="project-side-body">
-          <section>
-            <h4 style={(window.innerHeight <= 620) ? { paddingTop: '60px' } : {}}>TIME SPAN</h4>
-            <p>{projectData?.timeSpan}</p>
-          </section>
-          <section>
-            <h4>DELIEVERABLES</h4>
-            {projectData?.delieverables?.map((delieverable) => (
-              <p key={delieverable}>{delieverable}</p>
-            ))}
-          </section>
-          <section>
-            <h4>CLIENT</h4>
-            <p>{projectData?.client}</p>
-          </section>
-          <section>
-            <h4>PROJECT LEADER</h4>
-            {projectLeaders?.map((user) => (
-              <UserPill
-                key={user.id}
-                className="project-side-person"
-                image={employeeImageMapper(user.id)}
-                name={user.name}
-              />
-            ))}
-          </section>
-          <section>
-            <h4>KEY STAKEHOLDERS</h4>
-            {projectTeam?.map((user) => (
-              <UserPill
-                key={user.id}
-                className="project-side-person"
-                image={employeeImageMapper(user.id)}
-                name={user.name}
-              />
-            ))}
-          </section>
-        </div>
-        <button type="button" onClick={() => setIsOpen(false)}>
-          <CrossIcon />
-        </button>
-      </motion.div>
+      <div className={isOpen ? 'layover' : ''}>
+        <motion.div
+          className="project-side"
+          initial={{ x: '-100%' }}
+          animate={{ x: isOpen ? '0%' : '-100%' }}
+        >
+          <div className="project-side-body">
+            <section>
+              <h4 style={(window.innerHeight <= 620) ? { paddingTop: '60px' } : {}}>TIME SPAN</h4>
+              <p>{projectData?.timeSpan}</p>
+            </section>
+            <section>
+              <h4>DELIEVERABLES</h4>
+              {projectData?.delieverables?.map((delieverable) => (
+                <p key={delieverable}>{delieverable}</p>
+              ))}
+            </section>
+            <section>
+              <h4>CLIENT</h4>
+              <p>{projectData?.client}</p>
+            </section>
+            <section>
+              <h4>PROJECT LEADER</h4>
+              {projectLeaders?.map((user) => (
+                <UserPill
+                  key={user.id}
+                  className="project-side-person"
+                  image={employeeImageMapper(user.id)}
+                  name={user.name}
+                />
+              ))}
+            </section>
+            <section>
+              <h4>KEY STAKEHOLDERS</h4>
+              {projectTeam?.map((user) => (
+                <UserPill
+                  key={user.id}
+                  className="project-side-person"
+                  image={employeeImageMapper(user.id)}
+                  name={user.name}
+                />
+              ))}
+            </section>
+          </div>
+          <button type="button" onClick={() => setIsOpen(false)}>
+            <CrossIcon />
+          </button>
+        </motion.div>
+      </div>
       <div className="project-details">
         <div className="project-info">
-          <section>
+          <section className="project-information">
             <div className="project-info-name">
               <ArrowIcon className="project-info-back" onClick={() => router.navigate('/work')} />
               {ProjectLogo && <ProjectLogo className="project-info-icon" />}
-              <span>{projectData?.name}</span>
+              <span className="line-height-correction">{projectData?.name}</span>
             </div>
             <p className="project-info-description">
               {projectData?.description}
@@ -146,7 +148,7 @@ function SingleProject() {
           <ProjectButton className="project-info-button" onClick={() => setIsOpen(true)}>More Details</ProjectButton>
         </div>
         <div className="project-details-pic">
-          <img src={projectImageMapper(projectData?.titleImage)} alt={projectData?.name} />
+          <img className="correction" src={projectImageMapper(projectData?.titleImage)} alt={projectData?.name} />
         </div>
       </div>
       <ProjectButton className="project-more" onClick={() => setIsOpen(true)}>More Details</ProjectButton>

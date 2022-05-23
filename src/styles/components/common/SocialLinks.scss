@@ -1,9 +1,9 @@
 .social-links {
-  width: fit-content;
-  display: grid;
-  grid-template-columns: repeat(7, auto);
-  column-gap: 36px;
-
+  width: 340px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  
   svg {
     cursor: pointer;
     height: 20px;

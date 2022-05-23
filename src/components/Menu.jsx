@@ -7,15 +7,15 @@ import { SocialLinks } from './common';
 import { FloatingRyazLogo } from '../icons';
 
 export const Menu = ({ isOpen, setIsOpen }) => (
-  isOpen && ReactDOM.createPortal(
+  (isOpen && ReactDOM.createPortal(
     <nav className="menu">
       <Header isOpen={isOpen} setIsOpen={() => setIsOpen(false)} />
       <section className="menu-body">
         <div>
           <Link onClick={() => { if (isOpen) setIsOpen(false); }} to="/">Home</Link>
-          <Link to="/work">Our Work</Link>
-          <Link to="/about">About Us</Link>
-          <Link to="/contact">Contact</Link>
+          <Link onClick={() => { if (isOpen) setIsOpen(false); }} to="/work">Our Work</Link>
+          <Link onClick={() => { if (isOpen) setIsOpen(false); }} to="/about">About Us</Link>
+          <Link onClick={() => { if (isOpen) setIsOpen(false); }} to="/contact">Contact</Link>
         </div>
       </section>
       <FloatingRyazLogo />
@@ -24,7 +24,7 @@ export const Menu = ({ isOpen, setIsOpen }) => (
       </section>
     </nav>,
     document.body,
-  )
+  ))
 );
 
 Menu.propTypes = {
@@ -33,5 +33,5 @@ Menu.propTypes = {
 };
 Menu.defaultProps = {
   isOpen: false,
-  setIsOpen: () => {},
+  setIsOpen: () => { },
 };

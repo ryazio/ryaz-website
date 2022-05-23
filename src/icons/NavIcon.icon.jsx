@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 export const NavIcon = ({ className, onClick }) => (
-  <button type="button" className={`nav-icon ${className}`.trim()} onClick={onClick}>
+  <button type="button" aria-label="Menu" className={`nav-icon ${className}`.trim()} onClick={onClick}>
     <div className="nav-icon-layer" />
     <div className="nav-icon-layer" />
     <div className="nav-icon-layer" />

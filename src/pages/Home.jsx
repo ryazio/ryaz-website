@@ -9,9 +9,7 @@ function Home() {
   return (
     <Layout className="home" noFooter isShadowLogo>
       <div className="home-left">
-        <Link to="/work">
-          Our Work
-        </Link>
+        <Link to="/work">Our Work</Link>
       </div>
       <div className="home-middle">
         <div className="home-middle-text">
@@ -25,14 +23,19 @@ function Home() {
           </div>
         </div>
         <div className="home-middle-buttons">
-          <Link to="/work" className="home-button primary-btn primary-btn--inverted">Our Work</Link>
-          <Link to="/contact" className="home-button primary-btn">Hire Us</Link>
+          <Link
+            to="/work"
+            className="home-button primary-btn primary-btn--inverted"
+          >
+            Our Work
+          </Link>
+          <Link to="/contact" className="home-button primary-btn shadow">
+            Hire Us
+          </Link>
         </div>
       </div>
       <div className="home-right">
-        <Link to="/about">
-          About Us
-        </Link>
+        <Link to="/about">About Us</Link>
       </div>
     </Layout>
   );
