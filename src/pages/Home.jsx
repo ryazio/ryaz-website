@@ -8,9 +8,6 @@ function Home() {
   }, []);
   return (
     <Layout className="home" noFooter isShadowLogo>
-      <div className="home-left">
-        <Link to="/work">Our Work</Link>
-      </div>
       <div className="home-middle">
         <div className="home-middle-text">
           <div className="home-tagline">
@@ -33,9 +30,6 @@ function Home() {
             Hire Us
           </Link>
         </div>
-      </div>
-      <div className="home-right">
-        <Link to="/about">About Us</Link>
       </div>
     </Layout>
   );

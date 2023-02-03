@@ -4,64 +4,8 @@
   height: calc(100vh - $nav-height-mobile);
 
   @include over-mobile {
-    grid-template-columns: 100px auto 100px;
+    // grid-template-columns: 100px auto 100px;
     height: calc(100vh - $nav-height-desktop);
-  }
-
-  &-left,
-  &-right {
-    position: relative;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    height: 100%;
-    padding-bottom: 84px;
-    writing-mode: vertical-lr;
-
-    @include over-mobile {
-      display: flex;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      height: calc(100% + 84px);
-      width: 1px;
-      background-color: rgba(255, 255, 255, 0.05);
-      opacity: 0.5;
-      top: -84px;
-    }
-
-    a {
-      color: rgba($clr-accent, 0.5);
-      text-decoration: none;
-      text-transform: uppercase;
-      letter-spacing: 0.2em;
-      font-size: 0.67em;
-      font-weight: 900;
-      transition: all ease 0.3s;
-
-      &:hover {
-        color: rgba($clr-accent, 0.8);
-      }
-    }
-  }
-
-  &-left {
-    &::after {
-      right: 0;
-    }
-
-    a {
-      transform: scale(-1, -1);
-    }
-  }
-
-  &-right {
-    &::after {
-      left: 0;
-    }
   }
 
   &-middle {
