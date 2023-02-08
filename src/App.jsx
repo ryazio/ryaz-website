@@ -24,6 +24,7 @@ function App() {
           <Route path="/work" element={<Work />} />
           <Route path="/work/:name" element={<SingleProject />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/hire" element={<Contact />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="*" element={<Navigate replace to="/" />} />
         </Routes>

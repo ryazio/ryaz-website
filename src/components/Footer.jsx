@@ -22,7 +22,7 @@ export const Footer = () => (
         <p className="footer-text"><Link to="/contact">Contact</Link></p>
       </section>
       <section>
-        <p className="footer-text"><Link to="/contact">Hire Us</Link></p>
+        <p className="footer-text"><Link to="/hire">Hire Us</Link></p>
         <p className="footer-text"><Link to="/contact">Join Us</Link></p>
         <SocialLinks className="footer-links-desktop" />
       </section>

@@ -26,7 +26,7 @@ function Home() {
           >
             Our Work
           </Link>
-          <Link to="/contact" className="home-button primary-btn shadow">
+          <Link to="/hire" className="home-button primary-btn shadow">
             Hire Us
           </Link>
         </div>

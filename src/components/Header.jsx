@@ -29,7 +29,7 @@ export const Header = ({ className, isOpen, setIsOpen }) => {
     },
     {
       title: 'HIRE US',
-      url: '/contact',
+      url: '/hire',
     }];
 
   return (
@@ -50,7 +50,7 @@ export const Header = ({ className, isOpen, setIsOpen }) => {
       </div>
       <div className="header-desktop-view">
         {LINKS.map(({ title, url }) => (
-          <div className={`header-desktop-view-link ${location.pathname === url || (url === '/home' && location.pathname === '/') ? 'active' : ''}`}>
+          <div key={title} className={`header-desktop-view-link ${location.pathname === url || (url === '/home' && location.pathname === '/') ? 'active' : ''}`}>
             <Link to={url}>{title}</Link>
           </div>
         ))}
