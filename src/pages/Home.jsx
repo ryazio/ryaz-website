@@ -11,9 +11,6 @@ function Home() {
   return (
     <Layout noFooter isShadowLogo>
       <div className="home">
-        <div className="home-left">
-          <Link to="/work">Our Work</Link>
-        </div>
         <div className="home-middle">
           <div className="home-middle-text">
             <div className="home-tagline">
@@ -36,9 +33,6 @@ function Home() {
               Hire Us
             </Link>
           </div>
-        </div>
-        <div className="home-right">
-          <Link to="/about">About Us</Link>
         </div>
       </div>
       <Work isNavVisible={false} isFooterVisible={false} />

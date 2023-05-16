@@ -33,7 +33,7 @@ export const ContactForm = ({ className }) => {
   };
 
   return (
-    <div className={`contact ${className}`.trim()}>
+    <div id="contact" className={`contact ${className}`.trim()}>
       <div id="contact-element" className="contact-tagline">Let’s make it happen.</div>
       <div className="contact-info">
         It doesn’t matter where you coming from, or any other aspect.

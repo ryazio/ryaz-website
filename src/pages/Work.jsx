@@ -24,7 +24,7 @@ function Work({ isNavVisible, isFooterVisible }) {
 
   return (
     <Layout className="work" noFooter={!isFooterVisible} isHeaderVisible={isNavVisible}>
-      <div className="work-tagline">
+      <div id="work" className="work-tagline">
         We design, build and ship digital products on time with written
         guarantees on quality & performance.
       </div>

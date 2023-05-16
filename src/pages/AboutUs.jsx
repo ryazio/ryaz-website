@@ -30,7 +30,7 @@ function RyazMethod({ isNavVisible }) {
   };
   return (
     <Layout isHeaderVisible={isNavVisible} className="about">
-      <div className="about-home">
+      <div id="about" className="about-home">
         <div className="about-info">
           <h2>
             A

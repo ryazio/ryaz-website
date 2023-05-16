@@ -9,27 +9,27 @@ export const Header = ({ className, isOpen, setIsOpen }) => {
   const LINKS = [
     {
       title: 'HOME',
-      url: '/home',
+      url: '/',
     },
     {
       title: 'OUR WORK',
-      url: '/work',
+      url: '#work',
     },
     {
       title: 'ABOUT US',
-      url: '/about',
+      url: '#about',
     },
     {
       title: 'CONTACT',
-      url: '/contact',
+      url: '#contact',
     },
     {
       title: 'BLOG',
-      url: '/webdioxide',
+      url: '#blog',
     },
     {
       title: 'HIRE US',
-      url: '/hire',
+      url: '#contact',
     }];
 
   return (
@@ -51,7 +51,7 @@ export const Header = ({ className, isOpen, setIsOpen }) => {
       <div className="header-desktop-view">
         {LINKS.map(({ title, url }) => (
           <div key={title} className={`header-desktop-view-link ${location.pathname === url || (url === '/home' && location.pathname === '/') ? 'active' : ''}`}>
-            <Link to={url}>{title}</Link>
+            <a href={url}>{title}</a>
           </div>
         ))}
       </div>
