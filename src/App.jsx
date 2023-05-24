@@ -6,7 +6,9 @@ import SwiperCore, { FreeMode, Navigation } from 'swiper';
 import Home from './pages/Home';
 import Work from './pages/Work';
 import SingleProject from './pages/SingleProject';
-import 'swiper/swiper.min.css';
+
+// import 'swiper/modules/navigation/navigation.min.css';
+// import 'swiper/modules/free-mode/free-mode.min.css';
 // import 'swiper/modules/free-mode/free-mode.min.css';
 // import 'swiper/modules/navigation/navigation.min.css';
 import './styles/index.scss';
