@@ -25,7 +25,7 @@ export const Header = ({ className, isOpen, setIsOpen }) => {
     },
     {
       title: 'BLOG',
-      url: '#blog',
+      url: 'https://webdioxide.com',
     },
     {
       title: 'HIRE US',
