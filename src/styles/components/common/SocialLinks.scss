@@ -1,0 +1,12 @@
+.social-links {
+  width: 340px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  
+  svg {
+    cursor: pointer;
+    height: 20px;
+    fill: #C9C9C9;
+  }
+}

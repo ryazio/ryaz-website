@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "Brandon";
+  src: url("./fonts/BrandonGrotesque-Light.otf");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Brandon";
+  src: url("./fonts/BrandonGrotesque-LightItalic.otf");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Brandon";
+  src: url("./fonts/BrandonGrotesque-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Brandon";
+  src: url("./fonts/BrandonGrotesque-Medium.otf");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Brandon";
+  src: url("./fonts/BrandonGrotesque-Bold.otf");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Brandon";
+  src: url("./fonts/BrandonGrotesque-Black.otf");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cormorant";
+  src: url("./fonts/cormorant.light-italic.otf");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}

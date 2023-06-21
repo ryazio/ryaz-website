@@ -1,0 +1,361 @@
+[
+  {
+    "id": "05",
+    "slug": "forby",
+    "name": "Forby",
+    "description": "Helping everyone freely put their views and support or disagree on anyone else's views. Forby users can easily share their ideas, vote on ideas and discuss plans and execute them all together!",
+    "labels": ["UI/UX Design"],
+    "leaders": [3],
+    "stakeholders": [3, 2, 1],
+    "client": "Sam Schikowitz",
+    "timeSpan": "2 Months",
+    "delieverables": ["UI/UX Design"],
+    "titleImage": "FORBY_TITLE",
+    "stackImages": [
+      "FORBY_STACK_1",
+      "FORBY_STACK_2",
+      "FORBY_STACK_3",
+      "FORBY_STACK_4",
+      "FORBY_STACK_5"
+    ],
+    "sliderImages": [
+      "FORBY_SLIDER_1",
+      "FORBY_SLIDER_2",
+      "FORBY_SLIDER_3",
+      "FORBY_SLIDER_4",
+      "FORBY_SLIDER_5",
+      "FORBY_SLIDER_6",
+      "FORBY_SLIDER_7",
+      "FORBY_SLIDER_8",
+      "FORBY_SLIDER_9",
+      "FORBY_SLIDER_10",
+      "FORBY_SLIDER_11",
+      "FORBY_SLIDER_12",
+      "FORBY_SLIDER_13",
+      "FORBY_SLIDER_14"
+    ],
+    "colorScheme": ["#DADBDB", "#BDCCD0", "#070707", "#525257", "#3E5BBC"],
+    "clientReview": {
+      "stars": 5,
+      "message": "Amazing designs to make this complicated thing simple and easy to interact with for the user.",
+      "link": "www.google.com"
+    }
+  },
+  {
+    "id": "06",
+    "slug": "puerto-rico-guide",
+    "name": "Puerto Rico Guide",
+    "description": "A project for the Puerto Rico government in order to help the real estate business grow well!",
+    "labels": ["Designing", "Frontend Development"],
+    "leaders": [2],
+    "stakeholders": [3, 2],
+    "client": "James Greaves",
+    "timeSpan": "1 Month",
+    "delieverables": ["UI/UX Design"],
+    "titleImage": "PUERTO_RICO_GUIDE_TITLE",
+    "stackImages": [
+      "PUERTO_RICO_GUIDE_STACK_1",
+      "PUERTO_RICO_GUIDE_STACK_2",
+      "PUERTO_RICO_GUIDE_STACK_3",
+      "PUERTO_RICO_GUIDE_STACK_4",
+      "PUERTO_RICO_GUIDE_STACK_5",
+      "PUERTO_RICO_GUIDE_STACK_6",
+      "PUERTO_RICO_GUIDE_STACK_7"
+    ],
+    "sliderImages": [
+      "PUERTO_RICO_GUIDE_SLIDER_1",
+      "PUERTO_RICO_GUIDE_SLIDER_2",
+      "PUERTO_RICO_GUIDE_SLIDER_3",
+      "PUERTO_RICO_GUIDE_SLIDER_4",
+      "PUERTO_RICO_GUIDE_SLIDER_5",
+      "PUERTO_RICO_GUIDE_SLIDER_6",
+      "PUERTO_RICO_GUIDE_SLIDER_7"
+    ],
+    "colorScheme": [
+      "#AEAEAE",
+      "#0C0806",
+      "#686562",
+      "#D0D0D0",
+      "#563723",
+      "#916C4C",
+      "#A38C70",
+      "#CABDA9"
+    ],
+    "clientReview": {
+      "stars": 5,
+      "message": "Amazing designs to make this complicated thing simple and easy to interact with for the user.",
+      "link": "www.google.com"
+    }
+  },
+  {
+    "id": "07",
+    "slug": "we-path",
+    "name": "WePath",
+    "description": "A case management app for German doctors in a university to manage all the cases, upload important WSI and non-WSI images helping them to discuss using the integrated chat facility with annotations.",
+    "labels": [
+      "Frontend Development",
+      "Backend Development",
+      "UI/UX Design",
+      "Testing",
+      "QA"
+    ],
+    "leaders": [3],
+    "stakeholders": [3, 6, 13, 15, 2],
+    "client": "Wepath",
+    "timeSpan": "3-4 Months",
+    "delieverables": [
+      "UI/UX Design",
+      "Front-end Development",
+      "Back-end Development"
+    ],
+    "titleImage": "WE_PATH_TITLE",
+    "stackImages": [
+      "WE_PATH_STACK_1",
+      "WE_PATH_STACK_2",
+      "WE_PATH_STACK_3",
+      "WE_PATH_STACK_4",
+      "WE_PATH_STACK_5"
+    ],
+    "colorScheme": [
+      "#F1F1F1",
+      "#B2C7CA",
+      "#136164",
+      "#666768",
+      "#5B9A9E",
+      "#352F2C",
+      "#857E8A"
+    ],
+    "clientReview": {
+      "stars": 5,
+      "message": "Amazing designs to make this complicated thing simple and easy to interact with for the user.",
+      "link": "www.google.com"
+    }
+  },
+  {
+    "id": "08",
+    "slug": "ac-nautica",
+    "name": "AC Nautica",
+    "description": "A project for representing business of an Italian Nautical Company dealing with buying, renting boats, fine tuning and lot more.",
+    "labels": ["Frontend Development", "UI/UX Design"],
+    "leaders": [3],
+    "stakeholders": [3, 14, 2],
+    "client": "Ana Maria",
+    "timeSpan": "2 Months",
+    "delieverables": ["UI/UX Design", "Front-end Development"],
+    "titleImage": "AC_NAUTICA_TITLE",
+    "stackImages": [
+      "AC_NAUTICA_STACK_1",
+      "AC_NAUTICA_STACK_2",
+      "AC_NAUTICA_STACK_3",
+      "AC_NAUTICA_STACK_4",
+      "AC_NAUTICA_STACK_5"
+    ],
+    "sliderImages": [
+      "AC_NAUTICA_SLIDER_1",
+      "AC_NAUTICA_SLIDER_2",
+      "AC_NAUTICA_SLIDER_3",
+      "AC_NAUTICA_SLIDER_4",
+      "AC_NAUTICA_SLIDER_5",
+      "AC_NAUTICA_SLIDER_6"
+    ],
+    "colorScheme": ["#09151B", "#374346", "#877A72", "#AA9E91", "#ECECE0"],
+    "clientReview": {
+      "stars": 5,
+      "message": "Amazing designs to make this complicated thing simple and easy to interact with for the user.",
+      "link": "www.google.com"
+    }
+  },
+  {
+    "id": "09",
+    "slug": "alibalance",
+    "name": "Alibalance",
+    "description": "The SaaS app helping organisations manage finances, compare annual growths, profits, loss for planning better approaches for managing expenses.",
+    "labels": ["Frontend Development", "Backend Development"],
+    "leaders": [18],
+    "stakeholders": [18, 4, 14, 2],
+    "client": "Scalarly",
+    "timeSpan": "2 Months",
+    "delieverables": ["Front-end Development"],
+    "titleImage": "ALIBALANCE_TITLE",
+    "stackImages": [
+      "ALIBALANCE_STACK_1",
+      "ALIBALANCE_STACK_2",
+      "ALIBALANCE_STACK_3",
+      "ALIBALANCE_STACK_4",
+      "ALIBALANCE_STACK_5"
+    ],
+    "colorScheme": ["#4BA5A7", "#E4F3F4", "#333333", "#999999", "#F6F6F6"],
+    "clientReview": {
+      "stars": 5,
+      "message": "Amazing designs to make this complicated thing simple and easy to interact with for the user.",
+      "link": "www.google.com"
+    }
+  },
+  {
+    "id": "10",
+    "slug": "green-clinic",
+    "name": "Green Clinic",
+    "description": "A platform for people to buy licensed Marijuana and consult the doctor online.",
+    "labels": ["UI/UX Design"],
+    "leaders": [2],
+    "stakeholders": [3, 2],
+    "client": "Sam Schikowitz",
+    "timeSpan": "1 Month",
+    "delieverables": ["UI/UX Design"],
+    "titleImage": "GREEN_CLINIC_TITLE",
+    "stackImages": [
+      "GREEN_CLINIC_STACK_1",
+      "GREEN_CLINIC_STACK_2",
+      "GREEN_CLINIC_STACK_3",
+      "GREEN_CLINIC_STACK_4",
+      "GREEN_CLINIC_STACK_5"
+    ],
+    "sliderImages": [
+      "GREEN_CLINIC_SLIDER_1",
+      "GREEN_CLINIC_SLIDER_2",
+      "GREEN_CLINIC_SLIDER_3",
+      "GREEN_CLINIC_SLIDER_4",
+      "GREEN_CLINIC_SLIDER_5",
+      "GREEN_CLINIC_SLIDER_6",
+      "GREEN_CLINIC_SLIDER_7",
+      "GREEN_CLINIC_SLIDER_8",
+      "GREEN_CLINIC_SLIDER_9"
+    ],
+    "colorScheme": ["#F5FBEE", "#9CB4B0", "#A5CBC3", "#6C9689", "#013324"],
+    "clientReview": {
+      "stars": 5,
+      "message": "Amazing designs to make this complicated thing simple and easy to interact with for the user.",
+      "link": "www.google.com"
+    }
+  },
+  {
+    "id": "11",
+    "slug": "sttm-desktop",
+    "name": "Sttm desktop",
+    "description": "A de facto standard for Keertans and Gurdwaras around the world to display Gurbani on screens for Sangat to join into the depth of Gurbani and translations.",
+    "labels": ["Designing", "Frontend Development"],
+    "leaders": [8],
+    "stakeholders": [8, 16],
+    "client": "Khalis Foundation",
+    "timeSpan": "ongoing",
+    "delieverables": ["UI/UX Design", "Front-end Development"],
+    "titleImage": "STTM_DESKTOP_TITLE",
+    "stackImages": [
+      "STTM_DESKTOP_STACK_1",
+      "STTM_DESKTOP_STACK_2",
+      "STTM_DESKTOP_STACK_3",
+      "STTM_DESKTOP_STACK_4",
+      "STTM_DESKTOP_STACK_5"
+    ],
+    "colorScheme": ["#4BA5A7", "#E4F3F4", "#333333", "#999999", "#F6F6F6"],
+    "clientReview": {
+      "stars": 5,
+      "message": "Amazing designs to make this complicated thing simple and easy to interact with for the user.",
+      "link": "www.google.com"
+    }
+  },
+  {
+    "id": "12",
+    "slug": "demobutler",
+    "name": "Demobutler",
+    "description": "A Video calling platform for different companies to schedule meetings, offer food coupon to meeting attendees, provide companies suggestions based on user’s past meeting.",
+    "labels": ["Designing", "Frontend Development"],
+    "leaders": [15],
+    "stakeholders": [15],
+    "client": "Ranadev",
+    "timeSpan": "6 months",
+    "delieverables": ["Front-end Development"],
+    "titleImage": "DEMOBUTLER_TITLE",
+    "stackImages": [
+      "DEMOBUTLER_STACK_1",
+      "DEMOBUTLER_STACK_2",
+      "DEMOBUTLER_STACK_3",
+      "DEMOBUTLER_STACK_4",
+      "DEMOBUTLER_STACK_5",
+      "DEMOBUTLER_STACK_6",
+      "DEMOBUTLER_STACK_7",
+      "DEMOBUTLER_STACK_8",
+      "DEMOBUTLER_STACK_9",
+      "DEMOBUTLER_STACK_10",
+      "DEMOBUTLER_STACK_11",
+      "DEMOBUTLER_STACK_12",
+      "DEMOBUTLER_STACK_13",
+      "DEMOBUTLER_STACK_14",
+      "DEMOBUTLER_STACK_15",
+      "DEMOBUTLER_STACK_16"
+    ],
+    "colorScheme": ["#4BA5A7", "#E4F3F4", "#333333", "#999999", "#F6F6F6"],
+    "clientReview": {
+      "stars": 5,
+      "message": "Amazing designs to make this complicated thing simple and easy to interact with for the user.",
+      "link": "www.google.com"
+    }
+  },
+  {
+    "id": "13",
+    "slug": "merit",
+    "name": "Merit",
+    "description": "A plaform for applying loans in US. It allows users to register for a loan and if the loan is accepted they can pay back the load through this application.",
+    "labels": [
+      "Frontend Development",
+      "Backend Development",
+      "UI/UX Design",
+      "Testing",
+      "QA"
+    ],
+    "leaders": [13],
+    "stakeholders": [13, 3, 6],
+    "client": "Ranadev",
+    "timeSpan": "1-2 Months",
+    "delieverables": ["Front-end Development", "Back-end Development"],
+    "titleImage": "MERIT_TITLE",
+    "stackImages": [
+      "MERIT_STACK_1",
+      "MERIT_STACK_2",
+      "MERIT_STACK_3",
+      "MERIT_STACK_4",
+      "MERIT_STACK_5",
+      "MERIT_STACK_6"
+    ],
+    "colorScheme": ["#4BA5A7", "#E4F3F4", "#333333", "#999999", "#F6F6F6"],
+    "clientReview": {
+      "stars": 5,
+      "message": "Amazing designs to make this complicated thing simple and easy to interact with for the user.",
+      "link": "www.google.com"
+    }
+  },
+  {
+    "id": "14",
+    "slug": "self-id",
+    "name": "Self ID",
+    "description": "A platform to support the second opinion of doctors.",
+    "labels": [
+      "Frontend Development",
+      "Backend Development",
+      "UI/UX Design",
+      "Testing",
+      "QA"
+    ],
+    "leaders": [7],
+    "stakeholders": [7, 6, 14, 20],
+    "client": "Ranadev",
+    "timeSpan": "ongoing",
+    "delieverables": ["Front-end Development", "Back-end Development"],
+    "titleImage": "SELF_ID_TITLE",
+    "stackImages": [
+      "SELF_ID_STACK_1",
+      "SELF_ID_STACK_2",
+      "SELF_ID_STACK_3",
+      "SELF_ID_STACK_4",
+      "SELF_ID_STACK_5",
+      "SELF_ID_STACK_6",
+      "SELF_ID_STAKC_7"
+    ],
+    "colorScheme": ["#4BA5A7", "#E4F3F4", "#333333", "#999999", "#F6F6F6"],
+    "clientReview": {
+      "stars": 5,
+      "message": "Amazing designs to make this complicated thing simple and easy to interact with for the user.",
+      "link": "www.google.com"
+    }
+  }
+]

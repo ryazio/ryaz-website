@@ -1,0 +1,48 @@
+.pillar {
+  height: fit-content;
+  padding: 12px 24px 42px;
+  background: #0d1b35;
+  border-radius: radius(5);
+
+  .pillar-info {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+
+    h2 {
+      font-size: 1.8rem;
+      color: #E7E7E7;
+    }
+
+    p {
+      font-size: 3rem;
+      font-weight: 420;
+      color: rgba($color: $clr-accent, $alpha: 0.1);
+    }
+  }
+
+  .pillar-description {
+    p:first-child {
+      font-family: "Cormorant";
+      font-style: italic;
+      line-height: 28px;
+      font-size: 20px;
+      margin-bottom: 1rem;
+    }
+    .pillar-content {
+      color: #EFEFEF;
+      @include over-tablet {
+        height: 105px;
+      }
+      @include over-tablet-medium {
+        height: 70px;
+      }
+      @include over-desktop {
+        height: 140px;
+      }
+      @include over-desktop-large {
+        height: 100px;
+      }
+    }
+  }
+}

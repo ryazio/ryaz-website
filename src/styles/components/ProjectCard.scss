@@ -1,0 +1,63 @@
+.project {
+  a:-webkit-any-link {
+    text-decoration: none;
+  }
+
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  @include over-tablet {
+    margin-left: 48px;
+    width: calc(100% - 48px);
+  }
+
+  &-sno {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -35%);
+    font-size: 64px;
+    line-height: 64px;
+    color: rgba(white, 0.05);
+    z-index: -1;
+    font-weight: 500;
+
+    @include over-tablet {
+      font-size: 144px;
+      line-height: 144px;
+    }
+  }
+
+  &-title {
+    font-size: 28px;
+    line-height: 42px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #ffffff;
+    width: fit-content;
+
+    @include over-tablet {
+      font-size: 64px;
+      line-height: 92px;
+    }
+  }
+
+  &-description {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 12px;
+    color: #cdcdcd;
+    font-weight: 300;
+  }
+
+  &-image {
+    border-radius: radius(1);
+    object-fit: cover;
+
+    @include over-tablet {
+      display: none;
+    }
+  }
+}

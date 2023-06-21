@@ -1,0 +1,25 @@
+.activity {
+  &-bar {
+    border-top: 1px solid $clr-primary;
+  }
+
+  h4 {
+    color: $clr-primary-light;
+    font-size: 2.5rem;
+    padding: 1.5rem 0;
+  }
+
+  &-tagline {
+    font-size: 1.1rem;
+    font-family: "brandon";
+    padding: 1.5rem 0;
+    font-style: italic;
+    color: #CBCBCB;
+  }
+
+  &-detail {
+    font-size: 1rem;
+    line-height: 2;
+    color: #E2E2E2;
+  }
+}
