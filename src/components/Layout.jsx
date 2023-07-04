@@ -7,12 +7,14 @@ import { ShadowRyazLogo } from './common';
 import { Menu } from './Menu';
 
 export const Layout = ({
-  className, children, noFooter, isShadowLogo,
+  className, children, noFooter, isShadowLogo, isHeaderVisible,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
-      <Header setIsOpen={() => setIsOpen(true)} />
+      {isHeaderVisible && (
+        <Header setIsOpen={() => setIsOpen(true)} />
+      )}
       <main className={className}>
         {children}
       </main>
@@ -27,9 +29,11 @@ Layout.propTypes = {
   className: PropTypes.string,
   noFooter: PropTypes.bool,
   isShadowLogo: PropTypes.bool,
+  isHeaderVisible: PropTypes.bool,
 };
 Layout.defaultProps = {
   className: '',
   noFooter: false,
   isShadowLogo: false,
+  isHeaderVisible: true,
 };
