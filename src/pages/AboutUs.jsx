@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import React, { useEffect, useState } from 'react';
 import { Toaster } from 'react-hot-toast';
+import PropTypes from 'prop-types';
 import {
   ContactForm, Layout, RyazPillar, RyazActivity,
 } from '../components';
@@ -9,7 +10,7 @@ import { employeeImageMapper } from '../contants';
 import employees from '../json/employees.json';
 import { RyazLogo } from '../icons';
 
-function RyazMethod() {
+function RyazMethod({ isNavVisible }) {
   const [isDesktopSizeWindow, setIsDesktopSizeWindow] = useState(
     window.innerWidth > 768,
   );
@@ -28,8 +29,8 @@ function RyazMethod() {
     document?.getElementById('contact-element')?.scrollIntoView();
   };
   return (
-    <Layout className="about">
-      <div className="about-home">
+    <Layout isHeaderVisible={isNavVisible} className="about">
+      <div id="about" className="about-home">
         <div className="about-info">
           <h2>
             A
@@ -150,5 +151,11 @@ function RyazMethod() {
     </Layout>
   );
 }
+RyazMethod.propTypes = {
+  isNavVisible: PropTypes.bool,
+};
+RyazMethod.defaultProps = {
+  isNavVisible: true,
+};
 
 export default RyazMethod;

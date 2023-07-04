@@ -1,12 +1,13 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
+import PropTypes from 'prop-types';
 import projects from '../json/projects.json';
 import transparentImage from '../images/transparent.png';
 
 import { Layout, ProjectCard } from '../components';
 import { projectImageMapper } from '../contants';
 
-function Work() {
+function Work({ isNavVisible, isFooterVisible }) {
   const [imageIndex, setImageIndex] = useState(0);
   const [currentImage, setCurrentImage] = useState(projectImageMapper(projects[0]?.titleImage));
   const containerRef = useRef();
@@ -22,8 +23,8 @@ function Work() {
   }, []);
 
   return (
-    <Layout className="work">
-      <div className="work-tagline">
+    <Layout className="work" noFooter={!isFooterVisible} isHeaderVisible={isNavVisible}>
+      <div id="work" className="work-tagline">
         We design, build and ship digital products on time with written
         guarantees on quality & performance.
       </div>
@@ -51,5 +52,12 @@ function Work() {
     </Layout>
   );
 }
-
+Work.propTypes = {
+  isNavVisible: PropTypes.bool,
+  isFooterVisible: PropTypes.bool,
+};
+Work.defaultProps = {
+  isNavVisible: true,
+  isFooterVisible: true,
+};
 export default Work;
