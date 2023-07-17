@@ -4,9 +4,19 @@
     "designation": "Director, Software Engineering"
   },
   {
-    "id": 2,
-    "name": "Nandini Prashar",
-    "designation": "UI/UX Designer / Project Manager"
+    "id": 18,
+    "name": "Shaina Sabarwal",
+    "designation": "Co-Founder"
+  },
+  {
+    "id": 6,
+    "name": "Mandeep Singh",
+    "designation": "Sofware Developer"
+  },
+  {
+    "id": 16,
+    "name": "Amanjot Singh",
+    "designation": "Sofware Developer"
   },
   {
     "id": 1,
@@ -24,19 +34,9 @@
     "designation": "Backend Developer"
   },
   {
-    "id": 6,
-    "name": "Mandeep Singh",
-    "designation": "Backend Developer / Project Manager"
-  },
-  {
     "id": 7,
     "name": "Vigas deep",
     "designation": "Backend Developer / Project Manager"
-  },
-  {
-    "id": 8,
-    "name": "Gauravjeet Singh",
-    "designation": "Co-Founder"
   },
   {
     "id": 9,
@@ -49,19 +49,9 @@
     "designation": "Developer"
   },
   {
-    "id": 11,
-    "name": "Arshpreet Singh",
-    "designation": "Wordpress Developer"
-  },
-  {
-    "id": 12,
-    "name": "Harminder Singh",
-    "designation": "Wordpress Developer"
-  },
-  {
     "id": 13,
     "name": "Divyanshu Garg",
-    "designation": "Frontend Developer"
+    "designation": "Software Developer"
   },
   {
     "id": 14,
@@ -71,22 +61,7 @@
   {
     "id": 15,
     "name": "Shiv Charan Sharma",
-    "designation": "Frontend Developer"
-  },
-  {
-    "id": 16,
-    "name": "Amanjot Singh",
-    "designation": "Frontend Developer"
-  },
-  {
-    "id": 17,
-    "name": "Gurjit Singh",
-    "designation": "Developer"
-  },
-  {
-    "id": 18,
-    "name": "Shaina Sabarwal",
-    "designation": "Co-Founder"
+    "designation": "Full-stack Developer"
   },
   {
     "id": 19,
@@ -94,23 +69,18 @@
     "designation": "Ghost"
   },
   {
-    "id": 20,
-    "name": "Palak Thapar",
-    "designation": "Backend Developer"
-  },
-  {
     "id": 21,
     "name": "Kamal Kaur",
     "designation": "Developer"
   },
   {
-    "id": 22,
-    "name": "Harinder Singh Balala",
-    "designation": "System Administrator"
+    "id": 2,
+    "name": "Nandini Prashar",
+    "designation": "UI/UX Designer / Project Manager"
   },
   {
-    "id": 23,
-    "name": "Anmol Kaur",
-    "designation": "Developer"
+    "id": 8,
+    "name": "Gauravjeet Singh",
+    "designation": "Senior Developer / Partner"
   }
 ]
