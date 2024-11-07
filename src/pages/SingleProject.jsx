@@ -3,7 +3,9 @@ import { useParams } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import projects from '../json/projects.json';
 import employees from '../json/employees.json';
-import { employeeImageMapper, projectImageMapper, projectLogoMapper } from '../contants';
+import {
+  employeeImageMapper, projectImageMapper, projectLogoMapper, projectVideoMapper,
+} from '../contants';
 import {
   CardSlider, CardStack, ColorScheme, FancyLabel, ProjectButton, Testinomial, UserPill,
 } from '../components/common';
@@ -184,31 +186,48 @@ function SingleProject() {
             <h5 className="project-video-title">Quick Glance</h5>
             <p className="project-video-text">A quick look of our project.</p>
             <div className="project-video-holder">
-              <iframe
-                width="560"
-                height="315"
-                src={projectData?.videoLink}
-                title="Video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; modestbranding; picture-in-picture"
-                allowFullScreen
-                className="project-video-embed"
-              />
+              {projectData?.videoLink.includes('http') ? (
+                <iframe
+                  width="560"
+                  height="315"
+                  src={projectData?.videoLink}
+                  title="Video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; modestbranding; picture-in-picture"
+                  allowFullScreen
+                  className="project-video-embed"
+                />
+              ) : (
+                <video
+                  width="560"
+                  height="315"
+                  controls
+                  className="project-video-embed"
+                >
+                  <source src={projectVideoMapper(projectData?.videoLink)} type="video/mp4" />
+                  <track kind="captions" srcLang="en" label="English captions" />
+                  Your browser does not support the video tag.
+                </video>
+              )}
             </div>
           </>
         )
         : <> </>}
-      <div className="project-sections">
-        <h5>Our Color Palette</h5>
-        <p>Color Scheme plays a great role.</p>
-        <ColorScheme className="project-sections-colors" colors={projectData?.colorScheme} />
-      </div>
-      <Testinomial
-        className="project-testinomial"
-        star={projectData?.clientReview?.stars}
-        review={projectData?.clientReview?.message}
-        to="/"
-      />
+      {projectData?.colorScheme && (
+        <div className="project-sections">
+          <h5>Our Color Palette</h5>
+          <p>Color Scheme plays a great role.</p>
+          <ColorScheme className="project-sections-colors" colors={projectData?.colorScheme} />
+        </div>
+      )}
+      {projectData?.clientReview?.stars && projectData?.clientReview?.message && (
+        <Testinomial
+          className="project-testinomial"
+          star={projectData?.clientReview?.stars}
+          review={projectData?.clientReview?.message}
+          to="/"
+        />
+      )}
     </Layout>
   );
 }

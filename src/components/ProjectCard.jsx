@@ -16,6 +16,7 @@ export const ProjectCard = ({
     <Link to={`/work/${slug}`} className="links">
       <div className="project-title">{projectName}</div>
       <div className="project-description">{description}</div>
+      <Link style={{ color: 'white' }} to={`/work/${slug}`}>more details</Link>
       <img className="project-image" src={projectImage} alt="" />
     </Link>
   </div>

@@ -29,6 +29,7 @@ function RyazMethod({ isNavVisible }) {
     document?.getElementById('contact-element')?.scrollIntoView();
   };
   return (
+    /* eslint-disable max-len */
     <Layout isHeaderVisible={isNavVisible} className="about">
       <div id="about" className="about-home">
         <div className="about-info">
@@ -36,8 +37,8 @@ function RyazMethod({ isNavVisible }) {
             A
             <span> design-led </span>
             and
-            <span> growth focused </span>
-            agency for companies that care.
+            <span> growth-focused </span>
+            agency for innovative EdTech companies.
           </h2>
           <p className="headline">
             We have certain core values defined and these are actually the four
@@ -61,13 +62,13 @@ function RyazMethod({ isNavVisible }) {
             <RyazPillar
               title="High Value"
               number="01"
-              content="We believe in not being the cheapest but the premium one and providing an easy and fulfilling experience plus value to our client."
+              content="We provide premium solutions that offer an easy, fulfilling experience with added value for education-driven companies shaping the future of learning."
             />
             {isDesktopSizeWindow ? (
               <RyazPillar
                 title="Empathy"
                 number="03"
-                content="We are able to establish an environment where we understand and share the feeling of not just our colleagues but our customers and clients too."
+                content="We create an environment that deeply understands our clients' vision and works tirelessly to help them achieve their goals."
               />
             ) : (
               <RyazPillar
@@ -88,7 +89,7 @@ function RyazMethod({ isNavVisible }) {
               <RyazPillar
                 title="Empathy"
                 number="03"
-                content="We are able to establish an environment where we understand and share the feeling of not just our colleagues but our customers and clients too."
+                content="We create an environment that deeply understands our clients' vision and works tirelessly to help them achieve their goals."
               />
             )}
             <RyazPillar
@@ -108,7 +109,7 @@ function RyazMethod({ isNavVisible }) {
       ) : (
         <div className="top" />
       )}
-      <div className="about-section">
+      {/* <div className="about-section">
         <h3>Our Team</h3>
         <p>A group of people that truly care for each other</p>
         <CardSlider className="team-swiper" dataKey="id" data={employees}>
@@ -122,8 +123,8 @@ function RyazMethod({ isNavVisible }) {
             </>
           )}
         </CardSlider>
-      </div>
-      <div className="about-section activities">
+      </div> */}
+      {/* <div className="about-section activities">
         <h3>Know More</h3>
         <p>What makes us better as a company ?</p>
         <div className="activities-block">
@@ -143,7 +144,7 @@ function RyazMethod({ isNavVisible }) {
             content="We aim high, always learning to understand every novelty from the world of technology. We're always ready to help everyone with the best of our knowledge. We welcome new challenges and are always ready to solve them."
           />
         </div>
-      </div>
+      </div> */}
       <ContactForm className="about-contact" />
       <div>
         <Toaster />

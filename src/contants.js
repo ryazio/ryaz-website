@@ -10,20 +10,85 @@ import id9 from './images/employees/Sahib.jpg';
 import id10 from './images/employees/Varmillion.jpg';
 import id11 from './images/employees/Arsh.jpg';
 import id12 from './images/employees/Harminder.jpg';
-import id13 from './images/employees/pl-1.jpg';
+import id13 from './images/employees/Divyanshu.png';
 import id14 from './images/employees/Rajvir.jpg';
 import id15 from './images/employees/Shiv-Charan.jpg';
 import id16 from './images/employees/Amanjot.jpg';
 import id17 from './images/employees/Gurjit.jpg';
-import id18 from './images/employees/Shaina.jpeg';
+import id18 from './images/employees/Shaina.jpg';
 import id19 from './images/employees/Ghost.jpg';
 import id20 from './images/employees/Palak.jpg';
 import id21 from './images/employees/Kamal.jpg';
 import id22 from './images/employees/Harry.jpeg';
 import id23 from './images/employees/Anmol.jpg';
+import id24 from './images/employees/Dheeraj.png';
+import id25 from './images/employees/Jaspreet.jpg';
+import id26 from './images/employees/Khushi.jpeg';
+import id27 from './images/employees/Uttamdeep.png';
+import id28 from './images/employees/Sanchit.png';
+import id0 from './images/employees/pl-2.jpg';
+
 import {
-  ForbyIcon, MollyIcon, SkillshapeIcon, ITBIIcon, FlamencosIcon,
+  ForbyIcon, MollyIcon, SkillshapeIcon, ITBIIcon, FlamencosIcon, NuieeIcon, CwhqIcon, KomenIcon,
 } from './icons/project';
+
+import CWHQ_VIDEO from './videos/projects/cwhq.mp4';
+
+import MAZZOLARI_TITLE from './images/projects/mazzolari/title.png';
+import MAZZOLARI_STACK_1 from './images/projects/mazzolari/stack_1.png';
+import MAZZOLARI_STACK_2 from './images/projects/mazzolari/stack_2.png';
+import MAZZOLARI_STACK_3 from './images/projects/mazzolari/stack_3.png';
+import MAZZOLARI_STACK_4 from './images/projects/mazzolari/stack_4.png';
+import MAZZOLARI_STACK_5 from './images/projects/mazzolari/stack_5.png';
+import MAZZOLARI_SLIDER_1 from './images/projects/mazzolari/slider_1.png';
+import MAZZOLARI_SLIDER_2 from './images/projects/mazzolari/slider_2.png';
+import MAZZOLARI_SLIDER_3 from './images/projects/mazzolari/slider_3.png';
+import MAZZOLARI_SLIDER_4 from './images/projects/mazzolari/slider_4.png';
+import MAZZOLARI_SLIDER_5 from './images/projects/mazzolari/slider_5.png';
+
+import PICBELLY_TITLE from './images/projects/picbelly/title.png';
+import PICBELLY_STACK_1 from './images/projects/picbelly/stack_1.png';
+import PICBELLY_STACK_2 from './images/projects/picbelly/stack_2.png';
+import PICBELLY_STACK_3 from './images/projects/picbelly/stack_3.png';
+import PICBELLY_STACK_4 from './images/projects/picbelly/stack_4.png';
+import PICBELLY_STACK_5 from './images/projects/picbelly/stack_5.png';
+import PICBELLY_STACK_6 from './images/projects/picbelly/stack_6.png';
+
+import CWHQ_TITLE from './images/projects/cwhq/title.png';
+import CWHQ_STACK_1 from './images/projects/cwhq/stack_1.png';
+import CWHQ_STACK_2 from './images/projects/cwhq/stack_2.png';
+import CWHQ_STACK_3 from './images/projects/cwhq/stack_3.png';
+import CWHQ_STACK_4 from './images/projects/cwhq/stack_4.png';
+import CWHQ_STACK_5 from './images/projects/cwhq/stack_5.png';
+
+import KOMEN_TITLE from './images/projects/komen/title.png';
+import KOMEN_STACK_1 from './images/projects/komen/stack_1.png';
+import KOMEN_STACK_2 from './images/projects/komen/stack_2.png';
+import KOMEN_STACK_3 from './images/projects/komen/stack_3.png';
+import KOMEN_STACK_4 from './images/projects/komen/stack_4.png';
+import KOMEN_STACK_5 from './images/projects/komen/stack_5.png';
+import KOMEN_STACK_6 from './images/projects/komen/stack_6.png';
+import KOMEN_SLIDER_1 from './images/projects/komen/slider_1.png';
+import KOMEN_SLIDER_2 from './images/projects/komen/slider_2.png';
+import KOMEN_SLIDER_3 from './images/projects/komen/slider_3.png';
+import KOMEN_SLIDER_4 from './images/projects/komen/slider_4.png';
+
+import NIUEE_TITLE from './images/projects/niuee/title.png';
+import NIUEE_STACK_1 from './images/projects/niuee/stack_1.png';
+import NIUEE_STACK_2 from './images/projects/niuee/stack_2.png';
+import NIUEE_STACK_3 from './images/projects/niuee/stack_3.png';
+import NIUEE_STACK_4 from './images/projects/niuee/stack_4.png';
+import NIUEE_STACK_5 from './images/projects/niuee/stack_5.png';
+import NIUEE_STACK_6 from './images/projects/niuee/stack_6.png';
+import NIUEE_STACK_7 from './images/projects/niuee/stack_7.png';
+import NIUEE_SLIDER_1 from './images/projects/niuee/slider_1.png';
+import NIUEE_SLIDER_2 from './images/projects/niuee/slider_2.png';
+import NIUEE_SLIDER_3 from './images/projects/niuee/slider_3.png';
+import NIUEE_SLIDER_4 from './images/projects/niuee/slider_4.png';
+import NIUEE_SLIDER_5 from './images/projects/niuee/slider_5.png';
+import NIUEE_SLIDER_6 from './images/projects/niuee/slider_6.png';
+import NIUEE_SLIDER_7 from './images/projects/niuee/slider_7.png';
+import NIUEE_SLIDER_8 from './images/projects/niuee/slider_8.png';
 
 import MOLLY_TITLE from './images/projects/molly/title.png';
 import MOLLY_STACK_1 from './images/projects/molly/stack_1.png';
@@ -268,21 +333,46 @@ export const employeeImageMapper = (employeeId) => {
       return id22;
     case 23:
       return id23;
+    case 24:
+      return id24;
+    case 25:
+      return id25;
+    case 26:
+      return id26;
+    case 27:
+      return id27;
+    case 28:
+      return id28;
     default:
-      return id1;
+      return id0;
   }
 };
 
 export const projectLogoMapper = (projectId) => {
   switch (projectId) {
     case '01':
-      return MollyIcon;
+      return CwhqIcon;
     case '02':
       return SkillshapeIcon;
     case '03':
       return FlamencosIcon;
     case '04':
+      return NuieeIcon;
+    case '05':
+      return KomenIcon;
+    case '08':
+      return MollyIcon;
+    case '10':
       return ITBIIcon;
+    default:
+      return '';
+  }
+};
+
+export const projectVideoMapper = (videoName) => {
+  switch (videoName) {
+    case 'CWHQ_VIDEO':
+      return CWHQ_VIDEO;
     default:
       return '';
   }
@@ -290,6 +380,113 @@ export const projectLogoMapper = (projectId) => {
 
 export const projectImageMapper = (imageName) => {
   switch (imageName) {
+    case 'MAZZOLARI_TITLE':
+      return MAZZOLARI_TITLE;
+    case 'MAZZOLARI_STACK_1':
+      return MAZZOLARI_STACK_1;
+    case 'MAZZOLARI_STACK_2':
+      return MAZZOLARI_STACK_2;
+    case 'MAZZOLARI_STACK_3':
+      return MAZZOLARI_STACK_3;
+    case 'MAZZOLARI_STACK_4':
+      return MAZZOLARI_STACK_4;
+    case 'MAZZOLARI_STACK_5':
+      return MAZZOLARI_STACK_5;
+    case 'MAZZOLARI_SLIDER_1':
+      return MAZZOLARI_SLIDER_1;
+    case 'MAZZOLARI_SLIDER_2':
+      return MAZZOLARI_SLIDER_2;
+    case 'MAZZOLARI_SLIDER_3':
+      return MAZZOLARI_SLIDER_3;
+    case 'MAZZOLARI_SLIDER_4':
+      return MAZZOLARI_SLIDER_4;
+    case 'MAZZOLARI_SLIDER_5':
+      return MAZZOLARI_SLIDER_5;
+
+    case 'PICBELLY_TITLE':
+      return PICBELLY_TITLE;
+    case 'PICBELLY_STACK_1':
+      return PICBELLY_STACK_1;
+    case 'PICBELLY_STACK_2':
+      return PICBELLY_STACK_2;
+    case 'PICBELLY_STACK_3':
+      return PICBELLY_STACK_3;
+    case 'PICBELLY_STACK_4':
+      return PICBELLY_STACK_4;
+    case 'PICBELLY_STACK_5':
+      return PICBELLY_STACK_5;
+    case 'PICBELLY_STACK_6':
+      return PICBELLY_STACK_6;
+
+    case 'CWHQ_TITLE':
+      return CWHQ_TITLE;
+    case 'CWHQ_STACK_1':
+      return CWHQ_STACK_1;
+    case 'CWHQ_STACK_2':
+      return CWHQ_STACK_2;
+    case 'CWHQ_STACK_3':
+      return CWHQ_STACK_3;
+    case 'CWHQ_STACK_4':
+      return CWHQ_STACK_4;
+    case 'CWHQ_STACK_5':
+      return CWHQ_STACK_5;
+
+    case 'KOMEN_TITLE':
+      return KOMEN_TITLE;
+    case 'KOMEN_STACK_1':
+      return KOMEN_STACK_1;
+    case 'KOMEN_STACK_2':
+      return KOMEN_STACK_2;
+    case 'KOMEN_STACK_3':
+      return KOMEN_STACK_3;
+    case 'KOMEN_STACK_4':
+      return KOMEN_STACK_4;
+    case 'KOMEN_STACK_5':
+      return KOMEN_STACK_5;
+    case 'KOMEN_STACK_6':
+      return KOMEN_STACK_6;
+    case 'KOMEN_SLIDER_1':
+      return KOMEN_SLIDER_1;
+    case 'KOMEN_SLIDER_2':
+      return KOMEN_SLIDER_2;
+    case 'KOMEN_SLIDER_3':
+      return KOMEN_SLIDER_3;
+    case 'KOMEN_SLIDER_4':
+      return KOMEN_SLIDER_4;
+
+    case 'NIUEE_TITLE':
+      return NIUEE_TITLE;
+    case 'NIUEE_STACK_1':
+      return NIUEE_STACK_1;
+    case 'NIUEE_STACK_2':
+      return NIUEE_STACK_2;
+    case 'NIUEE_STACK_3':
+      return NIUEE_STACK_3;
+    case 'NIUEE_STACK_4':
+      return NIUEE_STACK_4;
+    case 'NIUEE_STACK_5':
+      return NIUEE_STACK_5;
+    case 'NIUEE_STACK_6':
+      return NIUEE_STACK_6;
+    case 'NIUEE_STACK_7':
+      return NIUEE_STACK_7;
+    case 'NIUEE_SLIDER_1':
+      return NIUEE_SLIDER_1;
+    case 'NIUEE_SLIDER_2':
+      return NIUEE_SLIDER_2;
+    case 'NIUEE_SLIDER_3':
+      return NIUEE_SLIDER_3;
+    case 'NIUEE_SLIDER_4':
+      return NIUEE_SLIDER_4;
+    case 'NIUEE_SLIDER_5':
+      return NIUEE_SLIDER_5;
+    case 'NIUEE_SLIDER_6':
+      return NIUEE_SLIDER_6;
+    case 'NIUEE_SLIDER_7':
+      return NIUEE_SLIDER_7;
+    case 'NIUEE_SLIDER_8':
+      return NIUEE_SLIDER_8;
+
     case 'MOLLY_TITLE':
       return MOLLY_TITLE;
     case 'MOLLY_STACK_1':

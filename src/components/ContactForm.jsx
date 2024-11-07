@@ -14,17 +14,16 @@ export const ContactForm = ({ className }) => {
     e.preventDefault();
     setLoading(true);
     const data = { email, subject, name };
-    axios.post('https://www.actionforms.io/e/r/ryaz-forms-endpoint', data, {
-      headers: { 'Content-Type': 'application/json' },
-    })
+    axios.post('https://sheetdb.io/api/v1/8p19i1a9wowe9', data)
       .then((response) => {
-        // console.log(response.data);
+        console.log(response.data);
         toast.success('Form Submitted Successfully');
         setEmail('');
         setSubject('');
         setName('');
       })
-      .catch(() => {
+      .catch((error) => {
+        console.error('Error submitting form:', error);
         toast.error('Something went wrong');
       })
       .finally(() => {

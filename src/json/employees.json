@@ -1,4 +1,5 @@
-[{
+[
+  {
     "id": 3,
     "name": "Inderpreet Singh",
     "designation": "Director, Software Engineering"
@@ -30,7 +31,7 @@
   },
   {
     "id": 7,
-    "name": "Vigas deep",
+    "name": "Vigas Deep",
     "designation": "Backend Developer / Project Manager"
   },
   {
@@ -112,5 +113,46 @@
     "id": 23,
     "name": "Anmol Kaur",
     "designation": "Developer"
+  },
+  {
+    "id": 24,
+    "name": "Dheeraj Arora",
+    "designation": "Frontend Developer"
+  },
+  {
+    "id": 25,
+    "name": "Jaspreet Singh",
+    "designation": "Frontend Developer"
+  },
+  {
+    "id": 26,
+    "name": "Khushi Aggarwal",
+    "designation": "Backend Developer"
+  },
+  {
+    "id": 27,
+    "name": "Uttamdeep Kaur Bhullar",
+    "designation": "Project Manager"
+  },
+  {
+    "id": 28,
+    "name": "Sanchit Khera",
+    "designation": "Frontend Developer"
+  },
+  {
+    "id": 29,
+    "name": "Matt"
+  },
+  {
+    "id": 30,
+    "name": "Alessandro"
+  },
+  {
+    "id": 31,
+    "name": "Jey Iyempandi"
+  },
+  {
+    "id": 32,
+    "name": "Antonio de Pable Ca`rabe(Coqui)"
   }
 ]
