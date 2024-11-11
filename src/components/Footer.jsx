@@ -14,6 +14,7 @@ export const Footer = () => (
         </div>
         <p className="footer-text-address">H. No. 188/2, Near Raksha Madam, Water Tank Road, Samrala, Ludhiana, Punjab, 141114 IN</p>
         <p>+91 6280256990</p>
+        <p>inder@ryaz.io</p>
       </section>
       <section>
         <p className="footer-text"><a href="/">Home</a></p>

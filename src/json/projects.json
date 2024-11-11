@@ -1,9 +1,9 @@
 [
   {
     "id": "01",
-    "slug": "molly",
-    "name": "Molly",
-    "description": "A time and task management application with beautiful and elegant UI, Powered with AI-based assistant which reminds you for different things to make you cope up with your planned schedule.",
+    "slug": "cwhq",
+    "name": "CWHQ",
+    "description": "With a mission to make learning programming fun and engaging, this program offers live classes instead of pre-recorded videos for kids of all ages. The curriculum is thoughtfully divided into Elementary, Middle, and High School levels to suit different age groups. Ryaz is responsible for designing and developing all aspects of this curriculum.",
     "labels": [
       "Frontend Development",
       "Backend Development",
@@ -11,29 +11,38 @@
       "Testing",
       "QA"
     ],
-    "leaders": [7],
-    "stakeholders": [7, 6, 13, 14],
-    "client": "Ranadev",
-    "timeSpan": "6 Months",
-    "delieverables": ["Front-end Development", "Back-end Development"],
-    "titleImage": "MOLLY_TITLE",
-    "stackImages": [
-      "MOLLY_STACK_1",
-      "MOLLY_STACK_3",
-      "MOLLY_STACK_4",
-      "MOLLY_STACK_5",
-      "MOLLY_STACK_6"
+    "leaders": [
+      3,
+      8
     ],
-    "colorScheme": ["#FFFFFF", "#F1F3F6", "#3C46DA", "#161C6B", "#E94B4B"],
-    "clientReview": {
-      "stars": 5,
-      "message": "Team ryaz impressed us with a highly personalized approach to our project and lots of interesting suggestions. We love the way they consider the project as their own product and work really hard for it’s success. Thanks to team ryaz for a wonderful experience :)"
-    },
+    "stakeholders": [
+      3,
+      8,
+      9,
+      1,
+      21,
+      31
+    ],
+    "client": "CodewizardsHQ",
+    "timeSpan": "6 Months",
+    "delieverables": [
+      "Shopify theme",
+      "migration of products from Magento to Shopify using Litextension tool"
+    ],
+    "titleImage": "CWHQ_TITLE",
+    "stackImages": [
+      "CWHQ_STACK_1",
+      "CWHQ_STACK_2",
+      "CWHQ_STACK_3",
+      "CWHQ_STACK_4",
+      "CWHQ_STACK_5"
+    ],
+    "clientReview": {},
     "resolution": {
       "height": "9",
       "width": "16"
     },
-    "videoLink": ""
+    "videoLink": "CWHQ_VIDEO"
   },
   {
     "id": "02",
@@ -47,8 +56,15 @@
       "Testing",
       "QA"
     ],
-    "leaders": [3],
-    "stakeholders": [3, 2, 13, 9],
+    "leaders": [
+      3
+    ],
+    "stakeholders": [
+      3,
+      2,
+      13,
+      9
+    ],
     "client": "Sam Schikowitz",
     "timeSpan": "6 months",
     "delieverables": [
@@ -103,9 +119,21 @@
       "Testing",
       "QA"
     ],
-    "leaders": [6, 2],
-    "stakeholders": [6, 2, 13, 5, 1, 4],
-    "client": "Ana Maria",
+    "leaders": [
+      6,
+      2
+    ],
+    "stakeholders": [
+      3,
+      18,
+      24,
+      5,
+      26,
+      27,
+      2,
+      32
+    ],
+    "client": "Antonio de Pablo (Coqui)",
     "timeSpan": "6 Months",
     "delieverables": [
       "UI/UX Design",
@@ -154,12 +182,352 @@
   },
   {
     "id": "04",
+    "slug": "niuee",
+    "name": "Niuee",
+    "description": "NIUEE is an innovative interior design platform focused on optimizing spaces through neuroscience, biophilic design, and sustainability. It offers expert advice and solutions to create environments that enhance well-being, boost happiness, and promote ecological responsibility.",
+    "labels": [
+      "Frontend Development",
+      "Backend Development",
+      "UI/UX Design",
+      "Testing"
+    ],
+    "leaders": [
+      2
+    ],
+    "stakeholders": [
+      2,
+      3,
+      5,
+      25,
+      27,
+      29
+    ],
+    "client": "Scalarly",
+    "timeSpan": "6 Months",
+    "delieverables": [
+      "Frontend Development",
+      "Backend Development",
+      "UI/UX Design",
+      "Testing"
+    ],
+    "titleImage": "NIUEE_TITLE",
+    "stackImages": [
+      "NIUEE_STACK_1",
+      "NIUEE_STACK_2",
+      "NIUEE_STACK_3",
+      "NIUEE_STACK_4",
+      "NIUEE_STACK_5",
+      "NIUEE_STACK_6",
+      "NIUEE_STACK_7"
+    ],
+    "sliderImages": [
+      "NIUEE_SLIDER_1",
+      "NIUEE_SLIDER_2",
+      "NIUEE_SLIDER_3",
+      "NIUEE_SLIDER_4",
+      "NIUEE_SLIDER_4",
+      "NIUEE_SLIDER_6",
+      "NIUEE_SLIDER_7",
+      "NIUEE_SLIDER_8"
+    ],
+    "colorScheme": [
+      "#f8f8f8",
+      "#dfc8a2",
+      "#e3edea",
+      "#768b86",
+      "#314230",
+      "#333333"
+    ],
+    "clientReview": {},
+    "resolution": {
+      "height": "9",
+      "width": "16"
+    },
+    "videoLink": ""
+  },
+  {
+    "id": "05",
+    "slug": "komen",
+    "name": "Komen",
+    "description": "Race for the Cure is the flagship event of Komen Italia, raising awareness and funds for the fight against breast cancer. Held in cities like Rome, it supports research, prevention, and assistance projects for women. Participants can join runs, walks, and other activities, with proceeds funding over 1,500 projects across Italy. The event also honors the 'Donne in Rosa,' women who have battled breast cancer, symbolizing hope and solidarity.",
+    "labels": [
+      "Maintenance",
+      "Testing",
+      "QA"
+    ],
+    "leaders": [
+      5
+    ],
+    "stakeholders": [
+      5,
+      3,
+      27,
+      28,
+      29
+    ],
+    "client": "Scalarly",
+    "timeSpan": "6 Months",
+    "delieverables": [
+      "Shopify theme",
+      "migration of products from Magento to Shopify using Litextension tool"
+    ],
+    "titleImage": "KOMEN_TITLE",
+    "stackImages": [
+      "KOMEN_STACK_1",
+      "KOMEN_STACK_2",
+      "KOMEN_STACK_3",
+      "KOMEN_STACK_4",
+      "KOMEN_STACK_5",
+      "KOMEN_STACK_6"
+    ],
+    "sliderImages": [
+      "KOMEN_SLIDER_1",
+      "KOMEN_SLIDER_2",
+      "KOMEN_SLIDER_3",
+      "KOMEN_SLIDER_4"
+    ],
+    "colorScheme": [
+      "#FFFFFF",
+      "#C8277D",
+      "#C5006E",
+      "#343a40",
+      "#292d32"
+    ],
+    "clientReview": {},
+    "resolution": {
+      "height": "9",
+      "width": "16"
+    },
+    "videoLink": ""
+  },
+  {
+    "id": "06",
+    "slug": "picbelly",
+    "name": "Picbelly",
+    "description": "Picbelly is a portfolio website designed for photographers. Easily upload photos and videos, customize your portfolio with templates, and get booked online for shoots—whether it's packages, hourly, or individual sessions. Designed to be simple, even for non-tech-savvy photographers, Picbelly makes hiring photographers as easy as using Zomato.",
+    "labels": [
+      "UI/UX Design"
+    ],
+    "leaders": [
+      1
+    ],
+    "stakeholders": [
+      1,
+      3,
+      18,
+      9,
+      27,
+      7
+    ],
+    "client": "Vigas Deep",
+    "timeSpan": "6 Months",
+    "delieverables": [
+      "UI/UX Design"
+    ],
+    "titleImage": "PICBELLY_TITLE",
+    "stackImages": [
+      "PICBELLY_STACK_1",
+      "PICBELLY_STACK_2",
+      "PICBELLY_STACK_3",
+      "PICBELLY_STACK_4",
+      "PICBELLY_STACK_5",
+      "PICBELLY_STACK_6"
+    ],
+    "colorScheme": [
+      "#FFFFFF",
+      "#F67725",
+      "#E56117",
+      "#7A7A7A",
+      "#161616",
+      "#0A0A0A"
+    ],
+    "clientReview": {},
+    "resolution": {
+      "height": "9",
+      "width": "16"
+    },
+    "videoLink": ""
+  },
+  {
+    "id": "7",
+    "slug": "we-path",
+    "name": "WePath",
+    "description": "A case management app for German doctors in a university to manage all the cases, upload important WSI and non-WSI images helping them to discuss using the integrated chat facility with annotations.",
+    "labels": [
+      "Frontend Development",
+      "Backend Development",
+      "UI/UX Design",
+      "Testing",
+      "QA"
+    ],
+    "leaders": [
+      3
+    ],
+    "stakeholders": [
+      3,
+      6,
+      13,
+      15,
+      2
+    ],
+    "client": "Wepath",
+    "timeSpan": "3-4 Months",
+    "delieverables": [
+      "UI/UX Design",
+      "Front-end Development",
+      "Back-end Development"
+    ],
+    "titleImage": "WE_PATH_TITLE",
+    "stackImages": [
+      "WE_PATH_STACK_1",
+      "WE_PATH_STACK_2",
+      "WE_PATH_STACK_3",
+      "WE_PATH_STACK_4",
+      "WE_PATH_STACK_5"
+    ],
+    "colorScheme": [
+      "#F1F1F1",
+      "#B2C7CA",
+      "#136164",
+      "#666768",
+      "#5B9A9E",
+      "#352F2C",
+      "#857E8A"
+    ],
+    "clientReview": {
+      "stars": 5,
+      "message": "I’m quite impressed by the work Ryaz did for our project. The dev team is really hard working and they were readily available for us throughout the project. I like their drive for innovation and the company spirit."
+    },
+    "resolution": {
+      "height": "11",
+      "width": "16"
+    },
+    "videoLink": ""
+  },
+  {
+    "id": "08",
+    "slug": "molly",
+    "name": "Molly",
+    "description": "A time and task management application with beautiful and elegant UI, Powered with AI-based assistant which reminds you for different things to make you cope up with your planned schedule.",
+    "labels": [
+      "Frontend Development",
+      "Backend Development",
+      "UI/UX Design",
+      "Testing",
+      "QA"
+    ],
+    "leaders": [
+      7
+    ],
+    "stakeholders": [
+      7,
+      6,
+      13,
+      14
+    ],
+    "client": "Ranadev",
+    "timeSpan": "6 Months",
+    "delieverables": [
+      "Front-end Development",
+      "Back-end Development"
+    ],
+    "titleImage": "MOLLY_TITLE",
+    "stackImages": [
+      "MOLLY_STACK_1",
+      "MOLLY_STACK_3",
+      "MOLLY_STACK_4",
+      "MOLLY_STACK_5",
+      "MOLLY_STACK_6"
+    ],
+    "colorScheme": [
+      "#FFFFFF",
+      "#F1F3F6",
+      "#3C46DA",
+      "#161C6B",
+      "#E94B4B"
+    ],
+    "clientReview": {
+      "stars": 5,
+      "message": "Team ryaz impressed us with a highly personalized approach to our project and lots of interesting suggestions. We love the way they consider the project as their own product and work really hard for it’s success. Thanks to team ryaz for a wonderful experience :)"
+    },
+    "resolution": {
+      "height": "9",
+      "width": "16"
+    },
+    "videoLink": ""
+  },
+  {
+    "id": "09",
+    "slug": "mazzolari",
+    "name": "Mazzolari",
+    "description": "An Italy-based eCommerce business with over 25,000 products turned to us for a seamless migration from Magento to Shopify. We successfully replicated their existing Magento theme in Shopify, preserving the original design and functionality to ensure a smooth transition.",
+    "labels": [
+      "Frontend Development",
+      "Backend Development",
+      "UI/UX Design",
+      "Testing",
+      "QA"
+    ],
+    "leaders": [
+      18
+    ],
+    "stakeholders": [
+      3,
+      18,
+      29,
+      30
+    ],
+    "client": "Alessandro Mazzolari",
+    "timeSpan": "6 Months",
+    "delieverables": [
+      "Shopify theme",
+      "migration of products from Magento to Shopify using Litextension tool"
+    ],
+    "titleImage": "MAZZOLARI_TITLE",
+    "stackImages": [
+      "MAZZOLARI_STACK_1",
+      "MAZZOLARI_STACK_2",
+      "MAZZOLARI_STACK_3",
+      "MAZZOLARI_STACK_4",
+      "MAZZOLARI_STACK_5"
+    ],
+    "sliderImages": [
+      "MAZZOLARI_SLIDER_1",
+      "MAZZOLARI_SLIDER_2",
+      "MAZZOLARI_SLIDER_3",
+      "MAZZOLARI_SLIDER_4",
+      "MAZZOLARI_SLIDER_5"
+    ],
+    "colorScheme": [
+      "#000000",
+      "#F0F0F0",
+      "#ffffff",
+      "#CC0000",
+      "#F5F5F5"
+    ],
+    "clientReview": {},
+    "resolution": {
+      "height": "9",
+      "width": "16"
+    },
+    "videoLink": ""
+  },
+  {
+    "id": "10",
     "slug": "itbi",
     "name": "ITBI",
     "description": "A wallet integration project which integrates wallets like coinbase, metamask, and FIAT services like Prime Trust into a single application, for helping the user trade easily.",
-    "labels": ["Designing", "Frontend Development"],
-    "leaders": [13],
-    "stakeholders": [13, 3],
+    "labels": [
+      "Designing",
+      "Frontend Development"
+    ],
+    "leaders": [
+      13
+    ],
+    "stakeholders": [
+      13,
+      3
+    ],
     "client": "Ranadev",
     "timeSpan": "ongoing",
     "delieverables": [
@@ -197,54 +565,6 @@
     "resolution": {
       "height": "9",
       "width": "19"
-    },
-    "videoLink": ""
-  },
-  {
-    "id": "05",
-    "slug": "we-path",
-    "name": "WePath",
-    "description": "A case management app for German doctors in a university to manage all the cases, upload important WSI and non-WSI images helping them to discuss using the integrated chat facility with annotations.",
-    "labels": [
-      "Frontend Development",
-      "Backend Development",
-      "UI/UX Design",
-      "Testing",
-      "QA"
-    ],
-    "leaders": [3],
-    "stakeholders": [3, 6, 13, 15, 2],
-    "client": "Wepath",
-    "timeSpan": "3-4 Months",
-    "delieverables": [
-      "UI/UX Design",
-      "Front-end Development",
-      "Back-end Development"
-    ],
-    "titleImage": "WE_PATH_TITLE",
-    "stackImages": [
-      "WE_PATH_STACK_1",
-      "WE_PATH_STACK_2",
-      "WE_PATH_STACK_3",
-      "WE_PATH_STACK_4",
-      "WE_PATH_STACK_5"
-    ],
-    "colorScheme": [
-      "#F1F1F1",
-      "#B2C7CA",
-      "#136164",
-      "#666768",
-      "#5B9A9E",
-      "#352F2C",
-      "#857E8A"
-    ],
-    "clientReview": {
-      "stars": 5,
-      "message": "I’m quite impressed by the work Ryaz did for our project. The dev team is really hard working and they were readily available for us throughout the project. I like their drive for innovation and the company spirit."
-    },
-    "resolution": {
-      "height": "11",
-      "width": "16"
     },
     "videoLink": ""
   }
