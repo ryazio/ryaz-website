@@ -13,15 +13,15 @@ export const Header = ({ className, isOpen, setIsOpen }) => {
     },
     {
       title: 'OUR WORK',
-      url: '#work',
+      url: '/work',
     },
     {
       title: 'ABOUT US',
-      url: '#about',
+      url: '/about',
     },
     {
       title: 'CONTACT',
-      url: '#contact',
+      url: '/contact',
     },
     {
       title: 'BLOG',
@@ -29,7 +29,7 @@ export const Header = ({ className, isOpen, setIsOpen }) => {
     },
     {
       title: 'HIRE US',
-      url: '#contact',
+      url: '/contact',
     }];
 
   return (

@@ -157,7 +157,11 @@ function SingleProject() {
 
       <div className="project-sections">
         <h5>Designs</h5>
-        <p>We reflect craftsmanship through our work.</p>
+        {projectData.name === 'CWHQ' ? (
+          <p>We design and develop the curriculum inside out.</p>
+        ) : (
+          <p>We reflect craftsmanship through our work.</p>
+        )}
         <CardStack
           style={{ height: (width * heightResolution) || undefined }}
           className="project-sections-stack"
