@@ -18,13 +18,13 @@ import AboutUs from './pages/AboutUs';
 import { MediaQueryProvider } from './hooks';
 import { initializeGA } from './analytics';
 import AnalyticsTracker from './components/AnalyticsTracker';
+import { GA_MEASUREMENT_ID } from './config/enviornment';
 
 SwiperCore.use([FreeMode, Navigation]);
 function App() {
   useEffect(() => {
-    const measurementId = process.env.REACT_APP_GA_MEASUREMENT_ID;
-    if (measurementId) {
-      initializeGA(measurementId);
+    if (GA_MEASUREMENT_ID) {
+      initializeGA(GA_MEASUREMENT_ID);
     }
   }, []);
 
