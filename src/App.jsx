@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {
   BrowserRouter as Router, Routes, Route, Navigate,
+  useLocation,
 } from 'react-router-dom';
 import SwiperCore, { FreeMode, Navigation } from 'swiper';
 import Home from './pages/Home';
@@ -15,12 +16,22 @@ import './styles/index.scss';
 import Contact from './pages/Contact';
 import AboutUs from './pages/AboutUs';
 import { MediaQueryProvider } from './hooks';
+import { initializeGA } from './analytics';
+import AnalyticsTracker from './components/AnalyticsTracker';
+import { GA_MEASUREMENT_ID } from './config/enviornment';
 
 SwiperCore.use([FreeMode, Navigation]);
 function App() {
+  useEffect(() => {
+    if (GA_MEASUREMENT_ID) {
+      initializeGA(GA_MEASUREMENT_ID);
+    }
+  }, []);
+
   return (
     <MediaQueryProvider>
       <Router>
+        <AnalyticsTracker />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/work" element={<Work />} />
