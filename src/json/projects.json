@@ -35,7 +35,8 @@
       "CWHQ_STACK_2",
       "CWHQ_STACK_3",
       "CWHQ_STACK_4",
-      "CWHQ_STACK_5"
+      "CWHQ_STACK_5",
+      "CWHQ_STACK_6"
     ],
     "clientReview": {},
     "resolution": {
@@ -142,6 +143,7 @@
     ],
     "titleImage": "FLAMENCOS_TITLE",
     "stackImages": [
+      "FLAMENCOS_STACK_1",
       "FLAMENCOS_STACK_2",
       "FLAMENCOS_STACK_3",
       "FLAMENCOS_STACK_4",
