@@ -60,4 +60,19 @@
       display: none;
     }
   }
+
+  &-more-details {
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    text-decoration: none;
+    &-icon{
+      height: 16px;
+      width: 16px;
+      display: flex;
+      align-items: center;
+      margin-top: 2px;
+    }
+  }
 }

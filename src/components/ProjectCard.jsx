@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { ArrowIcon } from '../icons';
 
 export const ProjectCard = ({
   sno,
@@ -16,7 +17,10 @@ export const ProjectCard = ({
     <Link to={`/work/${slug}`} className="links">
       <div className="project-title">{projectName}</div>
       <div className="project-description">{description}</div>
-      <Link style={{ color: 'white' }} to={`/work/${slug}`}>more details</Link>
+      <Link className="project-more-details" to={`/work/${slug}`}>
+        <span>more details</span>
+        <ArrowIcon className="project-more-details-icon" />
+      </Link>
       <img className="project-image" src={projectImage} alt="" />
     </Link>
   </div>
