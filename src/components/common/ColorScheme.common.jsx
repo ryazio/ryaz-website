@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { useSize } from '../../hooks';
 import { CopyIcon } from '../../icons';
@@ -19,7 +19,16 @@ function hexCol(color) {
 export const ColorScheme = ({ className, colors }) => {
   const parentContainer = useRef();
   const { width } = useSize(parentContainer);
-  let c1;
+  const [copiedColor, setCopiedColor] = useState(null);
+
+  const handleCopy = (color) => {
+    navigator.clipboard.writeText(color);
+    setCopiedColor(color);
+
+    setTimeout(() => {
+      setCopiedColor(null);
+    }, 2000);
+  };
 
   return (
     <motion.div
@@ -30,7 +39,7 @@ export const ColorScheme = ({ className, colors }) => {
       animate={{ height: width / colors.length || undefined }}
     >
       {colors.map((color) => {
-        c1 = hexCol(color) ? 'white-back' : '';
+        const c1 = hexCol(color) ? 'white-back' : '';
         return (
           <motion.div
             key={color}
@@ -42,19 +51,29 @@ export const ColorScheme = ({ className, colors }) => {
             whileTap="visible"
             variants={variantsParent}
           >
+            {/* Copy Icon and Color Text in the Same Row */}
             <motion.div
               className="color-scheme-label"
               variants={variants}
-              onClick={() => navigator.clipboard.writeText(color)}
+              onClick={() => handleCopy(color)}
               whileTap={{ scale: 0.9 }}
             >
-              {c1 === 'white-back' ? (
-                <CopyIcon fill="#333" />
-              ) : (
-                <CopyIcon fill="#fff" />
-              )}
-              <p>{color}</p>
+              <CopyIcon fill={c1 === 'white-back' ? '#333' : '#fff'} />
+              <p className="color-text">{color}</p>
             </motion.div>
+
+            {/* "Copied" Message Below */}
+            {copiedColor === color && (
+              <motion.p
+                className="copied-message"
+                initial={{ opacity: 0, y: -5 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -5 }}
+                transition={{ duration: 0.3 }}
+              >
+                Copied
+              </motion.p>
+            )}
           </motion.div>
         );
       })}

@@ -3,10 +3,13 @@
   height: 80px;
 
   &-block {
-    display: grid;
-    place-items: center;
+    display: flex;
+    flex-direction: column; /* Ensures "Copied" appears below */
+    align-items: center;
+    justify-content: center;
     width: 20%;
     height: 100%;
+
   }
 
   &-label {
@@ -44,4 +47,22 @@
   p {
     color: #333;
   }
+}
+
+.color-text {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.copied-message {
+  font-size: 14px;
+  color: #fff;
+  opacity: 0.8;
+  margin-top: 4px; /* Space between color text and "Copied" */
+  text-align: center;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.white-back .copied-message {
+  color: #333;
 }

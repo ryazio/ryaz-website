@@ -14,7 +14,8 @@ export const ContactForm = ({ className }) => {
     e.preventDefault();
     setLoading(true);
     const data = { email, subject, name };
-    axios.post('https://sheetdb.io/api/v1/8p19i1a9wowe9', data)
+    axios
+      .post('https://sheetdb.io/api/v1/hcj7fq2dsduqi', data)
       .then((response) => {
         console.log(response.data);
         toast.success('Form Submitted Successfully');
@@ -33,10 +34,12 @@ export const ContactForm = ({ className }) => {
 
   return (
     <div id="contact" className={`contact ${className}`.trim()}>
-      <div id="contact-element" className="contact-tagline">Let’s make it happen.</div>
+      <div id="contact-element" className="contact-tagline">
+        Let’s make it happen.
+      </div>
       <div className="contact-info">
-        It doesn’t matter where you coming from, or any other aspect.
-        If you are passionate about your work, we can’t wait to meet you.
+        It doesn’t matter where you coming from, or any other aspect. If you are
+        passionate about your work, we can’t wait to meet you.
       </div>
       <form onSubmit={onSubmit}>
         <div>
@@ -67,11 +70,7 @@ export const ContactForm = ({ className }) => {
           value={subject}
           required
         />
-        <button
-          type="submit"
-          className="primary-btn"
-          disabled={loading}
-        >
+        <button type="submit" className="primary-btn" disabled={loading}>
           {!loading ? 'Join Us Now' : 'Loading...'}
         </button>
       </form>
